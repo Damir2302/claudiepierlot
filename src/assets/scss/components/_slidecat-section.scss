@@ -1,0 +1,90 @@
+.slidecat__container {
+    padding: 60px 0 20px;
+
+    @include breakpoint(xl) {
+        padding: 80px 0 20px;
+    }
+}
+
+.slidecat__container .slick-slide {
+    margin: 0 1.2vw;
+    padding: 0;
+    max-width: 261px;
+
+    @include breakpoint(lg) {
+        margin: 0;
+        margin-right: 16px;
+        background: 0 0;
+        max-width: 469px;
+        height: 100%;
+        float: left;
+    }
+}
+
+.slidecat__container .slick-list {
+    padding: 0 12px;
+
+    @include breakpoint(lg) {
+        padding: 0;
+    }
+}
+
+.slidecat__container .slick-next,
+.slidecat__container .slick-prev {
+    background: 0 0;
+    height: 19px;
+    width: 12px;
+    margin-top: -28px;
+    z-index: 1;
+}
+
+.slidecat__container .slick-prev {
+    left: 0;
+}
+
+.slidecat__container .slick-next {
+    right: 0;
+    transform: rotate(180deg) translate(0,50%);
+}
+
+.slidecat__title {
+    margin-bottom: 15px;
+    padding-left: 14px;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        padding-left: 22px;
+        font-size: 16px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 28px;
+        padding-left: 42px;
+    }
+}
+
+.slidecat__slide {
+
+    @include breakpoint(lg) {
+        margin-left: 42px;
+    }
+}
+
+.slidecat__details {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.slidecat__name {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slidecat__price {
+    padding-top: 5px;
+}

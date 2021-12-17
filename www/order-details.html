@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Отслеживание заказа | Claudie Pierlot</title>
+    <!-- Styles-->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+  </head>
+  <body>
+    <div id="page">
+      <!-- Header::Start-->
+      <div id="header">
+        <header>
+          <div class="header__top"><a class="header__menu-btn" title="Menu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></a><a class="top-mobile-return" href="javascript:history.go(-1)"></a>
+            <div class="header__logo"><img class="black" src="assets/images/logo-2021-black-retina.png" alt="Claudie Pierlot"></div>
+            <div class="header__right">
+              <div class="right__layer"></div>
+              <ul class="header__info">
+                <li class="header__search"><a href="javasscript.void(0)" title="Search"><i class="icon-search"></i></a></li>
+                <li class="header__login"><a href="javasscript.void(0)" title="Login"><i class="icon-my-account"></i></a>
+                  <div class="login__content">
+                    <div class="close__content"></div>
+                    <div class="login__container">
+                      <div class="login__title">Аккаунт</div>
+                    </div>
+                    <form id="login-form">
+                      <input type="email" placeholder="Ваш адрес электронной почты" required>
+                      <input type="password" placeholder="Ваш пароль" required><a href="#">Забыли пароль?</a>
+                      <button class="login-btn">Войти</button>
+                    </form>
+                    <div class="register-sec">
+                      <h3>Нет аккаунта?</h3><a class="register-link button-style" href="/register.html">Зарегистрироваться</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__wishlist"><a href="javasscript.void(0)" title="Wishlist"><i class="icon-wishlist"></i><span class="number-item">2</span></a>
+                  <div class="wishlist__content">
+                    <div class="close__content"></div>
+                    <div class="wishlist-top__container">
+                      <div class="wishlist__title">Список желаний (1)</div>
+                      <div class="wishlist__promo">
+                        <p>Бесплатная доставка и возврат для всех заказов</p>
+                      </div>
+                    </div>
+                    <form id="wishlist-form">
+                      <div class="wishlist__main">
+                        <div class="wishlist__product">
+                          <div class="wishlist__image"><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="image"></a></div>
+                          <div class="wishlist__attributes">
+                            <div class="wishlist__product-name"><a>Длинное платье с принтом геометрией</a></div>
+                            <div class="wishlist__attr-types">
+                              <div class="attr-color"><span>Цвет:</span><span>Темный</span></div>
+                              <div class="attr-size"><span>Размер:</span><span>36</span></div>
+                            </div>
+                            <div class="wishlist__remove"><a>Удалить</a></div>
+                            <div class="wishlist__pricing"><span>28 000 ₽</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wishlist__totals">
+                        <button class="wishlist__button">Добавить все в корзину</button>
+                        <button class="wishlist__button button-invert">Посмотреть все</button>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                <li class="header__cart"><a href="javasscript.void(0)" title="Cart"><i class="icon-panier"></i><span class="number-item">2</span></a>
+                  <div class="cart__content">
+                    <div class="close__content"><span>Назад</span></div>
+                    <div class="cart-top__container">
+                      <div class="cart__title">Корзина (1)</div>
+                      <div class="cart__promo">
+                        <p>Бесплатная доставка и возврат для всех заказов</p>
+                      </div>
+                    </div>
+                    <form id="cart-form">
+                      <div class="cart__main">
+                        <div class="cart__product">
+                          <div class="cart__image"><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="image"></a></div>
+                          <div class="cart__attributes">
+                            <div class="cart__product-name"><a>Длинное платье с принтом геометрией</a></div>
+                            <div class="cart__attr-types">
+                              <div class="attr-color"><span>Темный</span></div>
+                              <div class="attr-size">
+                                <select>
+                                  <option value="36">36</option>
+                                  <option value="38">38</option>
+                                  <option value="40">40</option>
+                                  <option value="42">42</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="cart__remove"><a>Удалить</a></div>
+                            <div class="cart__pricing"><span>28 000 ₽</span></div>
+                          </div>
+                        </div>
+                        <div class="cart__subtotals"><span class="shipping-time">Доставка от 2 до 3 дней</span><span class="shipping-price">Бесплатно</span></div>
+                      </div>
+                      <div class="cart__totals">
+                        <div class="total-price"><span>Итого: 28 000 ₽</span></div>
+                        <button class="cart__button">Смотреть мою корзину</button>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <nav id="navbar">
+            <ul class="navbar__menu">
+              <li class="item__menu has-submenu"><a class="item__menu-link" href="#">New in</a>
+                <div class="submenu__wrap">
+                  <div class="submenu__main">
+                    <ul class="submenu__expand-col">
+                      <li class="submenu__col-list"><span class="submenu__title">Новое</span>
+                        <ul>
+                          <li class="submenu__col-item">
+                            <h3><a>Новинка на этой неделе</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Новая рабочая одежда НОВЫЙ</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Зеленая жизнь</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Новая коллекция</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Лукбук Осень-Зима</a></h3>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="submenu__col-list">
+                        <ul class="submenu__images">
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-1.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-2.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-3.jpg" alt="image"></span><span>Название модели</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="item__menu has-submenu"><a class="item__menu-link" href="#">Одежда</a>
+                <div class="submenu__wrap">
+                  <div class="submenu__main">
+                    <ul class="submenu__expand-col">
+                      <li class="submenu__col-list"><span class="submenu__title">Наши новинки</span>
+                        <ul>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Время праздновать</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>На луну и обратно</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Привет из Колорадо</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Новая коллекция</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Лукбук Осень-Зима</a></h3>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="submenu__col-list">
+                        <ul class="submenu__images">
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-1.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-2.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-3.jpg" alt="image"></span><span>Название модели</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Сумки</a></li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Обувь</a></li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Аксессуары</a></li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Claudie cares</a></li>
+            </ul>
+            <ul class="navbar__extra">
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Нужна помощь?</a></li>
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Список желаний</a></li>
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Связаться с нами</a></li>
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Найти магазин</a></li>
+              <li class="extra__menu"><a class="extra__menu-link extra__menu-link--account button-style" href="/account.html">Аккаунт</a></li>
+            </ul>
+          </nav>
+          <div class="header__search-form">
+            <form id="search-form" role="search">
+              <fieldset>
+                <button class="icon-search" type="submit"></button>
+                <input id="search" type="text" name="search" placeholder="Найти" autocomplete="off"><a class="search__close-icon" href="javasscript.void(0)" title="close"><span class="icon-close"></span></a>
+              </fieldset>
+            </form>
+          </div>
+        </header>
+      </div>
+      <!-- Header::End-->
+      <!-- Main::Start-->
+      <main id="main" role="main">
+        <div id="order-details">
+          <h3>У вас нет аккаунта?</h3>
+          <p>Для отслеживания вашего заказа, пожалуйста, заполните следующую информацию:</p>
+          <form id="orderDetails">
+            <div class="form__row">
+              <label for="orderNumber"><span>Номер заказа</span><span class="required-indicator">*</span></label>
+              <input type="text" name="orderNumber" required>
+            </div>
+            <div class="form__row">
+              <label for="orderEmail"><span>Электронный адрес</span><span class="required-indicator">*</span></label>
+              <input type="text" name="orderEmail" required>
+            </div>
+            <div class="form__row">
+              <label for="orderPostalCode"><span>Номер счета</span><span class="required-indicator">*</span></label>
+              <input type="text" name="orderPostalCode" required>
+            </div>
+            <div class="form__row">
+              <button type="submit">Отследить свой заказ</button>
+            </div>
+          </form>
+        </div>
+      </main>
+      <!-- Main::End-->
+      <!-- Footer::Start-->
+      <div id="footer">
+        <footer>
+          <div class="footer__socials"><span>Присоединяйтесь к нам</span>
+            <ul>
+              <li><a class="icon-facebook2" href="facebook.com" title="facebook" target="_blank"></a></li>
+              <li><a class="icon-ico-instagram" href="instagram.com" title="instagram" target="_blank"></a></li>
+            </ul>
+          </div>
+          <div class="footer__reassurance">
+            <div class="exchange__info"><a><img src="assets/images/return.png" alt="return"><span>Обмен в магазине</span></a></div>
+            <div class="service-client"><a><img src="assets/images/SERVICE-CLIENT.png" alt="service"><span>Консультации для клиентов</span></a></div>
+            <div class="safe-payment"><a><img src="assets/images/PAYMENT.png" alt="payment"><span>Безопасная оплата</span></a></div>
+          </div>
+          <div class="footer__container">
+            <div class="footer__menu">
+              <ul class="menu__list">
+                <li class="menu__item has-sub-menu"><span>Есть вопросы?</span>
+                  <ul class="footer__submenu">
+                    <li><a href="#">Отследить заказ</a></li>
+                    <li><a href="#">Свяжитесь с нами</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Руководство по размерам</a></li>
+                    <li><a href="#">Руководство по техническому обслуживанию</a></li>
+                    <li><a href="#">*Условия действующих предложений</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item has-sub-menu"><span>Наши услуги</span>
+                  <ul class="footer__submenu">
+                    <li><a href="#">Все способы доставки</a></li>
+                    <li><a href="#">Звоните и забирайте</a></li>
+                    <li><a href="#">Возврат и обмен</a></li>
+                    <li><a href="#">GTC - Руководство по покупке</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Политика в отношении файлов cookie</a></li>
+                    <li><a href="#">Управление файлами cookie</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item has-sub-menu"><span>Бренд</span>
+                  <ul class="footer__submenu">
+                    <li><a href="#">Клоди Касс</a></li>
+                    <li><a href="#">Присоединяйтесь к нам</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item store-locator"><span><a href="#"><span class="icon-store"></span><span>Найти магазин</span></a></span></li>
+              </ul>
+            </div>
+            <div class="footer__countries"><span class="select__label">Страны/регионы:</span>
+              <div class="select__container">
+                <select class="select__lang">
+                  <option class="lang" data-url="/" value="Russia">Россия</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Austria">Австрия</option>
+                  <option class="lang" data-url="https://be.claudiepierlot.com" value="Belgium">Бельгия</option>
+                  <option class="lang" data-url="https://uk.claudiepierlot.com" value="United Kingdom">Великобритания</option>
+                  <option class="lang" data-url="https://de.claudiepierlot.com" value="Deutschland">Германия</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Greece">Греция</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Ireland">Ирландия</option>
+                  <option class="lang" data-url="https://es.claudiepierlot.com" value="España">Испания</option>
+                  <option class="lang" data-url="https://it.claudiepierlot.com" value="Italy">Италия</option>
+                  <option class="lang" data-url="https://www.claudiepierlot.cn" value="China">Китай</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Luxembourg">Люксембург</option>
+                  <option class="lang" data-url="http://www.claudiepierlot.com.hk/" value="Hong-Kong SAR/Macau SAR">Макао</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Netherlands">Нидерланды</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Portugal">Португалия</option>
+                  <option class="lang" data-url="https://fr.claudiepierlot.com" value="France">Франция</option>
+                  <option class="lang" data-url="https://ch.claudiepierlot.com" value="Switzerland">Швейцария</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- Footer::End-->
+    </div>
+    <!-- Scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.mousewheel.js"></script>
+    <script src="assets/js/jquery.jscrollpane.min.js"></script>
+    <script src="assets/js/inputmask.min.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

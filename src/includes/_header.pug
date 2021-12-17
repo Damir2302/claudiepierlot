@@ -1,0 +1,230 @@
+block header
+    #header
+        header(class= productDetails ? 'product-details' : '')
+
+            .header__top
+
+                a.header__menu-btn(title="Menu")
+                    span.line.line-1
+                    span.line.line-2
+                    span.line.line-3
+
+                a.top-mobile-return(href="javascript:history.go(-1)")
+
+                .header__logo
+                    img.black(src="assets/images/logo-2021-black-retina.png", alt="Claudie Pierlot")
+
+                .header__right
+                    .right__layer
+                    ul.header__info
+                        li.header__search
+                            a(href="javasscript.void(0)" title="Search")
+                                i.icon-search
+                        li.header__login
+                            a(href="javasscript.void(0)" title="Login")
+                                i.icon-my-account
+                            .login__content
+                                .close__content
+                                .login__container
+                                    .login__title Аккаунт
+                                form#login-form
+                                    input(type="email" placeholder="Ваш адрес электронной почты" required)
+                                    input(type="password" placeholder="Ваш пароль" required)
+                                    a(href="#") Забыли пароль?
+                                    button.login-btn Войти
+                                .register-sec
+                                    h3 Нет аккаунта?
+                                    a.register-link.button-style(href="/register.html") Зарегистрироваться
+
+
+
+                        li.header__wishlist
+                            a(href="javasscript.void(0)" title="Wishlist")
+                                i.icon-wishlist
+                                span.number-item 2
+
+                            .wishlist__content
+                                .close__content
+                                .wishlist-top__container
+                                    .wishlist__title Список желаний (1)
+                                    .wishlist__promo
+                                        p Бесплатная доставка и возврат для всех заказов
+                                form#wishlist-form
+                                    .wishlist__main
+                                        .wishlist__product
+                                            .wishlist__image
+                                                a
+                                                    img(src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg", alt="image")
+                                            .wishlist__attributes
+                                                .wishlist__product-name
+                                                    a Длинное платье с принтом геометрией
+                                                .wishlist__attr-types
+                                                    .attr-color
+                                                        span Цвет:
+                                                        span Темный
+                                                    .attr-size
+                                                        span Размер:
+                                                        span 36
+                                                .wishlist__remove
+                                                    a Удалить
+                                                .wishlist__pricing
+                                                    span 28 000 ₽
+
+                                    .wishlist__totals
+                                        button.wishlist__button Добавить все в корзину
+                                        button.wishlist__button.button-invert Посмотреть все
+                        li.header__cart
+                            a(href="javasscript.void(0)" title="Cart")
+                                i.icon-panier
+                                span.number-item 2
+
+                            .cart__content
+                                .close__content
+                                    span Назад
+                                .cart-top__container
+                                    .cart__title Корзина (1)
+                                    .cart__promo
+                                        p Бесплатная доставка и возврат для всех заказов
+                                form#cart-form
+                                    .cart__main
+                                        .cart__product
+                                            .cart__image
+                                                a
+                                                    img(src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg", alt="image")
+                                            .cart__attributes
+                                                .cart__product-name
+                                                    a Длинное платье с принтом геометрией
+                                                .cart__attr-types
+                                                    .attr-color
+                                                        span Темный
+                                                    .attr-size
+                                                        select
+                                                            option(value="36") 36
+                                                            option(value="38") 38
+                                                            option(value="40") 40
+                                                            option(value="42") 42
+                                                .cart__remove
+                                                    a Удалить
+                                                .cart__pricing
+                                                    span 28 000 ₽
+                                        .cart__subtotals
+                                            span.shipping-time Доставка от 2 до 3 дней
+                                            span.shipping-price Бесплатно
+
+                                    .cart__totals
+                                        .total-price
+                                            span Итого: 28 000 ₽
+                                        button.cart__button Смотреть мою корзину
+
+
+            nav#navbar
+
+                ul.navbar__menu
+                    li.item__menu.has-submenu
+                        a.item__menu-link(href="#") New in
+                        .submenu__wrap
+                            .submenu__main
+                                ul.submenu__expand-col
+                                    li.submenu__col-list
+                                        span.submenu__title Новое
+                                        ul
+                                            li.submenu__col-item
+                                                h3
+                                                    a Новинка на этой неделе
+                                            li.submenu__col-item
+                                                h3
+                                                    a Новая рабочая одежда НОВЫЙ
+                                            li.submenu__col-item
+                                                h3
+                                                    a Зеленая жизнь
+                                            li.submenu__col-item
+                                                h3
+                                                    a Новая коллекция
+                                            li.submenu__col-item
+                                                h3
+                                                    a Лукбук Осень-Зима
+                                    li.submenu__col-list
+                                        ul.submenu__images
+                                            li
+                                                a.zoom-on-content
+                                                    span
+                                                        img(src="assets/images/model-1.jpg", alt="image")
+                                                    span Название модели
+                                            li
+                                                a.zoom-on-content
+                                                    span
+                                                        img(src="assets/images/model-2.jpg", alt="image")
+                                                    span Название модели
+                                            li
+                                                a.zoom-on-content
+                                                    span
+                                                        img(src="assets/images/model-3.jpg", alt="image")
+                                                    span Название модели
+                    li.item__menu.has-submenu
+                        a.item__menu-link(href="#") Одежда
+                        .submenu__wrap
+                            .submenu__main
+                                ul.submenu__expand-col
+                                    li.submenu__col-list
+                                        span.submenu__title Наши новинки
+                                        ul
+                                            li.submenu__col-item
+                                                h3.submenu__title-main
+                                                    a Время праздновать
+                                            li.submenu__col-item
+                                                h3.submenu__title-main
+                                                    a На луну и обратно
+                                            li.submenu__col-item
+                                                h3.submenu__title-main
+                                                    a Привет из Колорадо
+                                            li.submenu__col-item
+                                                h3.submenu__title-main
+                                                    a Новая коллекция
+                                            li.submenu__col-item
+                                                h3.submenu__title-main
+                                                    a Лукбук Осень-Зима
+                                    li.submenu__col-list
+                                        ul.submenu__images
+                                            li
+                                                a.zoom-on-content
+                                                    span
+                                                        img(src="assets/images/model-1.jpg", alt="image")
+                                                    span Название модели
+                                            li
+                                                a.zoom-on-content
+                                                    span
+                                                        img(src="assets/images/model-2.jpg", alt="image")
+                                                    span Название модели
+                                            li
+                                                a.zoom-on-content
+                                                    span
+                                                        img(src="assets/images/model-3.jpg", alt="image")
+                                                    span Название модели
+                    li.item__menu
+                        a.item__menu-link(href="#") Сумки
+                    li.item__menu
+                        a.item__menu-link(href="#") Обувь
+                    li.item__menu
+                        a.item__menu-link(href="#") Аксессуары
+                    li.item__menu
+                        a.item__menu-link(href="#") Claudie cares
+
+                ul.navbar__extra
+                    li.extra__menu
+                        a.extra__menu-link(href="#") Нужна помощь?
+                    li.extra__menu
+                        a.extra__menu-link(href="#") Список желаний
+                    li.extra__menu
+                        a.extra__menu-link(href="#") Связаться с нами
+                    li.extra__menu
+                        a.extra__menu-link(href="#") Найти магазин
+                    li.extra__menu
+                        a.extra__menu-link.extra__menu-link--account.button-style(href="/account.html") Аккаунт
+
+            .header__search-form
+                form#search-form(role="search")
+                    fieldset
+                        button.icon-search(type="submit")
+                        input#search(type="text", name="search" placeholder="Найти" autocomplete="off")
+                        a.search__close-icon(href="javasscript.void(0)" title="close")
+                            span.icon-close

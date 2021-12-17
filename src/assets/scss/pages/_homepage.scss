@@ -1,0 +1,188 @@
+section.home__content:first-child {
+    margin-top: 56px;
+
+    @include breakpoint(lg) {
+        margin: 0;
+    }
+}
+
+.slick__container {
+
+    @include breakpoint(xl) {
+        padding-bottom: 52.31%;
+        position: relative;
+        top: -83px;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.slick-slider span img:first-child {
+    display: none;
+
+    @include breakpoint(md) {
+        display: block;
+    }
+}
+
+.slick-slider span img:last-child {
+
+    @include breakpoint(md) {
+        display: none;
+    }
+}
+
+.season-iconic__container {
+    padding: 60px 0 20px 14px;
+    padding-left: 14px;
+
+    @include breakpoint(xl) {
+        padding: 0 0 20px;
+        margin-left: 50px;
+    }
+}
+
+.season-iconic__container .slick-slide {
+    margin: 0 15px 0 0;
+    padding: 0;
+    max-width: 261px;
+
+    @include breakpoint(xl) {
+        margin: 0;
+        padding: 0 1.27% 0 0;
+        background: 0 0;
+        max-width: 469px;
+        height: 100%;
+        float: left;
+    }
+}
+
+.season-iconic__container .slick-next,
+.season-iconic__container .slick-prev {
+    background: 0 0;
+    height: 19px;
+    width: 12px;
+    margin-top: -28px;
+}
+
+.season-iconic__container .slick-prev {
+    left: 26.4%;
+}
+
+.season-iconic__container .slick-next {
+    right: 15.4%;
+    transform: rotate(180deg) translate(0,50%);
+}
+
+.season-iconic__container img {
+    transition: transform .2s;
+}
+
+.season-iconic__container img:hover {
+    transform: scale(1.03);
+}
+
+.season__title {
+    margin-bottom: 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+
+    @include breakpoint(xl) {
+        font-size: 22px;
+    }
+}
+
+.product__detail {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.product__name {
+    width: 100%;
+    overflow: hidden;
+}
+
+.product__price {
+    padding-top: 5px;
+}
+
+.board__container {
+    padding: 20px 14px 30px;
+    background: #efeee9;
+    font-size: 14px;
+
+    @include breakpoint(md) {
+        padding: 30px 14px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 40px 50px 40px;
+    }
+}
+
+.board__container .slick-prev {
+    left: 1%;
+    z-index: 1;
+}
+
+.board__container .slick-next {
+    right: 1%;
+    transform: rotate(180deg) translate(0,50%);
+}
+
+.board__block.slick-slide {
+
+    @include breakpoint(xl) {
+        display: flex;
+    }
+}
+
+.board__image {
+    overflow: hidden;
+}
+
+.board__image img {
+    min-width: 400px;
+}
+
+.board__desc {
+
+    @include breakpoint(xl) {
+        margin-left: 35px;
+        position: relative;
+        bottom: 75px;
+        max-width: 425px;
+        align-self: flex-end;
+    }
+}
+
+.board__title {
+    margin: 20px 0 10px;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px;
+
+    @include breakpoint(xl) {
+        margin-bottom: 25px;
+    }
+}
+
+.board__action {
+    margin-top: 10px;
+    display: block;
+    text-decoration: underline;
+
+    @include breakpoint(xl) {
+        margin-top: 25px;
+    }
+}
+
+.board__text {
+    line-height: 21px;
+}
+

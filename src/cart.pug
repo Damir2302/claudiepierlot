@@ -1,0 +1,191 @@
+---
+title: Корзина | Claudie Pierlot
+noFooter: true
+bodyClass: cart-page
+---
+
+extends includes/_page
+
+block main
+
+    #cart-page
+
+        .reinsurance-column
+            div
+                a(href="#")
+                    img(src="assets/images/livraison.svg", alt="icon")
+                    h4 Бесплатная доставка
+            div
+                a(href="#")
+                    img(src="assets/images/retours.svg", alt="icon")
+                    h4 Обмен в магазине
+            div
+                a(href="#")
+                    img(src="assets/images/aide.svg", alt="icon")
+                    h4 Нужна помощь?
+            div
+                a(href="#")
+                    img(src="assets/images/paiementsecurise.svg", alt="icon")
+                    h4 Безопасная оплата
+
+        h1 Корзина
+
+        .checkout-container
+
+            .left-column
+                .cart-text
+                    p Бесплатная доставка и возврат для всех заказов
+                .cart-actions
+                    a(href="javascript:history.go(-1)") Продолжить покупки
+                .cart-item
+                    .cart-item__image
+                        a(href="#")
+                            img(src="assets/images/mini-img-1.jpg", alt="img")
+                    .cart-item__details
+                        span.detail-item_name Юбка со складками из переработанного полиэстера
+                        span.detail-item_size Размер: 42
+                        span.detail-item_color Цвет: Зеленый лес
+                        span.detail-item_quantity Количество: 1
+                        span.item-price 28 000 ₽
+                        a.item-remove_btn Удалить
+
+                .cart-item
+                    .cart-item__image
+                        a(href="#")
+                            img(src="assets/images/mini-img-2.jpg", alt="img")
+                    .cart-item__details
+                        span.detail-item_name Кашемировый свитер
+                        span.detail-item_size Размер: Т3
+                        span.detail-item_color Цвет: Цвет хаки
+                        span.detail-item_quantity Количество: 1
+                        span.item-price 28 000 ₽
+                        a.item-remove_btn Удалить
+
+                form#cartForm
+                    .form-header
+                        h3 Личные данные
+                        span * обязательные поля
+
+                    .form-row
+                        label(for="input-name" data-required) Ваше имя
+                        .c-input
+                            input#input-name(type="text" placeholder="Введите ваше имя" data-error-message="Введите ваше имя" required)
+
+                    .form-row
+                        label(for="input-lastname" data-required) Ваша фамилия
+                        .c-input
+                            input#input-lastname(type="text" placeholder="Введите вашу фамилию" data-error-message="Введите вашу фамилию" required)
+
+                    .form-row
+                        label(for="input-phone" data-required) Телефон
+                        .c-input
+                            input#input-phone(placeholder="+7 (xxx) xxx-xx-xx" data-error-message="Введите номер телефона" required)
+
+                    .form-row
+                        label(for="input-email" data-required) E-mail
+                        .c-input
+                            input#input-email(type="email" placeholder="Ваша электронная почта" data-error-message="Введите email" required)
+
+                    .form-row
+                        label(for="input-city" data-required) Город
+                        .c-input
+                            input#input-city(type="text" placeholder="..." data-error-message="Укажите город" required)
+                            .suggestions-wrapper
+                                .suggestions
+
+                                    .suggestion
+                                        span.suggestion-value
+                                            strong Москва
+                                            |, Россия
+
+                                    .suggestion
+                                        span.suggestion-value
+                                            strong Санкт-Петербург
+                                            |, Россия
+
+
+                    .form-section
+                        h3 Доставка
+                        .shipping-text
+                            span Чтобы выбрать доставку заполните, пожалуйста, поле "Город"
+
+                        .shipping-section
+
+                            .shipping-wrapper
+                                .shipping-type
+                                    input#radio-shipping(type="radio", name="shipping" checked)
+                                    div
+                                        label(for="radio-shipping")
+                                        span Курьером
+                                        span 346<b>₽</b>
+
+                            .input-address
+
+                                .form-row
+                                    label(for="input-email" data-required) Улица
+                                    .c-input
+                                        input#address-address-1(type="text" placeholder="Улица" data-error-message="Выберите улицу" required)
+
+                                .c-input-row
+                                    .c-input
+                                        input#input-address-2(type="text" placeholder="Дом" data-error-message="Выберите дом" required)
+                                    .c-input
+                                        input#input-address-3(type="text" placeholder="Корпус")
+                                    .c-input
+                                        input#input-address-4(type="text" placeholder="Кв.")
+
+                    .form-section
+                        h3 Оплата
+                        .payment-section
+
+                            div
+                                .payment-type
+                                    input#radio-payment-1(type="radio", name="pay-system" checked)
+                                    div
+                                        label(for="radio-payment-1")
+                                        span Оплата при получении
+
+                            div
+                                .payment-type
+                                    input#radio-payment-2(type="radio", name="pay-system")
+                                    div
+                                        label(for="radio-payment-2")
+                                        span Оплата онлайн
+
+                    .form-row
+                        label(for="textarea-comment") Комментарий
+                        .textarea-input
+                            textarea#textarea-comment(placeholder="Комментарий к заказу")
+
+                    .form-section.form-section--final
+                        .form-wrapper
+                            .promo-wrap
+                                .promo-input
+                                    input(type="text" placeholder="Промо-код")
+                                button
+                                    span Применить
+                            .checkout-final
+                                .final-price
+                                    p Товары
+                                    span 58 590₽
+                                .final-price
+                                    p Доставка
+                                    span 0₽
+                                .final-price
+                                    p Всего
+                                    span 58 590₽
+
+                        .form-submit
+
+                            .checkbox-block
+
+                                .checkbox
+                                    input#checkbox-rules(type="checkbox" checked)
+                                    label(for="checkbox-rules")
+                                        span Согласен с <a href="#popup-info-rules">правилами обработки информации</a>
+
+                                .checkbox
+                                    input#checkbox-feed(type="checkbox")
+                                    label(for="checkbox-feed") Подписаться на рассылку
+
+                            button(type="submit") Оформить заказ

@@ -1,0 +1,85 @@
+#order-details {
+    margin: 0 auto;
+    width: 300px;
+    letter-spacing: 1px;
+
+    @include breakpoint(md) {
+        width: 100%;
+    }
+}
+
+#order-details h3 {
+    margin-top: 116px;
+    margin-bottom: 66px;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint(xl) {
+        margin-top: 66px;
+    }
+}
+
+#order-details p {
+    margin-bottom: 30px;
+    font-size: 13px;
+    text-align: center;
+    text-transform: none;
+}
+
+#order-details form {
+    margin: 0 auto;
+    max-width: 430px;
+}
+
+#order-details form .form__row {
+    padding-bottom: 12px;
+    position: relative;
+    width: 100%;
+}
+
+#order-details .form__row  label {
+    padding: 0;
+    display: block;
+    width: auto;
+    float: none;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#order-details .required-indicator {
+    color: red;
+}
+
+#order-details .form__row  input {
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+    line-height: 32px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #cbcbcb;
+    appearance: none;
+    background: none transparent;
+}
+
+#order-details .form__row  button {
+    margin: 40px auto 0;
+    background: #000;
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+
+    @include breakpoint(md) {
+        max-width: 300px;
+    }
+}

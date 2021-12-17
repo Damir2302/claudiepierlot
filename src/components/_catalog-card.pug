@@ -1,0 +1,58 @@
+mixin card(url1, url2, url3, price, sale, badge="display:none")
+    .grid__block
+        .product__tile
+            .product__image
+                .image__wrapper
+                    a(href="example.com")
+                    .thumb__link
+                        img(src="assets/images/" + url1, alt="image")
+                        img(src="assets/images/" + url2, alt="image")
+                        img(src="assets/images/" + url3, alt="image")
+                span.vignette__badge
+                    img(src="assets/images/claudie_cares_plp.svg", alt="Claudie cares" style=badge)
+                span.vignette__promo= sale == undefined ? '' : '-' + sale + '%'
+                .vignette__wrapper
+                    span.product__add-whishlist
+                        span.tooltip__wishlist
+            .quick__actions
+                .product__colors
+                    ul.swatch__list
+                        li.swatch__color
+                            a
+                                span Черный
+                .product__sizes
+                    ul.swatch__list
+                        li.swatch__size
+                            a(href="#") 34
+                        li.swatch__size
+                            a(href="#") 36
+                        li.swatch__size
+                            a(href="#") 38
+                        li.swatch__size
+                            a(href="#") 40
+                .whishlist__add
+                    p Выберите свой размер
+                    ul.swatch__list
+                        li.swatch__size
+                            input(type="radio", name="size-radio")
+                            label 34
+                        li.swatch__size
+                            input(type="radio", name="size-radio")
+                            label 36
+                        li.swatch__size
+                            input(type="radio", name="size-radio")
+                            label 38
+                        li.swatch__size
+                            input(type="radio", name="size-radio")
+                            label 40
+                    button.wishlist__btn
+                    p.error-message Выберите размер
+                .whishlist__add.wishlist__validate
+                    p этот продукт был добавлен в <a>список желаний</a>
+            .info__product
+                .product__name
+                    h2.product__title
+                        a Платье из двух материалов
+                    .product__pricing
+                        span.price__standart= sale == undefined ? '' : parseInt(price.replace(/\s/g, '')  / (100 - sale) * 100) + ' ₽'
+                        span.price__sales= price + ' ₽'

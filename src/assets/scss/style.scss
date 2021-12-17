@@ -1,0 +1,23 @@
+@import 'base/normalize';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/icomoon';
+@import 'base/layout';
+@import 'base/ui';
+
+@import 'plugins/slick';
+@import 'plugins/slick-theme';
+@import 'plugins/jquery.jscrollpane.scss';
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/slidecat-section';
+
+@import 'pages/homepage';
+@import 'pages/catalog';
+@import 'pages/product-info';
+@import 'pages/cart';
+@import 'pages/faq';
+@import 'pages/order-details';
+@import 'pages/account';
+@import 'pages/register';

@@ -1,0 +1,89 @@
+---
+title: Корзина | Claudie Pierlot
+noFooter: true
+bodyClass: cart-page
+---
+
+extends includes/_page
+
+block main
+
+    #cart-page
+
+        .steps-scroll-view
+            ul.checkout-progress-indicator
+                li.active(data-step="0")
+                    .step-text
+                        span Корзина
+                li.inactive(data-step="1")
+                    .step-text
+                        span Индентификация
+                li.inactive(data-step="2")
+                    .step-text
+                        span Доставка
+                li.inactive(data-step="3")
+                    .step-text
+                        span Оплата
+
+        .checkout-container
+
+            .left-column
+                .cart-actions
+                    a(href="javascript:history.go(-1)") Продолжить покупки
+                .cart-text
+                    p Бесплатная доставка и возврат для всех заказов
+                .cart-item
+                    .cart-item__image
+                        a(href="#")
+                            img(src="assets/images/mini-img-1.jpg", alt="img")
+                    .cart-item__details
+                        span.detail-item_name Юбка со складками из переработанного полиэстера
+                        span.detail-item_size Размер: 42
+                        span.detail-item_color Цвет: Зеленый лес
+                        span.detail-item_quantity Количество: 1
+                        span.item-price 28 000 ₽
+                        a.item-remove_btn Удалить
+
+                .cart-item
+                    .cart-item__image
+                        a(href="#")
+                            img(src="assets/images/mini-img-2.jpg", alt="img")
+                    .cart-item__details
+                        span.detail-item_name Кашемировый свитер
+                        span.detail-item_size Размер: Т3
+                        span.detail-item_color Цвет: Цвет хаки
+                        span.detail-item_quantity Количество: 1
+                        span.item-price 28 000 ₽
+                        a.item-remove_btn Удалить
+
+            .right-column
+                h1 Корзина
+
+                .checkout-column
+                    span.cart-number-items Товары (2)
+                    span.shipping-time-items Доставка от 2 до 3 дней
+
+                    .cart-totals
+                        .cart-total-price
+                            span Итого:
+                            span 56 000 ₽
+                        button.cart-button Продолжить
+                        span.promocode-actions Есть промокод?
+
+                .reinsurance-column
+                    div
+                        a(href="#")
+                            img(src="assets/images/livraison.svg", alt="icon")
+                            h4 Бесплатная доставка
+                    div
+                        a(href="#")
+                            img(src="assets/images/retours.svg", alt="icon")
+                            h4 Обмен в магазине
+                    div
+                        a(href="#")
+                            img(src="assets/images/aide.svg", alt="icon")
+                            h4 Нужна помощь?
+                    div
+                        a(href="#")
+                            img(src="assets/images/paiementsecurise.svg", alt="icon")
+                            h4 Безопасная оплата

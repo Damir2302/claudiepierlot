@@ -1,0 +1,30 @@
+---
+title: Отслеживание заказа | Claudie Pierlot
+---
+
+extends includes/_page
+
+block main
+
+    #order-details
+
+        h3 У вас нет аккаунта?
+        p Для отслеживания вашего заказа, пожалуйста, заполните следующую информацию:
+        form#orderDetails
+            .form__row
+                label(for="orderNumber")
+                    span Номер заказа
+                    span.required-indicator *
+                input(type="text" name="orderNumber" required)
+            .form__row
+                label(for="orderEmail")
+                    span Электронный адрес
+                    span.required-indicator *
+                input(type="text" name="orderEmail" required)
+            .form__row
+                label(for="orderPostalCode")
+                    span Номер счета
+                    span.required-indicator *
+                input(type="text" name="orderPostalCode" required)
+            .form__row
+                button(type="submit") Отследить свой заказ

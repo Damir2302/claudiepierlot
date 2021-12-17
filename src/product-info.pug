@@ -1,0 +1,188 @@
+---
+title: Информация о товаре | Claudie Pierlot
+productDetails: true
+bodyClass: product-page
+---
+
+extends includes/_page
+
+block main
+
+    #product-card
+        .swatchs-layer
+
+        .product-img__container
+            .product-main__slide
+                .images__wrapper
+
+                    .product-main__image
+                        picture
+                            img(src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg", alt="image")
+                        span.zoom-icon
+
+                    .product-details__container
+
+                        .product-detail
+                            h1.product-name Короткое пальто
+                            span.product-price 28 000 ₽
+                            a.add-wish-list__btn
+                                span.tooltip__wishlist
+
+                        .product-tabs
+                            .info-slider
+                                div
+                                    img(src="assets/images/Dessiner.png", alt="icon")
+                                    span Сделано в Париже
+                                div
+                                    img(src="assets/images/Colis.png", alt="icon")
+                                    span Бесплатная доставка и возврат
+                                div
+                                    img(src="assets/images/Aide.png", alt="icon")
+                                    span Нужна помощь? Звоните 8 800 ХХХ ХХХХ
+                            .tab-control__mobile
+                                span.tab__control.active-tab(data-activate="activate-tab-1") Описание
+                                span.tab__control(data-activate="activate-tab-2") Материалы и обслуживание
+
+                            .description-tab.activate-tab-1.show
+                                p Смелое длинное платье<br>Струящаяся рубашка с длинными<br>рукавами.<br>Геометрическая ткань с принтом.<br>Набор складок на бюсте.<br>Широкие запястья в тон.
+                                .shop-look
+                                    a Дополнить лук
+                                p.reference-num Артикул: <i>CFPRO01255</i>
+                            .description-tab.activate-tab-2.mobile-only
+                                p Основная ткань: 82% акрил, 18% полиэстер.<br>Дополнительная ткань: 88% полиэстер, 12% шерсть.<br>Подкладка: 100% полиэстер<br><br>Модель изготовлена ​​в Китае.<br><br>
+                                p Не стирать<br>Не отбеливать<br>Не гладить<br>Профессиональная химчистка с ПК и УВ,<br>умеренная обработка<br>Не сушить в стиральной машине
+
+                        #product-content
+                            .product-variations
+                                ul.main-swatchs
+
+                                    li.attribute.attribute-color
+                                        button
+                                            a.color-select(style="background: url('assets/images/D002.jpg')")
+                                            | СИНИЙ
+                                        .colors-list
+                                            ul.swatchs-colors
+                                                li.selected
+                                                    a(href="#" title="СИНИЙ" style="background: url('assets/images/D002.jpg')")
+                                                        span СИНИЙ
+                                                li
+                                                    a(href="#" title="ПУРПУРНЫЙ" style="background: url('assets/images/F015.jpg')")
+                                                        span ПУРПУРНЫЙ
+
+                                    li.attribute.attribute-size
+                                        button
+                                            span.size-select Размер талии
+                                            span.size-select Талия
+                                        .size-list
+                                            ul.swatchs-size
+                                                li
+                                                    a 34
+                                                li
+                                                    a 36
+                                                li
+                                                    a 38
+                                                li
+                                                    a 40
+                                                li
+                                                    a 42
+                                                li.model-size Рост модели - 176 см, размер - 36.
+                                a.add-wish-list__btn
+                                    span.tooltip__wishlist
+
+                            .mobile-product__price
+                                span 28 000 ₽
+                            .product-add-to-cart
+                                form
+                                    fieldset
+                                        button#add-to-cart <span>добавить</span> в корзину
+                            .reservation-btn
+                                button Забронировать в магазине
+
+                    .product-image
+                        picture
+                            img(src="assets/images/Claudie_CFPOU00332-B001_H_2.jpg", alt="image")
+                        span.zoom-icon
+
+                    .product-image
+                        picture
+                            img(src="assets/images/Claudie_CFPOU00332-B001_H_3.jpg", alt="image")
+                        span.zoom-icon
+
+                    .tabs-container
+
+                        .tabs-horizontal
+
+                            ul.tab-control-container
+                                li.tab-control.active-tab
+                                    h2 Полезно знать
+                                li.tab-control
+                                    h2 Поставки и возвраты
+                                li.tab-control
+                                    h2 Материалы и обслуживание
+
+                            .activate-tab.show
+                                p Эта модель была задумана и спроектирована нашими стилистами, в студии Claudie Pierlot, в самом центра Парижа
+                                p Сомневаетесь в покупке? Колебаетесь? Предлагаем бесплатную доставку и возврат товара
+                                p Нужна помощь?<br>Наши консультанты доступны Пн-Сб: 9:00 — 20:00 8 800 ХХХ ХХХХ (бесплатное обслуживание и звонок)
+
+                            .activate-tab
+                                ul
+                                    li Бесплатная доставка от 2 до 3 дней
+                                    li Доставка на дом, в магазинах или в пункте пересылки
+                                ul
+                                    li Бесплатный и продленный возврат до 15 января.
+                                    li Обмен в магазине
+
+                            .activate-tab
+                                ul
+                                    li Основная ткань: 82% акрил, 18% полиэстер.
+                                    li Вторичная ткань: 88% полиэстер, 12% шерсть.
+                                    li Подкладка: 100% полиэстер.
+                                    li Модель производилась в Китае.
+                                ul
+                                    li Не мыть
+                                    li Не отбеливать
+                                    li Не гладить
+                                    li Профессиональная химчистка с ПК и УВ, умеренная обработка
+                                    li Не сушить в стиральной машине
+
+        section.slidecat
+            .slidecat__container
+                h3.slidecat__title В составе лука
+                .slidecat__slide
+
+                    .slidecat__product
+                        a
+                            img(src="assets/images/Claudie_CFPJE00176-J001_H_1.jpg", alt="image")
+                            .slidecat__details
+                                span.slidecat__name Джинсы из органического хлопка
+                                .slidecat__price
+                                    span.slidecat__standart
+                                    span.slidecat__sales 18 225 ₽
+
+                    .slidecat__product
+                        a
+                            img(src="assets/images/Claudie_CFPTS00565-B001_H_1.jpg", alt="image")
+                            .slidecat__details
+                                span.slidecat__name Футболка с высоким воротом
+                                .slidecat__price
+                                    span.slidecat__standart
+                                    span.slidecat__sales 22 000 ₽
+
+                    .slidecat__product
+                        a
+                            img(src="assets/images/Claudie_CFACH00298-B001_H_1.jpg", alt="image")
+                            .slidecat__details
+                                span.slidecat__name Кожаные ботинки
+                                .slidecat__price
+                                    span.slidecat__standart
+                                    span.slidecat__sales 22 000 ₽
+
+        include components/_slidecat-section
+
+        .breadcrumbs__wrapper
+            ol.breadcrumb
+                li.breadcrumb__item
+                    a.breadcrumb__elem Одежда
+                li.breadcrumb__item
+                    span.breadcrumb__elem.breadcrumb__elem--last Платья

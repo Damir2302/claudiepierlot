@@ -1,0 +1,106 @@
+block footer
+    #footer
+        footer
+
+            .footer__socials
+                span Присоединяйтесь к нам
+                ul
+                    li
+                        a.icon-facebook2(href="facebook.com" title="facebook" target="_blank")
+                    li
+                        a.icon-ico-instagram(href="instagram.com" title="instagram" target="_blank")
+
+            if newsletter
+                .footer__newsletter
+                    p.newsletter__intro Каждую неделю открывайте для себя наши <b>предложения, частные распродажи и капсульные коллекции</b>
+                    form#newsletter-form
+                        .form__container
+                            input#email(type="email" name="email" placeholder="Подписка на рассылку новостей" autocomplete="off")
+                            input.button-style(type="submit" value="ПОДПИСАТЬСЯ" autocomplete="off")
+                        p.newsletter__info Подписываясь на новостную рассылку, вы принимаете нашу <u><a href="#">политику конфиденциальности</a></u>
+
+            if !newsletter
+                .footer__reassurance
+                    .exchange__info
+                        a
+                            img(src="assets/images/return.png", alt="return")
+                            span Обмен в магазине
+
+                    .service-client
+                        a
+                            img(src="assets/images/SERVICE-CLIENT.png", alt="service")
+                            span Консультации для клиентов
+
+                    .safe-payment
+                        a
+                            img(src="assets/images/PAYMENT.png", alt="payment")
+                            span Безопасная оплата
+
+            .footer__container
+                .footer__menu
+                    ul.menu__list
+                        li.menu__item.has-sub-menu
+                            span Есть вопросы?
+                            ul.footer__submenu
+                                li
+                                    a(href="#") Отследить заказ
+                                li
+                                    a(href="#") Свяжитесь с нами
+                                li
+                                    a(href="#") FAQ
+                                li
+                                    a(href="#") Руководство по размерам
+                                li
+                                    a(href="#") Руководство по техническому обслуживанию
+                                li
+                                    a(href="#") *Условия действующих предложений
+                        li.menu__item.has-sub-menu
+                            span Наши услуги
+                            ul.footer__submenu
+                                li
+                                    a(href="#") Все способы доставки
+                                li
+                                    a(href="#") Звоните и забирайте
+                                li
+                                    a(href="#") Возврат и обмен
+                                li
+                                    a(href="#") GTC - Руководство по покупке
+                                li
+                                    a(href="#") Политика конфиденциальности
+                                li
+                                    a(href="#") Политика в отношении файлов cookie
+                                li
+                                    a(href="#") Управление файлами cookie
+                        li.menu__item.has-sub-menu
+                            span Бренд
+                            ul.footer__submenu
+                                li
+                                    a(href="#") Клоди Касс
+                                li
+                                    a(href="#") Присоединяйтесь к нам
+                        li.menu__item.store-locator
+                            span
+                                a(href="#")
+                                    span.icon-store
+                                    span Найти магазин
+
+                .footer__countries
+                    span.select__label Страны/регионы:
+                    .select__container
+                        select.select__lang
+                            option.lang(data-url="/" value="Russia") Россия
+                            option.lang(data-url="https://int.claudiepierlot.com" value="Austria") Австрия
+                            option.lang(data-url="https://be.claudiepierlot.com" value="Belgium") Бельгия
+                            option.lang(data-url="https://uk.claudiepierlot.com" value="United Kingdom") Великобритания
+                            option.lang(data-url="https://de.claudiepierlot.com" value="Deutschland") Германия
+                            option.lang(data-url="https://int.claudiepierlot.com" value="Greece") Греция
+                            option.lang(data-url="https://int.claudiepierlot.com" value="Ireland") Ирландия
+                            option.lang(data-url="https://es.claudiepierlot.com" value="España") Испания
+                            option.lang(data-url="https://it.claudiepierlot.com" value="Italy") Италия
+                            option.lang(data-url="https://www.claudiepierlot.cn" value="China") Китай
+                            option.lang(data-url="https://int.claudiepierlot.com" value="Luxembourg") Люксембург
+                            option.lang(data-url="http://www.claudiepierlot.com.hk/" value="Hong-Kong SAR/Macau SAR") Макао
+                            option.lang(data-url="https://int.claudiepierlot.com" value="Netherlands") Нидерланды
+                            option.lang(data-url="https://int.claudiepierlot.com" value="Portugal") Португалия
+                            option.lang(data-url="https://fr.claudiepierlot.com" value="France") Франция
+                            option.lang(data-url="https://ch.claudiepierlot.com" value="Switzerland") Швейцария
