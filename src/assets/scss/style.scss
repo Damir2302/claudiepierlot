@@ -1,5 +1,6 @@
 @import 'base/normalize';
 @import 'base/mixins';
+@import 'base/fontawesome';
 @import 'base/fonts';
 @import 'base/icomoon';
 @import 'base/layout';
@@ -7,11 +8,13 @@
 
 @import 'plugins/slick';
 @import 'plugins/slick-theme';
-@import 'plugins/jquery.jscrollpane.scss';
+@import 'plugins/jquery.jscrollpane';
+@import 'plugins/jquery-ui.min';
 
 @import 'components/header';
 @import 'components/footer';
 @import 'components/slidecat-section';
+@import 'components/aside-profile';
 
 @import 'pages/homepage';
 @import 'pages/catalog';
@@ -21,3 +24,10 @@
 @import 'pages/order-details';
 @import 'pages/account';
 @import 'pages/register';
+@import 'pages/personal';
+@import 'pages/favorites';
+@import 'pages/orders';
+@import 'pages/return';
+
+@import 'popup/booking';
+@import 'popup/password';

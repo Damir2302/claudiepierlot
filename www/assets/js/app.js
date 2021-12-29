@@ -1,6 +1,11 @@
 $(document).ready(function(){
 
     // Header
+
+    if ($(window).width() > 1259 && $(window).scrollTop() > 82) {
+        $('body').addClass('background-header');
+    }
+
     $(window).on('scroll', function(){
         if ($(window).width() > 1259 && $(window).scrollTop() > 82) {
             $('body').addClass('background-header');
@@ -12,9 +17,9 @@ $(document).ready(function(){
     // Header mobile & tablet
     $(window).on('scroll', function(){
         if ($(window).width() < 1024 && $(window).scrollTop() > 82) {
-            $('header.product-details').addClass('hide-header');
+            $('header.item-details').addClass('hide-header');
         } else {
-            $('header.product-details').removeClass('hide-header');
+            $('header.item-details').removeClass('hide-header');
         }
     });
 
@@ -361,6 +366,9 @@ $(document).ready(function(){
     $('.faq__container .nav__services').on('click', function() {
         $(this).toggleClass('open');
     });
+
+    // INPUT MASK PHONE NUMBER
+    $('input[type="tel"]').inputmask({"mask": "+7 (999) 99-99-99"});
 
 });
 

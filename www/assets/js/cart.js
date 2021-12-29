@@ -12,4 +12,19 @@ $(document).ready(function(){
     // PHONE MASK
     $('#input-phone').inputmask({"mask": "+7 (999) 99-99-99"});
 
+    // DELIVERY SELECT
+    $('.delivery-date-select').on('click', function() {
+        $(this).siblings().removeClass('active');
+        $(this).toggleClass('active');
+    });
+
+    $('.date-select-item').on('click', function(e) {
+        $(this).parent().parent().find('span').html($(this).html())
+    });
+
+    $('html').click(function(e) {
+        if (!$(e.target).closest('.delivery-date-select').length) {
+            $('.delivery-date-select').removeClass('active');
+          }
+    });
 });

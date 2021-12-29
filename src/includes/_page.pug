@@ -31,5 +31,14 @@ html(lang="ru")
                     include _footer
             // Footer::End
 
+        if booking
+            // Booking Popup
+            block booking
+                include ../popup/_booking
+
+        // Password Popup
+        block password
+            include ../popup/_password
+
         // Scripts
         include _loadScripts

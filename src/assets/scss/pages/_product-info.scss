@@ -302,9 +302,7 @@ body.swatchs-layer-opened {
     border-width: 0 1px 1px 0;
 
     @include breakpoint(lg) {
-        padding: 3px;
-        top: 23px;
-        right: 27px;
+        content: none;
     }
 }
 
@@ -678,6 +676,7 @@ body.swatchs-layer-opened {
         color: #fff;
         text-align: center;
         line-height: 58px;
+        cursor: pointer;
     }
 }
 

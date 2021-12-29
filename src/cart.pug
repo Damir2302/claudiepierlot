@@ -37,155 +37,197 @@ block main
                     p Бесплатная доставка и возврат для всех заказов
                 .cart-actions
                     a(href="javascript:history.go(-1)") Продолжить покупки
-                .cart-item
-                    .cart-item__image
-                        a(href="#")
-                            img(src="assets/images/mini-img-1.jpg", alt="img")
-                    .cart-item__details
-                        span.detail-item_name Юбка со складками из переработанного полиэстера
-                        span.detail-item_size Размер: 42
-                        span.detail-item_color Цвет: Зеленый лес
-                        span.detail-item_quantity Количество: 1
-                        span.item-price 28 000 ₽
-                        a.item-remove_btn Удалить
+                .cart-content
+                    .cart-item
+                        .cart-item__image
+                            a(href="#")
+                                img(src="assets/images/mini-img-1.jpg", alt="img")
+                        .cart-item__details
+                            span.detail-item_name Юбка со складками из переработанного полиэстера
+                            span.detail-item_size Размер: 42
+                            span.detail-item_color Цвет: Зеленый лес
+                            span.detail-item_quantity Количество: 1
+                            span.item-price 28 000 ₽
+                            a.item-remove_btn Удалить
 
-                .cart-item
-                    .cart-item__image
-                        a(href="#")
-                            img(src="assets/images/mini-img-2.jpg", alt="img")
-                    .cart-item__details
-                        span.detail-item_name Кашемировый свитер
-                        span.detail-item_size Размер: Т3
-                        span.detail-item_color Цвет: Цвет хаки
-                        span.detail-item_quantity Количество: 1
-                        span.item-price 28 000 ₽
-                        a.item-remove_btn Удалить
+                    .cart-item
+                        .cart-item__image
+                            a(href="#")
+                                img(src="assets/images/mini-img-2.jpg", alt="img")
+                        .cart-item__details
+                            span.detail-item_name Кашемировый свитер
+                            span.detail-item_size Размер: Т3
+                            span.detail-item_color Цвет: Цвет хаки
+                            span.detail-item_quantity Количество: 1
+                            span.item-price 28 000 ₽
+                            a.item-remove_btn Удалить
 
-                form#cartForm
-                    .form-header
-                        h3 Личные данные
-                        span * обязательные поля
+                    form#cartForm
+                        .form-header
+                            h3 Личные данные
+                            span * обязательные поля
 
-                    .form-row
-                        label(for="input-name" data-required) Ваше имя
-                        .c-input
-                            input#input-name(type="text" placeholder="Введите ваше имя" data-error-message="Введите ваше имя" required)
+                        .form-row
+                            label(for="input-name" data-required) Ваше имя
+                            .c-input
+                                input#input-name(type="text" name="name" placeholder="Введите ваше имя" data-error-message="Введите ваше имя" required)
 
-                    .form-row
-                        label(for="input-lastname" data-required) Ваша фамилия
-                        .c-input
-                            input#input-lastname(type="text" placeholder="Введите вашу фамилию" data-error-message="Введите вашу фамилию" required)
+                        .form-row
+                            label(for="input-lastname" data-required) Ваша фамилия
+                            .c-input
+                                input#input-lastname(type="text" name="lastname" placeholder="Введите вашу фамилию" data-error-message="Введите вашу фамилию" required)
 
-                    .form-row
-                        label(for="input-phone" data-required) Телефон
-                        .c-input
-                            input#input-phone(placeholder="+7 (xxx) xxx-xx-xx" data-error-message="Введите номер телефона" required)
+                        .form-row
+                            label(for="input-phone" data-required) Телефон
+                            .c-input
+                                input#input-phone(name="phone" placeholder="+7 (xxx) xxx-xx-xx" data-error-message="Введите номер телефона" required)
 
-                    .form-row
-                        label(for="input-email" data-required) E-mail
-                        .c-input
-                            input#input-email(type="email" placeholder="Ваша электронная почта" data-error-message="Введите email" required)
+                        .form-row
+                            label(for="input-email" data-required) E-mail
+                            .c-input
+                                input#input-email(type="email" name="email" placeholder="Ваша электронная почта" data-error-message="Введите email" required)
 
-                    .form-row
-                        label(for="input-city" data-required) Город
-                        .c-input
-                            input#input-city(type="text" placeholder="..." data-error-message="Укажите город" required)
-                            .suggestions-wrapper
-                                .suggestions
+                        .form-row
+                            label(for="input-city" data-required) Город
+                            .c-input
+                                input#input-city(type="text" name="city" placeholder="..." data-error-message="Укажите город" required)
+                                .suggestions-wrapper
+                                    .suggestions
 
-                                    .suggestion
-                                        span.suggestion-value
-                                            strong Москва
-                                            |, Россия
+                                        .suggestion
+                                            span.suggestion-value
+                                                strong Москва
+                                                |, Россия
 
-                                    .suggestion
-                                        span.suggestion-value
-                                            strong Санкт-Петербург
-                                            |, Россия
+                                        .suggestion
+                                            span.suggestion-value
+                                                strong Санкт-Петербург
+                                                |, Россия
 
 
-                    .form-section
-                        h3 Доставка
-                        .shipping-text
-                            span Чтобы выбрать доставку заполните, пожалуйста, поле "Город"
+                        .form-section
+                            h3 Доставка
+                            .shipping-text
+                                span Чтобы выбрать доставку заполните, пожалуйста, поле "Город"
 
-                        .shipping-section
+                            .shipping-section
 
-                            .shipping-wrapper
-                                .shipping-type
-                                    input#radio-shipping(type="radio", name="shipping" checked)
-                                    div
-                                        label(for="radio-shipping")
-                                        span Курьером
-                                        span 346<b>₽</b>
+                                .shipping-wrapper
+                                    .shipping-type
+                                        input#radio-shipping(type="radio", name="shipping" checked)
+                                        div
+                                            label(for="radio-shipping")
+                                            span Курьером
+                                            span 346<b>₽</b>
 
-                            .input-address
+                                .input-address
 
-                                .form-row
-                                    label(for="input-email" data-required) Улица
-                                    .c-input
-                                        input#address-address-1(type="text" placeholder="Улица" data-error-message="Выберите улицу" required)
+                                    .form-row
+                                        label(for="input-email" data-required) Улица
+                                        .c-input
+                                            input#address-address-1(type="text" name="street" placeholder="Улица" data-error-message="Выберите улицу" required)
 
-                                .c-input-row
-                                    .c-input
-                                        input#input-address-2(type="text" placeholder="Дом" data-error-message="Выберите дом" required)
-                                    .c-input
-                                        input#input-address-3(type="text" placeholder="Корпус")
-                                    .c-input
-                                        input#input-address-4(type="text" placeholder="Кв.")
+                                    .c-input-row
+                                        .c-input
+                                            input#input-address-2(type="text" name="address-1" placeholder="Дом" data-error-message="Выберите дом" required)
+                                        .c-input
+                                            input#input-address-3(type="text" name="address-2" placeholder="Корпус")
+                                        .c-input
+                                            input#input-address-4(type="text" name="address-3" placeholder="Кв.")
 
-                    .form-section
-                        h3 Оплата
-                        .payment-section
+                        .form-section
+                            h3 Оплата
+                            .payment-section
 
-                            div
-                                .payment-type
-                                    input#radio-payment-1(type="radio", name="pay-system" checked)
-                                    div
-                                        label(for="radio-payment-1")
-                                        span Оплата при получении
+                                div
+                                    .payment-type
+                                        input#radio-payment-1(type="radio", name="pay-system" checked)
+                                        div
+                                            label(for="radio-payment-1")
+                                            span Оплата при получении
 
-                            div
-                                .payment-type
-                                    input#radio-payment-2(type="radio", name="pay-system")
-                                    div
-                                        label(for="radio-payment-2")
-                                        span Оплата онлайн
+                                div
+                                    .payment-type
+                                        input#radio-payment-2(type="radio", name="pay-system")
+                                        div
+                                            label(for="radio-payment-2")
+                                            span Оплата онлайн
 
-                    .form-row
-                        label(for="textarea-comment") Комментарий
-                        .textarea-input
-                            textarea#textarea-comment(placeholder="Комментарий к заказу")
+                        div
+                            .delivery-date
+                                .delivery-date-select
+                                    input(type="hidden" name="delivery-date")
+                                    .date-selected
+                                        span Выберите дату доставки
+                                    .date-select
+                                        .date-select-item 18.12.2021
+                                        .date-select-item 19.12.2021
+                                        .date-select-item 20.12.2021
 
-                    .form-section.form-section--final
-                        .form-wrapper
-                            .promo-wrap
-                                .promo-input
-                                    input(type="text" placeholder="Промо-код")
-                                button
-                                    span Применить
-                            .checkout-final
-                                .final-price
-                                    p Товары
-                                    span 58 590₽
-                                .final-price
-                                    p Доставка
-                                    span 0₽
-                                .final-price
-                                    p Всего
-                                    span 58 590₽
-
-                        .form-submit
+                                .delivery-date-select
+                                    input(type="hidden" name="delivery-time")
+                                    .date-selected
+                                        span Выберите время доставки
+                                    .date-select
+                                        .date-select-item c 10:00 до 15:00
+                                        .date-select-item c 9:00 до 18:00
+                                        .date-select-item c 15:00 до 20:00
 
                             .checkbox-block
-
                                 .checkbox
-                                    input#checkbox-rules(type="checkbox" checked)
-                                    label(for="checkbox-rules")
-                                        span Согласен с <a href="#popup-info-rules">правилами обработки информации</a>
+                                    input#checkbox-call(type="checkbox" name="callme")
+                                    label(for="checkbox-call") Перезвоните мне для подтверждения заказа
 
-                                .checkbox
-                                    input#checkbox-feed(type="checkbox")
-                                    label(for="checkbox-feed") Подписаться на рассылку
+                        .form-row
+                            label(for="textarea-comment" name="comment") Комментарий
+                            .textarea-input
+                                textarea#textarea-comment(placeholder="Комментарий к заказу")
 
-                            button(type="submit") Оформить заказ
+                        .form-section.form-section--final
+                            .form-wrapper
+                                .promo-wrap
+                                    .promo-input
+                                        input(type="text" name="promo" placeholder="Промо-код")
+                                    button
+                                        span Применить
+                                .checkout-final
+                                    .final-price
+                                        p Товары
+                                        span 58 590₽
+                                    .final-price
+                                        p Доставка
+                                        span 0₽
+                                    .final-price
+                                        p Всего
+                                        span 58 590₽
+
+                            .form-submit
+
+                                .checkbox-block
+
+                                    .checkbox
+                                        input#checkbox-rules(type="checkbox" checked)
+                                        label(for="checkbox-rules")
+                                            span Согласен с <a href="#popup-info-rules">правилами обработки информации</a>
+
+                                    .checkbox
+                                        input#checkbox-feed(type="checkbox")
+                                        label(for="checkbox-feed") Подписаться на рассылку
+
+                                button(type="submit") Оформить заказ
+
+                // SUCCESS
+                .cart-success
+                    h3 Спасибо за Ваш заказ!
+                    div
+                        p Ваш заказ <b>№ 47117</b> обрабатывается.
+                        p В ближайшее время наш менеджер свяжется с Вами.
+
+                    div.pay-button
+                        p Сумма к оплате по счету: <b>24 950 руб.</b>
+                        a.button-style Оплатить
+
+                    div
+                        p <b>Обращаем внимание!</b> Если Вы решите отказаться от покупки, для возврата денежных средств Вам нужно связаться с нашей службой поддержки по телефону 8 800 (999) 999-99-99
+                            |  или по электронной почте info@claudiepierlot.ru
+                        p С полными правилами возврата Вы можете ознакомиться <a href="#">здесь</a>.

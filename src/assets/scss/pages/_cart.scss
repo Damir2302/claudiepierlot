@@ -703,7 +703,7 @@ body.cart-page .header__logo img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 14px;
+    padding: 10px 14px;
     border: 1px solid black;
     position: relative;
     font-size: 14px;
@@ -772,10 +772,18 @@ body.cart-page .header__logo img {
 
 .date-select-item {
     font-size: 14px;
-    padding: 16px 14px;
+    padding: 10px 14px;
+    border-bottom: 1px solid #e2e2e2;
     transition: 0.2s linear background-color;
-}
 
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        background: #f2f2f2;
+    }
+}
 
 .textarea-input {
     border: thin solid #dadada;
@@ -1028,4 +1036,31 @@ body.cart-page .header__logo img {
     &:hover {
         background: #343434;
     }
+}
+
+.cart-success h3 {
+    margin: 30px 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.cart-success p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.cart-success > div > p > a {
+    display: inline;
+    color: blue;
+}
+
+.pay-button {
+    margin: 50px 0 30px;
+}
+
+.pay-button .button-style {
+    margin-top: 10px;
+    max-width: 200px;
+    font-weight: 600;
+    text-align: center;
 }
