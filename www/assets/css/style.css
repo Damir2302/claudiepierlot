@@ -26730,13 +26730,6 @@ section.topic a {
     text-align: center
 }
 
-@media (min-width: 768px) {
-    .p-order-detail__row {
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap
-    }
-}
-
 .p-order-detail__row:nth-child(3) {
     padding-bottom: 9px;
     border-bottom: thin solid #dadada
@@ -26762,12 +26755,6 @@ section.topic a {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row
-    }
-}
-
-@media (min-width: 768px) {
-    .p-order-detail__row .p-props {
-        width: 100%
     }
 }
 

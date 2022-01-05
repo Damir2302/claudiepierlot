@@ -203,10 +203,6 @@
     width: 100%;
     font-size: 12px;
     text-align: center;
-
-    @include breakpoint(md) {
-        flex-wrap: nowrap;
-    }
 }
 
 .p-order-detail__row:nth-child(3) {
@@ -227,13 +223,6 @@
 
     @include breakpoint(md) {
         flex-direction: row;
-    }
-}
-
-.p-order-detail__row .p-props {
-
-    @include breakpoint(md) {
-        width: 100%;
     }
 }
 
