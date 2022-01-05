@@ -1,797 +1,725 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <title>Информация о товаре | Claudie Pierlot</title>
-  <!-- Styles-->
-  <link rel="stylesheet" href="assets/css/style.min.css">
-  <!-- Yandex.Map-->
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-</head>
-
-<body class="product-page">
-  <div id="page">
-    <!-- Header::Start-->
-    <div id="header">
-      <header class="item-details">
-        <div class="header__top"><a class="header__menu-btn" title="Menu"><span class="line line-1"></span><span
-              class="line line-2"></span><span class="line line-3"></span></a><a class="top-mobile-return"
-            href="javascript:history.go(-1)"></a>
-          <div class="header__logo"><img class="black" src="assets/images/logo-2021-black-retina.png"
-              alt="Claudie Pierlot"></div>
-          <div class="header__right">
-            <div class="right__layer"></div>
-            <ul class="header__info">
-              <li class="header__search"><a href="javasscript.void(0)" title="Search"><i class="icon-search"></i></a>
-              </li>
-              <li class="header__login"><a href="javasscript.void(0)" title="Login"><i class="icon-my-account"></i></a>
-                <div class="login__content">
-                  <div class="close__content"></div>
-                  <div class="login__container">
-                    <div class="login__title">Аккаунт</div>
-                    <form id="login-form">
-                      <input type="email" placeholder="Ваш адрес электронной почты" required>
-                      <input type="password" placeholder="Ваш пароль" required><a href="#password-forgot"
-                        rel="nofollow">Забыли пароль?</a>
-                      <button class="login-btn">Войти</button>
-                    </form>
-                    <div class="register-sec">
-                      <h3>Нет аккаунта?</h3><a class="register-link button-style"
-                        href="/register.html">Зарегистрироваться</a>
-                    </div>
-                  </div>
-                  <!-- LOGGED-->
-                  <div class="logged__container">
-                    <div class="logged__title">Мой аккаунт</div>
-                    <ul class="logged__menu">
-                      <li><a href="personal.html">Профиль</a></li>
-                      <li><a href="favorites.html">Избранное</a></li>
-                      <li><a href="orders.html">История заказов</a></li>
-                      <li><a href="return.html">Возврат товара</a></li>
-                      <li class="logout-account"><a href="#" rel="nofollow">Выход</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              <li class="header__wishlist"><a href="javasscript.void(0)" title="Wishlist"><i
-                    class="icon-wishlist"></i><span class="number-item">2</span></a>
-                <div class="wishlist__content">
-                  <div class="close__content"></div>
-                  <div class="wishlist-top__container">
-                    <div class="wishlist__title">Список желаний (1)</div>
-                    <div class="wishlist__promo">
-                      <p>Бесплатная доставка и возврат для всех заказов</p>
-                    </div>
-                  </div>
-                  <form id="wishlist-form">
-                    <div class="wishlist__main">
-                      <div class="wishlist__product">
-                        <div class="wishlist__image"><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg"
-                              alt="image"></a></div>
-                        <div class="wishlist__attributes">
-                          <div class="wishlist__product-name"><a>Длинное платье с принтом геометрией</a></div>
-                          <div class="wishlist__attr-types">
-                            <div class="attr-color"><span>Цвет:</span><span>Темный</span></div>
-                            <div class="attr-size"><span>Размер:</span><span>36</span></div>
-                          </div>
-                          <div class="wishlist__remove"><a>Удалить</a></div>
-                          <div class="wishlist__pricing"><span>28 000 ₽</span></div>
-                        </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Информация о товаре | Claudie Pierlot</title>
+    <!-- Styles-->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Yandex.Map-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  </head>
+  <body class="product-page">
+    <div id="page">
+      <!-- Header::Start-->
+      <div id="header">
+        <header class="item-details">
+          <div class="header__top"><a class="header__menu-btn" title="Menu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></a><a class="top-mobile-return" href="javascript:history.go(-1)"></a>
+            <div class="header__logo"><img class="black" src="assets/images/logo-2021-black-retina.png" alt="Claudie Pierlot"></div>
+            <div class="header__right">
+              <div class="right__layer"></div>
+              <ul class="header__info">
+                <li class="header__search"><a href="javasscript.void(0)" title="Search"><i class="icon-search"></i></a></li>
+                <li class="header__login"><a href="javasscript.void(0)" title="Login"><i class="icon-my-account"></i></a>
+                  <div class="login__content">
+                    <div class="close__content"></div>
+                    <div class="login__container">
+                      <div class="login__title">Аккаунт</div>
+                      <form id="login-form">
+                        <input type="email" placeholder="Ваш адрес электронной почты" required>
+                        <input type="password" placeholder="Ваш пароль" required><a href="#password-forgot" rel="nofollow">Забыли пароль?</a>
+                        <button class="login-btn">Войти</button>
+                      </form>
+                      <div class="register-sec">
+                        <h3>Нет аккаунта?</h3><a class="register-link button-style" href="/register.html">Зарегистрироваться</a>
                       </div>
                     </div>
-                    <div class="wishlist__totals">
-                      <button class="wishlist__button">Добавить все в корзину</button>
-                      <button class="wishlist__button button-invert">Посмотреть все</button>
-                    </div>
-                  </form>
-                </div>
-              </li>
-              <li class="header__cart"><a href="javasscript.void(0)" title="Cart"><i class="icon-panier"></i><span
-                    class="number-item">2</span></a>
-                <div class="cart__content">
-                  <div class="close__content"><span>Назад</span></div>
-                  <div class="cart-top__container">
-                    <div class="cart__title">Корзина (1)</div>
-                    <div class="cart__promo">
-                      <p>Бесплатная доставка и возврат для всех заказов</p>
-                    </div>
-                  </div>
-                  <form id="cart-form">
-                    <div class="cart__main">
-                      <div class="cart__product">
-                        <div class="cart__image"><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg"
-                              alt="image"></a></div>
-                        <div class="cart__attributes">
-                          <div class="cart__product-name"><a>Длинное платье с принтом геометрией</a></div>
-                          <div class="cart__attr-types">
-                            <div class="attr-color"><span>Темный</span></div>
-                            <div class="attr-size">
-                              <select>
-                                <option value="36">36</option>
-                                <option value="38">38</option>
-                                <option value="40">40</option>
-                                <option value="42">42</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="cart__remove"><a>Удалить</a></div>
-                          <div class="cart__pricing"><span>28 000 ₽</span></div>
-                        </div>
-                      </div>
-                      <div class="cart__subtotals"><span class="shipping-time">Доставка от 2 до 3 дней</span><span
-                          class="shipping-price">Бесплатно</span></div>
-                    </div>
-                    <div class="cart__totals">
-                      <div class="total-price"><span>Итого: 28 000 ₽</span></div>
-                      <button class="cart__button">Смотреть мою корзину</button>
-                    </div>
-                  </form>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <nav id="navbar">
-          <ul class="navbar__menu">
-            <li class="item__menu has-submenu"><a class="item__menu-link" href="#">New in</a>
-              <div class="submenu__wrap">
-                <div class="submenu__main">
-                  <ul class="submenu__expand-col">
-                    <li class="submenu__col-list"><span class="submenu__title">Новое</span>
-                      <ul>
-                        <li class="submenu__col-item">
-                          <h3><a>Новинка на этой неделе</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3><a>Новая рабочая одежда НОВЫЙ</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3><a>Зеленая жизнь</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3><a>Новая коллекция</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3><a>Лукбук Осень-Зима</a></h3>
-                        </li>
+                    <!-- LOGGED-->
+                    <div class="logged__container">
+                      <div class="logged__title">Мой аккаунт</div>
+                      <ul class="logged__menu">
+                        <li><a href="personal.html">Профиль</a></li>
+                        <li><a href="favorites.html">Избранное</a></li>
+                        <li><a href="orders.html">История заказов</a></li>
+                        <li><a href="return.html">Возврат товара</a></li>
+                        <li class="logout-account"><a href="#" rel="nofollow">Выход</a></li>
                       </ul>
-                    </li>
-                    <li class="submenu__col-list">
-                      <ul class="submenu__images">
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-1.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-2.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-3.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="item__menu has-submenu"><a class="item__menu-link" href="#">Одежда</a>
-              <div class="submenu__wrap">
-                <div class="submenu__main">
-                  <ul class="submenu__expand-col">
-                    <li class="submenu__col-list"><span class="submenu__title">Наши новинки</span>
-                      <ul>
-                        <li class="submenu__col-item">
-                          <h3 class="submenu__title-main"><a>Время праздновать</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3 class="submenu__title-main"><a>На луну и обратно</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3 class="submenu__title-main"><a>Привет из Колорадо</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3 class="submenu__title-main"><a>Новая коллекция</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3 class="submenu__title-main"><a>Лукбук Осень-Зима</a></h3>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="submenu__col-list">
-                      <ul class="submenu__images">
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-1.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-2.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-3.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="item__menu"><a class="item__menu-link" href="#">Сумки</a></li>
-            <li class="item__menu"><a class="item__menu-link" href="#">Обувь</a></li>
-            <li class="item__menu"><a class="item__menu-link" href="#">Аксессуары</a></li>
-            <li class="item__menu"><a class="item__menu-link" href="#">Claudie cares</a></li>
-          </ul>
-          <ul class="navbar__extra">
-            <li class="extra__menu"><a class="extra__menu-link" href="#">Нужна помощь?</a></li>
-            <li class="extra__menu"><a class="extra__menu-link" href="#">Список желаний</a></li>
-            <li class="extra__menu"><a class="extra__menu-link" href="#">Связаться с нами</a></li>
-            <li class="extra__menu"><a class="extra__menu-link" href="#">Найти магазин</a></li>
-            <li class="extra__menu"><a class="extra__menu-link extra__menu-link--account button-style"
-                href="/account.html">Аккаунт</a></li>
-          </ul>
-        </nav>
-        <div class="header__search-form">
-          <form id="search-form" role="search">
-            <fieldset>
-              <button class="icon-search" type="submit"></button>
-              <input id="search" type="text" name="search" placeholder="Найти" autocomplete="off"><a
-                class="search__close-icon" href="javasscript.void(0)" title="close"><span class="icon-close"></span></a>
-            </fieldset>
-          </form>
-        </div>
-      </header>
-    </div>
-    <!-- Header::End-->
-    <!-- Main::Start-->
-    <main id="main" role="main">
-      <div id="product-card">
-        <div class="swatchs-layer"></div>
-        <div class="product-img__container">
-          <div class="product-main__slide">
-            <div class="images__wrapper">
-              <div class="product-main__image">
-                <picture><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="image"></picture><span
-                  class="zoom-icon"></span>
-              </div>
-              <div class="product-details__container">
-                <div class="product-detail">
-                  <h1 class="product-name">Короткое пальто</h1><span class="product-price">28 000 ₽</span><a
-                    class="add-wish-list__btn"><span class="tooltip__wishlist"></span></a>
-                </div>
-                <div class="product-tabs">
-                  <div class="info-slider">
-                    <div><img src="assets/images/Dessiner.png" alt="icon"><span>Сделано в Париже</span></div>
-                    <div><img src="assets/images/Colis.png" alt="icon"><span>Бесплатная доставка и возврат</span></div>
-                    <div><img src="assets/images/Aide.png" alt="icon"><span>Нужна помощь? Звоните 8 800 ХХХ ХХХХ</span>
                     </div>
                   </div>
-                  <div class="tab-control__mobile"><span class="tab__control active-tab"
-                      data-activate="activate-tab-1">Описание</span><span class="tab__control"
-                      data-activate="activate-tab-2">Материалы и обслуживание</span></div>
-                  <div class="description-tab activate-tab-1 show">
-                    <p>Смелое длинное платье<br>Струящаяся рубашка с длинными<br>рукавами.<br>Геометрическая ткань с
-                      принтом.<br>Набор складок на бюсте.<br>Широкие запястья в тон.</p>
-                    <div class="shop-look"><a>Дополнить лук</a></div>
-                    <p class="reference-num">Артикул: <i>CFPRO01255</i></p>
-                  </div>
-                  <div class="description-tab activate-tab-2 mobile-only">
-                    <p>Основная ткань: 82% акрил, 18% полиэстер.<br>Дополнительная ткань: 88% полиэстер, 12%
-                      шерсть.<br>Подкладка: 100% полиэстер<br><br>Модель изготовлена ​​в Китае.<br><br></p>
-                    <p>Не стирать<br>Не отбеливать<br>Не гладить<br>Профессиональная химчистка с ПК и УВ,<br>умеренная
-                      обработка<br>Не сушить в стиральной машине</p>
-                  </div>
-                </div>
-                <div id="product-content">
-                  <div class="product-variations">
-                    <ul class="main-swatchs">
-                      <li class="attribute attribute-color">
-                        <button><a class="color-select"
-                            style="background: url('assets/images/D002.jpg')"></a>СИНИЙ</button>
-                        <div class="colors-list">
-                          <ul class="swatchs-colors">
-                            <li class="selected"><a href="#" title="СИНИЙ"
-                                style="background: url('assets/images/D002.jpg')"><span>СИНИЙ</span></a></li>
-                            <li><a href="#" title="ПУРПУРНЫЙ"
-                                style="background: url('assets/images/F015.jpg')"><span>ПУРПУРНЫЙ</span></a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="attribute attribute-size">
-                        <button><span class="size-select">Размер талии</span><span
-                            class="size-select">Талия</span></button>
-                        <div class="size-list">
-                          <ul class="swatchs-size">
-                            <li><a>34</a></li>
-                            <li><a>36</a></li>
-                            <li><a>38</a></li>
-                            <li><a>40</a></li>
-                            <li><a>42</a></li>
-                            <li class="model-size">Рост модели - 176 см, размер - 36.</li>
-                          </ul>
-                        </div>
-                      </li>
-                    </ul><a class="add-wish-list__btn"><span class="tooltip__wishlist"></span></a>
-                  </div>
-                  <div class="mobile-product__price"><span>28 000 ₽</span></div>
-                  <div class="product-add-to-cart">
-                    <form>
-                      <fieldset>
-                        <button id="add-to-cart"><span>добавить</span> в корзину</button>
-                      </fieldset>
-                    </form>
-                  </div>
-                  <div class="reservation-btn">
-                    <button>Забронировать в магазине</button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-image">
-                <picture><img src="assets/images/Claudie_CFPOU00332-B001_H_2.jpg" alt="image"></picture><span
-                  class="zoom-icon"></span>
-              </div>
-              <div class="product-image">
-                <picture><img src="assets/images/Claudie_CFPOU00332-B001_H_3.jpg" alt="image"></picture><span
-                  class="zoom-icon"></span>
-              </div>
-              <div class="tabs-container">
-                <div class="tabs-horizontal">
-                  <ul class="tab-control-container">
-                    <li class="tab-control active-tab">
-                      <h2>Полезно знать</h2>
-                    </li>
-                    <li class="tab-control">
-                      <h2>Поставки и возвраты</h2>
-                    </li>
-                    <li class="tab-control">
-                      <h2>Материалы и обслуживание</h2>
-                    </li>
-                  </ul>
-                  <div class="activate-tab show">
-                    <p>Эта модель была задумана и спроектирована нашими стилистами, в студии Claudie Pierlot, в самом
-                      центра Парижа</p>
-                    <p>Сомневаетесь в покупке? Колебаетесь? Предлагаем бесплатную доставку и возврат товара</p>
-                    <p>Нужна помощь?<br>Наши консультанты доступны Пн-Сб: 9:00 — 20:00 8 800 ХХХ ХХХХ (бесплатное
-                      обслуживание и звонок)</p>
-                  </div>
-                  <div class="activate-tab">
-                    <ul>
-                      <li>Бесплатная доставка от 2 до 3 дней</li>
-                      <li>Доставка на дом, в магазинах или в пункте пересылки</li>
-                    </ul>
-                    <ul>
-                      <li>Бесплатный и продленный возврат до 15 января.</li>
-                      <li>Обмен в магазине</li>
-                    </ul>
-                  </div>
-                  <div class="activate-tab">
-                    <ul>
-                      <li>Основная ткань: 82% акрил, 18% полиэстер.</li>
-                      <li>Вторичная ткань: 88% полиэстер, 12% шерсть.</li>
-                      <li>Подкладка: 100% полиэстер.</li>
-                      <li>Модель производилась в Китае.</li>
-                    </ul>
-                    <ul>
-                      <li>Не мыть</li>
-                      <li>Не отбеливать</li>
-                      <li>Не гладить</li>
-                      <li>Профессиональная химчистка с ПК и УВ, умеренная обработка</li>
-                      <li>Не сушить в стиральной машине</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="slidecat">
-          <div class="slidecat__container">
-            <h3 class="slidecat__title">В составе лука</h3>
-            <div class="slidecat__slide">
-              <div class="slidecat__product"><a><img src="assets/images/Claudie_CFPJE00176-J001_H_1.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Джинсы из органического хлопка</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">18 225 ₽</span></div>
-                  </div>
-                </a></div>
-              <div class="slidecat__product"><a><img src="assets/images/Claudie_CFPTS00565-B001_H_1.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Футболка с высоким воротом</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">22 000 ₽</span></div>
-                  </div>
-                </a></div>
-              <div class="slidecat__product"><a><img src="assets/images/Claudie_CFACH00298-B001_H_1.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Кожаные ботинки</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">22 000 ₽</span></div>
-                  </div>
-                </a></div>
-            </div>
-          </div>
-        </section>
-        <section class="slidecat">
-          <div class="slidecat__container">
-            <h3 class="slidecat__title">Немного вдохновения</h3>
-            <div class="slidecat__slide">
-              <div class="slidecat__product"><a><img src="assets/images/slide-1.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Короткое платье</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">18 225 ₽</span></div>
-                  </div>
-                </a></div>
-              <div class="slidecat__product"><a><img src="assets/images/slide-2.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Кожаный ремень</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">22 000 ₽</span></div>
-                  </div>
-                </a></div>
-              <div class="slidecat__product"><a><img src="assets/images/slide-3.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Шерстяное платье</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">22 000 ₽</span></div>
-                  </div>
-                </a></div>
-              <div class="slidecat__product"><a><img src="assets/images/slide-4.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Рубашка с бахромой</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">22 000 ₽</span></div>
-                  </div>
-                </a></div>
-              <div class="slidecat__product"><a><img src="assets/images/slide-1.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Шерстяное платье</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">18 225 ₽</span></div>
-                  </div>
-                </a></div>
-              <div class="slidecat__product"><a><img src="assets/images/slide-2.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Халат</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">22 000 ₽</span></div>
-                  </div>
-                </a></div>
-              <div class="slidecat__product"><a><img src="assets/images/slide-3.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Шерстяное платье</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">22 000 ₽</span></div>
-                  </div>
-                </a></div>
-              <div class="slidecat__product"><a><img src="assets/images/slide-4.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Блузка с оборками</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">22 000 ₽</span></div>
-                  </div>
-                </a></div>
-              <div class="slidecat__product"><a><img src="assets/images/slide-1.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Шерстяное платье</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">18 225 ₽</span></div>
-                  </div>
-                </a></div>
-              <div class="slidecat__product"><a><img src="assets/images/slide-2.jpg" alt="image">
-                  <div class="slidecat__details"><span class="slidecat__name">Халат</span>
-                    <div class="slidecat__price"><span class="slidecat__standart"></span><span
-                        class="slidecat__sales">22 000 ₽</span></div>
-                  </div>
-                </a></div>
-            </div>
-          </div>
-        </section>
-        <div class="breadcrumbs__wrapper">
-          <ol class="breadcrumb">
-            <li class="breadcrumb__item"><a class="breadcrumb__elem">Одежда</a></li>
-            <li class="breadcrumb__item"><span class="breadcrumb__elem breadcrumb__elem--last">Платья</span></li>
-          </ol>
-        </div>
-      </div>
-    </main>
-    <!-- Main::End-->
-    <!-- Footer::Start-->
-    <div id="footer">
-      <footer>
-        <div class="footer__socials"><span>Присоединяйтесь к нам</span>
-          <ul>
-            <li><a class="icon-facebook2" href="facebook.com" title="facebook" target="_blank"></a></li>
-            <li><a class="icon-ico-instagram" href="instagram.com" title="instagram" target="_blank"></a></li>
-          </ul>
-        </div>
-        <div class="footer__reassurance">
-          <div class="exchange__info"><a><img src="assets/images/return.png" alt="return"><span>Обмен в
-                магазине</span></a></div>
-          <div class="service-client"><a><img src="assets/images/SERVICE-CLIENT.png" alt="service"><span>Консультации
-                для клиентов</span></a></div>
-          <div class="safe-payment"><a><img src="assets/images/PAYMENT.png" alt="payment"><span>Безопасная
-                оплата</span></a></div>
-        </div>
-        <div class="footer__container">
-          <div class="footer__menu">
-            <ul class="menu__list">
-              <li class="menu__item has-sub-menu"><span>Есть вопросы?</span>
-                <ul class="footer__submenu">
-                  <li><a href="#">Отследить заказ</a></li>
-                  <li><a href="#">Свяжитесь с нами</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Руководство по размерам</a></li>
-                  <li><a href="#">Руководство по техническому обслуживанию</a></li>
-                  <li><a href="#">*Условия действующих предложений</a></li>
-                </ul>
-              </li>
-              <li class="menu__item has-sub-menu"><span>Наши услуги</span>
-                <ul class="footer__submenu">
-                  <li><a href="#">Все способы доставки</a></li>
-                  <li><a href="#">Звоните и забирайте</a></li>
-                  <li><a href="#">Возврат и обмен</a></li>
-                  <li><a href="#">GTC - Руководство по покупке</a></li>
-                  <li><a href="#">Политика конфиденциальности</a></li>
-                  <li><a href="#">Политика в отношении файлов cookie</a></li>
-                  <li><a href="#">Управление файлами cookie</a></li>
-                </ul>
-              </li>
-              <li class="menu__item has-sub-menu"><span>Бренд</span>
-                <ul class="footer__submenu">
-                  <li><a href="#">Клоди Касс</a></li>
-                  <li><a href="#">Присоединяйтесь к нам</a></li>
-                </ul>
-              </li>
-              <li class="menu__item store-locator"><span><a href="#"><span class="icon-store"></span><span>Найти
-                      магазин</span></a></span></li>
-            </ul>
-          </div>
-          <div class="footer__countries"><span class="select__label">Страны/регионы:</span>
-            <div class="select__container">
-              <select class="select__lang">
-                <option class="lang" data-url="/" value="Russia">Россия</option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Austria">Австрия</option>
-                <option class="lang" data-url="https://be.claudiepierlot.com" value="Belgium">Бельгия</option>
-                <option class="lang" data-url="https://uk.claudiepierlot.com" value="United Kingdom">Великобритания
-                </option>
-                <option class="lang" data-url="https://de.claudiepierlot.com" value="Deutschland">Германия</option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Greece">Греция</option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Ireland">Ирландия</option>
-                <option class="lang" data-url="https://es.claudiepierlot.com" value="España">Испания</option>
-                <option class="lang" data-url="https://it.claudiepierlot.com" value="Italy">Италия</option>
-                <option class="lang" data-url="https://www.claudiepierlot.cn" value="China">Китай</option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Luxembourg">Люксембург</option>
-                <option class="lang" data-url="http://www.claudiepierlot.com.hk/" value="Hong-Kong SAR/Macau SAR">Макао
-                </option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Netherlands">Нидерланды</option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Portugal">Португалия</option>
-                <option class="lang" data-url="https://fr.claudiepierlot.com" value="France">Франция</option>
-                <option class="lang" data-url="https://ch.claudiepierlot.com" value="Switzerland">Швейцария</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <!-- Footer::End-->
-  </div>
-  <!-- Booking Popup-->
-  <div class="booking-bg-layer"></div>
-  <div class="booking-container">
-    <div class="booking-popup-area">
-      <div class="booking-header">
-        <div class="booking-title">
-          <h1>Зарезервируйте товар бесплатно и без обязательства покупки</h1>
-          <h1 class="mobile">Зарезервируйте товар</h1><a class="close-icon">Закрыть</a>
-        </div>
-        <div class="booking-navigation">
-          <ul class="navigation-menu">
-            <li class="nav-current" data-step="1"><a>Продукт</a></li>
-            <li data-step="2"><a>Магазин</a></li>
-            <li data-step="3"><a>Ваши данные</a></li>
-            <li class="nav-last-child" data-step="4"><a>Подтверждение</a></li>
-          </ul>
-          <div class="nav-mobile"><span>1/4</span><span>Продукт</span></div>
-        </div>
-      </div>
-      <div class="booking-body">
-        <div class="step-product steps step-1">
-          <div class="location-search">
-            <form>
-              <label>Вы можете выбрать магазин:</label>
-              <ul class="location-shops">
-                <li class="location-shop">
-                  <input id="prop1" type="radio" name="location" checked>
-                  <label for="prop1">в Москве</label>
                 </li>
-                <li class="location-shop">
-                  <input id="prop2" type="radio" name="location">
-                  <label for="prop2">в Санкт-Петербурге</label>
+                <li class="header__wishlist"><a href="javasscript.void(0)" title="Wishlist"><i class="icon-wishlist"></i><span class="number-item">2</span></a>
+                  <div class="wishlist__content">
+                    <div class="close__content"></div>
+                    <div class="wishlist-top__container">
+                      <div class="wishlist__title">Список желаний (1)</div>
+                      <div class="wishlist__promo">
+                        <p>Бесплатная доставка и возврат для всех заказов</p>
+                      </div>
+                    </div>
+                    <form id="wishlist-form">
+                      <div class="wishlist__main">
+                        <div class="wishlist__product">
+                          <div class="wishlist__image"><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="image"></a></div>
+                          <div class="wishlist__attributes">
+                            <div class="wishlist__product-name"><a>Длинное платье с принтом геометрией</a></div>
+                            <div class="wishlist__attr-types">
+                              <div class="attr-color"><span>Цвет:</span><span>Темный</span></div>
+                              <div class="attr-size"><span>Размер:</span><span>36</span></div>
+                            </div>
+                            <div class="wishlist__remove"><a>Удалить</a></div>
+                            <div class="wishlist__pricing"><span>28 000 ₽</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wishlist__totals">
+                        <button class="wishlist__button">Добавить все в корзину</button>
+                        <button class="wishlist__button button-invert">Посмотреть все</button>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                <li class="header__cart"><a href="javasscript.void(0)" title="Cart"><i class="icon-panier"></i><span class="number-item">2</span></a>
+                  <div class="cart__content">
+                    <div class="close__content"><span>Назад</span></div>
+                    <div class="cart-top__container">
+                      <div class="cart__title">Корзина (1)</div>
+                      <div class="cart__promo">
+                        <p>Бесплатная доставка и возврат для всех заказов</p>
+                      </div>
+                    </div>
+                    <form id="cart-form">
+                      <div class="cart__main">
+                        <div class="cart__product">
+                          <div class="cart__image"><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="image"></a></div>
+                          <div class="cart__attributes">
+                            <div class="cart__product-name"><a>Длинное платье с принтом геометрией</a></div>
+                            <div class="cart__attr-types">
+                              <div class="attr-color"><span>Темный</span></div>
+                              <div class="attr-size">
+                                <select>
+                                  <option value="36">36</option>
+                                  <option value="38">38</option>
+                                  <option value="40">40</option>
+                                  <option value="42">42</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="cart__remove"><a>Удалить</a></div>
+                            <div class="cart__pricing"><span>28 000 ₽</span></div>
+                          </div>
+                        </div>
+                        <div class="cart__subtotals"><span class="shipping-time">Доставка от 2 до 3 дней</span><span class="shipping-price">Бесплатно</span></div>
+                      </div>
+                      <div class="cart__totals">
+                        <div class="total-price"><span>Итого: 28 000 ₽</span></div>
+                        <button class="cart__button">Смотреть мою корзину</button>
+                      </div>
+                    </form>
+                  </div>
                 </li>
               </ul>
-              <button class="button-style" id="selectCityBtn">Найти</button>
+            </div>
+          </div>
+          <nav id="navbar">
+            <ul class="navbar__menu">
+              <li class="item__menu has-submenu"><a class="item__menu-link" href="#">New in</a>
+                <div class="submenu__wrap">
+                  <div class="submenu__main">
+                    <ul class="submenu__expand-col">
+                      <li class="submenu__col-list"><span class="submenu__title">Новое</span>
+                        <ul>
+                          <li class="submenu__col-item">
+                            <h3><a>Новинка на этой неделе</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Новая рабочая одежда НОВЫЙ</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Зеленая жизнь</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Новая коллекция</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Лукбук Осень-Зима</a></h3>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="submenu__col-list">
+                        <ul class="submenu__images">
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-1.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-2.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-3.jpg" alt="image"></span><span>Название модели</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="item__menu has-submenu"><a class="item__menu-link" href="#">Одежда</a>
+                <div class="submenu__wrap">
+                  <div class="submenu__main">
+                    <ul class="submenu__expand-col">
+                      <li class="submenu__col-list"><span class="submenu__title">Наши новинки</span>
+                        <ul>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Время праздновать</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>На луну и обратно</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Привет из Колорадо</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Новая коллекция</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Лукбук Осень-Зима</a></h3>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="submenu__col-list">
+                        <ul class="submenu__images">
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-1.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-2.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-3.jpg" alt="image"></span><span>Название модели</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Сумки</a></li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Обувь</a></li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Аксессуары</a></li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Claudie cares</a></li>
+            </ul>
+            <ul class="navbar__extra">
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Нужна помощь?</a></li>
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Список желаний</a></li>
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Связаться с нами</a></li>
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Найти магазин</a></li>
+              <li class="extra__menu"><a class="extra__menu-link extra__menu-link--account button-style" href="/account.html">Аккаунт</a></li>
+            </ul>
+          </nav>
+          <div class="header__search-form">
+            <form id="search-form" role="search">
+              <fieldset>
+                <button class="icon-search" type="submit"></button>
+                <input id="search" type="text" name="search" placeholder="Найти" autocomplete="off"><a class="search__close-icon" href="javasscript.void(0)" title="close"><span class="icon-close"></span></a>
+              </fieldset>
             </form>
           </div>
-          <div class="product-block hide">
-            <div class="product-header"><span class="location-reminder"><span>Вы выбрали г.Москва</span><a
-                  id="changeCityBtn" href="javascript:void(0)">Изменить город</a></span>
-              <h2 class="step-title">Флисовый свитшот с нашивкой</h2>
-            </div>
-            <div class="product-column-left">
-              <div class="product-img"><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="img">
-                <div class="product-slider">
-                  <ul>
-                    <li><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="img"></a></li>
-                  </ul>
+        </header>
+      </div>
+      <!-- Header::End-->
+      <!-- Main::Start-->
+      <main id="main" role="main">
+        <div id="product-card">
+          <div class="swatchs-layer"></div>
+          <div class="product-img__container">
+            <div class="product-main__slide">
+              <div class="images__wrapper">
+                <div class="product-main__image">
+                  <picture><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="image"></picture><span class="zoom-icon"></span>
+                </div>
+                <div class="product-details__container">
+                  <div class="product-detail">
+                    <h1 class="product-name">Короткое пальто</h1><span class="product-price">28 000 ₽</span><a class="add-wish-list__btn"><span class="tooltip__wishlist"></span></a>
+                  </div>
+                  <div class="product-tabs">
+                    <div class="info-slider">
+                      <div><img src="assets/images/Dessiner.png" alt="icon"><span>Сделано в Париже</span></div>
+                      <div><img src="assets/images/Colis.png" alt="icon"><span>Бесплатная доставка и возврат</span></div>
+                      <div><img src="assets/images/Aide.png" alt="icon"><span>Нужна помощь? Звоните 8 800 ХХХ ХХХХ</span></div>
+                    </div>
+                    <div class="tab-control__mobile"><span class="tab__control active-tab" data-activate="activate-tab-1">Описание</span><span class="tab__control" data-activate="activate-tab-2">Материалы и обслуживание</span></div>
+                    <div class="description-tab activate-tab-1 show">
+                      <p>Смелое длинное платье<br>Струящаяся рубашка с длинными<br>рукавами.<br>Геометрическая ткань с принтом.<br>Набор складок на бюсте.<br>Широкие запястья в тон.</p>
+                      <div class="shop-look"><a>Дополнить лук</a></div>
+                      <p class="reference-num">Артикул: <i>CFPRO01255</i></p>
+                    </div>
+                    <div class="description-tab activate-tab-2 mobile-only">
+                      <p>Основная ткань: 82% акрил, 18% полиэстер.<br>Дополнительная ткань: 88% полиэстер, 12% шерсть.<br>Подкладка: 100% полиэстер<br><br>Модель изготовлена ​​в Китае.<br><br></p>
+                      <p>Не стирать<br>Не отбеливать<br>Не гладить<br>Профессиональная химчистка с ПК и УВ,<br>умеренная обработка<br>Не сушить в стиральной машине</p>
+                    </div>
+                  </div>
+                  <div id="product-content">
+                    <div class="product-variations">
+                      <ul class="main-swatchs">
+                        <li class="attribute attribute-color">
+                          <button><a class="color-select" style="background: url('assets/images/D002.jpg')"></a>СИНИЙ</button>
+                          <div class="colors-list">
+                            <ul class="swatchs-colors">
+                              <li class="selected"><a href="#" title="СИНИЙ" style="background: url('assets/images/D002.jpg')"><span>СИНИЙ</span></a></li>
+                              <li><a href="#" title="ПУРПУРНЫЙ" style="background: url('assets/images/F015.jpg')"><span>ПУРПУРНЫЙ</span></a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="attribute attribute-size">
+                          <button><span class="size-select">Размер талии</span><span class="size-select">Талия</span></button>
+                          <div class="size-list">
+                            <ul class="swatchs-size">
+                              <li><a>34</a></li>
+                              <li><a>36</a></li>
+                              <li><a>38</a></li>
+                              <li><a>40</a></li>
+                              <li><a>42</a></li>
+                              <li class="model-size">Рост модели - 176 см, размер - 36.</li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul><a class="add-wish-list__btn"><span class="tooltip__wishlist"></span></a>
+                    </div>
+                    <div class="mobile-product__price"><span>28 000 ₽</span></div>
+                    <div class="product-add-to-cart">
+                      <form>
+                        <fieldset>
+                          <button id="add-to-cart"><span>добавить</span> в корзину</button>
+                        </fieldset>
+                      </form>
+                    </div>
+                    <div class="reservation-btn">
+                      <button>Забронировать в магазине</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-image">
+                  <picture><img src="assets/images/Claudie_CFPOU00332-B001_H_2.jpg" alt="image"></picture><span class="zoom-icon"></span>
+                </div>
+                <div class="product-image">
+                  <picture><img src="assets/images/Claudie_CFPOU00332-B001_H_3.jpg" alt="image"></picture><span class="zoom-icon"></span>
+                </div>
+                <div class="tabs-container">
+                  <div class="tabs-horizontal">
+                    <ul class="tab-control-container">
+                      <li class="tab-control active-tab">
+                        <h2>Полезно знать</h2>
+                      </li>
+                      <li class="tab-control">
+                        <h2>Поставки и возвраты</h2>
+                      </li>
+                      <li class="tab-control">
+                        <h2>Материалы и обслуживание</h2>
+                      </li>
+                    </ul>
+                    <div class="activate-tab show">
+                      <p>Эта модель была задумана и спроектирована нашими стилистами, в студии Claudie Pierlot, в самом центра Парижа</p>
+                      <p>Сомневаетесь в покупке? Колебаетесь? Предлагаем бесплатную доставку и возврат товара</p>
+                      <p>Нужна помощь?<br>Наши консультанты доступны Пн-Сб: 9:00 — 20:00 8 800 ХХХ ХХХХ (бесплатное обслуживание и звонок)</p>
+                    </div>
+                    <div class="activate-tab">
+                      <ul>
+                        <li>Бесплатная доставка от 2 до 3 дней</li>
+                        <li>Доставка на дом, в магазинах или в пункте пересылки</li>
+                      </ul>
+                      <ul>
+                        <li>Бесплатный и продленный возврат до 15 января.</li>
+                        <li>Обмен в магазине</li>
+                      </ul>
+                    </div>
+                    <div class="activate-tab">
+                      <ul>
+                        <li>Основная ткань: 82% акрил, 18% полиэстер.</li>
+                        <li>Вторичная ткань: 88% полиэстер, 12% шерсть.</li>
+                        <li>Подкладка: 100% полиэстер.</li>
+                        <li>Модель производилась в Китае.</li>
+                      </ul>
+                      <ul>
+                        <li>Не мыть</li>
+                        <li>Не отбеливать</li>
+                        <li>Не гладить</li>
+                        <li>Профессиональная химчистка с ПК и УВ, умеренная обработка</li>
+                        <li>Не сушить в стиральной машине</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="product-column-right">
-              <form><strong>Чтобы уточнить наличие товара, пожалуйста, выберите:</strong>
-                <label>Размер*</label>
-                <div class="select-block-size">
-                  <select required>
-                    <option value="0" selected disabled>Выбрать размер</option>
-                    <option value="0">S</option>
-                    <option value="1">M</option>
-                  </select>
-                </div><span class="b-error">Укажите размер</span>
-                <label>Цвет*</label>
-                <div class="select-block-color">
-                  <select required>
-                    <option value="0" selected disabled>Выбрать цвет</option>
-                    <option value="0">Белый</option>
-                    <option value="1">Черный</option>
-                  </select>
-                </div><span class="b-error">Укажите цвет</span>
-              </form>
-              <div class="next-step">
-                <button class="button-style btn-next">Далее</button>
-                <label>* Обязательные поля</label>
+          </div>
+          <section class="slidecat">
+            <div class="slidecat__container">
+              <h3 class="slidecat__title">В составе лука</h3>
+              <div class="slidecat__slide">
+                <div class="slidecat__product"><a><img src="assets/images/Claudie_CFPJE00176-J001_H_1.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Джинсы из органического хлопка</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">18 225 ₽</span></div>
+                    </div></a></div>
+                <div class="slidecat__product"><a><img src="assets/images/Claudie_CFPTS00565-B001_H_1.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Футболка с высоким воротом</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">22 000 ₽</span></div>
+                    </div></a></div>
+                <div class="slidecat__product"><a><img src="assets/images/Claudie_CFACH00298-B001_H_1.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Кожаные ботинки</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">22 000 ₽</span></div>
+                    </div></a></div>
               </div>
             </div>
-            <div class="product-sentence">Цена на товар в бутике совпадает с ценой товара в выбранном магазине</div>
+          </section>
+          <section class="slidecat">
+            <div class="slidecat__container">
+              <h3 class="slidecat__title">Немного вдохновения</h3>
+              <div class="slidecat__slide">
+                <div class="slidecat__product"><a><img src="assets/images/slide-1.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Короткое платье</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">18 225 ₽</span></div>
+                    </div></a></div>
+                <div class="slidecat__product"><a><img src="assets/images/slide-2.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Кожаный ремень</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">22 000 ₽</span></div>
+                    </div></a></div>
+                <div class="slidecat__product"><a><img src="assets/images/slide-3.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Шерстяное платье</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">22 000 ₽</span></div>
+                    </div></a></div>
+                <div class="slidecat__product"><a><img src="assets/images/slide-4.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Рубашка с бахромой</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">22 000 ₽</span></div>
+                    </div></a></div>
+                <div class="slidecat__product"><a><img src="assets/images/slide-1.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Шерстяное платье</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">18 225 ₽</span></div>
+                    </div></a></div>
+                <div class="slidecat__product"><a><img src="assets/images/slide-2.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Халат</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">22 000 ₽</span></div>
+                    </div></a></div>
+                <div class="slidecat__product"><a><img src="assets/images/slide-3.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Шерстяное платье</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">22 000 ₽</span></div>
+                    </div></a></div>
+                <div class="slidecat__product"><a><img src="assets/images/slide-4.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Блузка с оборками</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">22 000 ₽</span></div>
+                    </div></a></div>
+                <div class="slidecat__product"><a><img src="assets/images/slide-1.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Шерстяное платье</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">18 225 ₽</span></div>
+                    </div></a></div>
+                <div class="slidecat__product"><a><img src="assets/images/slide-2.jpg" alt="image">
+                    <div class="slidecat__details"><span class="slidecat__name">Халат</span>
+                      <div class="slidecat__price"><span class="slidecat__standart"></span><span class="slidecat__sales">22 000 ₽</span></div>
+                    </div></a></div>
+              </div>
+            </div>
+          </section>
+          <div class="breadcrumbs__wrapper">
+            <ol class="breadcrumb">
+              <li class="breadcrumb__item"><a class="breadcrumb__elem">Одежда</a></li>
+              <li class="breadcrumb__item"><span class="breadcrumb__elem breadcrumb__elem--last">Платья</span></li>
+            </ol>
           </div>
         </div>
-        <div class="step-store steps step-2 hide">
-          <h2 class="step-title">Магазины около Вас</h2>
-          <div class="map-toggle"><a class="button-toggle"><span class="close-map hide">Закрыть карту</span><span
-                class="open-map">Показать на карте</span></a></div>
-          <div class="store-list-container">
-            <ul class="product-store-list">
-              <li class="product-store">
-                <div class="store-info">
-                  <h3>Цветной</h3>
-                  <address><span>Цветной бул., 15, стр. 1</span><span>+7 (495) 737-77-73<a
-                        href="javascript:void(0)">Показать на карте</a></span></address>
-                  <p>10:00 — 22:00</p>
-                </div>
-                <div class="other-info"><a class="button-style" href="javascript:void(0)">Выбрать магазин</a></div>
-              </li>
-              <li class="product-store">
-                <div class="store-info">
-                  <h3>Цветной</h3>
-                  <address><span>Цветной бул., 15, стр. 1</span><span>+7 (495) 737-77-73<a
-                        href="javascript:void(0)">Показать на карте</a></span></address>
-                  <p>10:00 — 22:00</p>
-                </div>
-                <div class="other-info"><a class="button-style" href="javascript:void(0)">Выбрать магазин</a></div>
-              </li>
-              <li class="product-store">
-                <div class="store-info">
-                  <h3>Цветной</h3>
-                  <address><span>Цветной бул., 15, стр. 1</span><span>+7 (495) 737-77-73<a
-                        href="javascript:void(0)">Показать на карте</a></span></address>
-                  <p>10:00 — 22:00</p>
-                </div>
-                <div class="other-info"><a class="button-style" href="javascript:void(0)">Выбрать магазин</a></div>
-              </li>
+      </main>
+      <!-- Main::End-->
+      <!-- Footer::Start-->
+      <div id="footer">
+        <footer>
+          <div class="footer__socials"><span>Присоединяйтесь к нам</span>
+            <ul>
+              <li><a class="icon-facebook2" href="facebook.com" title="facebook" target="_blank"></a></li>
+              <li><a class="icon-ico-instagram" href="instagram.com" title="instagram" target="_blank"></a></li>
             </ul>
-            <div class="hide" id="store-map" style="width: 100%; height: 400px;"></div>
+          </div>
+          <div class="footer__reassurance">
+            <div class="exchange__info"><a><img src="assets/images/return.png" alt="return"><span>Обмен в магазине</span></a></div>
+            <div class="service-client"><a><img src="assets/images/SERVICE-CLIENT.png" alt="service"><span>Консультации для клиентов</span></a></div>
+            <div class="safe-payment"><a><img src="assets/images/PAYMENT.png" alt="payment"><span>Безопасная оплата</span></a></div>
+          </div>
+          <div class="footer__container">
+            <div class="footer__menu">
+              <ul class="menu__list">
+                <li class="menu__item has-sub-menu"><span>Есть вопросы?</span>
+                  <ul class="footer__submenu">
+                    <li><a href="#">Отследить заказ</a></li>
+                    <li><a href="#">Свяжитесь с нами</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Руководство по размерам</a></li>
+                    <li><a href="#">Руководство по техническому обслуживанию</a></li>
+                    <li><a href="#">*Условия действующих предложений</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item has-sub-menu"><span>Наши услуги</span>
+                  <ul class="footer__submenu">
+                    <li><a href="#">Все способы доставки</a></li>
+                    <li><a href="#">Звоните и забирайте</a></li>
+                    <li><a href="#">Возврат и обмен</a></li>
+                    <li><a href="#">GTC - Руководство по покупке</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Политика в отношении файлов cookie</a></li>
+                    <li><a href="#">Управление файлами cookie</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item has-sub-menu"><span>Бренд</span>
+                  <ul class="footer__submenu">
+                    <li><a href="#">Клоди Касс</a></li>
+                    <li><a href="#">Присоединяйтесь к нам</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item store-locator"><span><a href="#"><span class="icon-store"></span><span>Найти магазин</span></a></span></li>
+              </ul>
+            </div>
+            <div class="footer__countries"><span class="select__label">Страны/регионы:</span>
+              <div class="select__container">
+                <select class="select__lang">
+                  <option class="lang" data-url="/" value="Russia">Россия</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Austria">Австрия</option>
+                  <option class="lang" data-url="https://be.claudiepierlot.com" value="Belgium">Бельгия</option>
+                  <option class="lang" data-url="https://uk.claudiepierlot.com" value="United Kingdom">Великобритания</option>
+                  <option class="lang" data-url="https://de.claudiepierlot.com" value="Deutschland">Германия</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Greece">Греция</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Ireland">Ирландия</option>
+                  <option class="lang" data-url="https://es.claudiepierlot.com" value="España">Испания</option>
+                  <option class="lang" data-url="https://it.claudiepierlot.com" value="Italy">Италия</option>
+                  <option class="lang" data-url="https://www.claudiepierlot.cn" value="China">Китай</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Luxembourg">Люксембург</option>
+                  <option class="lang" data-url="http://www.claudiepierlot.com.hk/" value="Hong-Kong SAR/Macau SAR">Макао</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Netherlands">Нидерланды</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Portugal">Португалия</option>
+                  <option class="lang" data-url="https://fr.claudiepierlot.com" value="France">Франция</option>
+                  <option class="lang" data-url="https://ch.claudiepierlot.com" value="Switzerland">Швейцария</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- Footer::End-->
+    </div>
+    <!-- Booking Popup-->
+    <div class="booking-bg-layer"></div>
+    <div class="booking-container">
+      <div class="booking-popup-area">
+        <div class="booking-header">
+          <div class="booking-title">
+            <h1>Зарезервируйте товар бесплатно и без обязательства покупки</h1>
+            <h1 class="mobile">Зарезервируйте товар</h1><a class="close-icon">Закрыть</a>
+          </div>
+          <div class="booking-navigation">
+            <ul class="navigation-menu">
+              <li class="nav-current" data-step="1"><a>Продукт</a></li>
+              <li data-step="2"><a>Магазин</a></li>
+              <li data-step="3"><a>Ваши данные</a></li>
+              <li class="nav-last-child" data-step="4"><a>Подтверждение</a></li>
+            </ul>
+            <div class="nav-mobile"><span>1/4</span><span>Продукт</span></div>
           </div>
         </div>
-        <div class="step-user steps step-3 hide">
-          <div class="terms-data hide">
-            <div class="top-panel">
-              <h2>ПРАВИЛА ИСПОЛЬЗОВАНИЯ И УСЛОВИЯ ИНТЕРНЕТ-РЕЗЕРВИРОВАНИЯ</h2><a class="close-icon"></a>
+        <div class="booking-body">
+          <div class="step-product steps step-1">
+            <div class="location-search">
+              <form>
+                <label>Вы можете выбрать магазин:</label>
+                <ul class="location-shops">
+                  <li class="location-shop">
+                    <input id="prop1" type="radio" name="location" checked>
+                    <label for="prop1">в Москве</label>
+                  </li>
+                  <li class="location-shop">
+                    <input id="prop2" type="radio" name="location">
+                    <label for="prop2">в Санкт-Петербурге</label>
+                  </li>
+                </ul>
+                <button class="button-style" id="selectCityBtn">Найти</button>
+              </form>
             </div>
-            <div class="terms-data-content">
-              <h3>ВВЕДЕНИЕ</h3>
-              <p>Цель настоящих условий заключается в том, чтобы определить условия, при которых Пользователь может
-                использовать услугу резервирования товара, предложенную на веб-сайте maje.ru (далее - Услуга), как это
-                определено ниже. Настоящие условия заключаются исключительно между компанией ООО Фэшн Студио (далее
-                Компания), и любым лицом, совершающим резервирование, далее именуемым "пользователь сети" и совместно
-                именуемым "сторонами". Стороны соглашаются с тем, что их отношения будут регулироваться исключительно
-                условиями резервирования, которые доступны на данном веб-сайте. Эти условия могут быть изменены. В таком
-                случае применяются условия, действующие на сайте во время резервирования. И наконец, в настоящих общих
-                условиях резервирования определяются условия резервирования. Любой пользователь, получивший доступ к
-                сервису, обязуется ознакомиться с настоящими Условиями и принять их. Любое использование Сайта и сервиса
-                предполагает принятие и соблюдение всех настоящих условий. Таким образом, они являются соглашением между
-                Пользователем и Компанией. В случае, если пользователь не желает принимать все или часть настоящих
-                Условий, он должен отказаться от использования сервиса. Пользователя информируют о том, что единственная
-                подлинная версия настоящих условий и положений — это версия, находящаяся в Интернете на сайте, которую
-                он должен систематически подтверждать при каждом входе в систему. Предполагается, что настоящие Условия
-                использования услуг Компанией не могут рассматриваться каждой из сторон как общие условия продажи. В
-                случае покупки применяются общие условия продажи, которые применяются в магазине или на сайте.</p>
-              <h3>ОПРЕДЕЛЕНИЯ:</h3>
-              <ul>
-                <li>Пользователь или клиент: любое лицо, которое подключается к сайту и использует сервис;</li>
-                <li>Веб-сайт claudiepierlot.ru;</li>
-                <li>Сервис: услуга резервирования объекта настоящих общих условий.</li>
-              </ul><a href="#shop-reserv">СТАТЬЯ 1: РЕЗЕРВИРОВАНИЕ В МАГАЗИНЕ</a><a href="#in-stock">СТАТЬЯ 2: НАЛИЧИЕ
-                ТОВАРА</a><a href="#reserv-conditions">СТАТЬЯ 3: УСЛОВИЯ РЕЗЕРВИРОВАНИЯ</a><a href="#liabilities">СТАТЬЯ
-                4: ОБЯЗАТЕЛЬСТВА ПОЛЬЗОВАТЕЛЯ</a><a href="#privacy">СТАТЬЯ 5: ЗАЩИТА ПЕРСОНАЛЬНЫХ ДАННЫХ</a>
-              <h3 id="shop-reserv">СТАТЬЯ 1: РЕЗЕРВИРОВАНИЕ В МАГАЗИНЕ</h3>
-              <p>Заказ товара в выбранном клиентом магазине не предполагает онлайн-оплаты пользователем. Оплата будет
-                производиться в магазине, при покупке зарезервированного товара. Когда пользователь хочет
-                зарезервировать товар, резервирование осуществляется в несколько этапов:</p>
-              <ul>
-                <li>сайт предлагает пользователю список магазинов, в которых имеется выбранный пользователем товар.
-                  Пользователь выбирает нужный магазин;</li>
-                <li>пользователь заполняет корзину резервирования;</li>
-                <li>пользователь сообщает следующую информацию: имя, фамилия, номер телефона, адрес электронной почты;
-                  пользователь подтверждает, что предоставленная им информация является персональной и достоверной. В
-                  частности, он обязуется не предоставлять ложную информацию и / или неполную информацию о своей
-                  личности и контактных данных,</li>
-                <li>пользователь получает подтверждение оформления резерва по электронной почте;</li>
-                <li>магазин связывается с пользователем по телефону для подтверждения наличия зарезервированного товара
-                  и подтверждения предполагаемого времени визита в магазин.</li>
-              </ul>
-              <p>Резервирование не предполагает каких-либо обязательств покупки, а только обязательства явиться в
-                магазин (или произвести аннулирование до истечения срока, в течение которого товар зарезервирован для
-                клиента). Цена Товара указывается на Сайте в рублях Российской Федерации. В случае неверного указания
-                цены заказанного Клиентом Товара, Компания при первой возможности информирует об этом Клиента для
-                подтверждения Резерва по исправленной цене либо аннулирования Резерва. При невозможности связаться с
-                Клиентом данный Резерв считается аннулированным. Промокоды, полученные на сайте или в сети интернет, не
-                могут быть использованы при оплате товара в магазине.</p>
-              <h4>Какие существуют способы оплаты?</h4>
-              <p>Способ оплаты устанавливается индивидуально в каждом магазине. Оплата может осуществлять наличными или
-                банковской картой в выбранном магазине при покупке товара. Компания оставляет за собой право отказаться
-                от обработки запроса на резервирование, если контактные данные пользователя не анализируются как
-                надежные (например, Ошибка номера телефона), если существует предыдущий или текущий спор об оплате или
-                если резервирование касается более 5 (пяти) товаров, забронированных одновременно.</p>
-              <h4>Подтверждение резерва / Оплата</h4>
-              <p>Пользователю рекомендуется сохранять электронную почту для подтверждения резервирования.</p>
-              <h3 id="in-stock">СТАТЬЯ 2: НАЛИЧИЕ ТОВАРА</h3>
-              <p>Предложения товаров и цен действительны до тех пор, пока они отображаются на сайте, за исключением
-                специальных операций, срок действия которых указан на сайте. На первых этапах резервирования
-                пользователю будет предложено проверить наличие товаров, продаваемых в магазине. Наличие указывает на
-                наличие товара в выбранном каждого магазине. Пользователь выбирает один из этих магазинов, чтобы
-                зарезервировать свой товар. Тем не менее, предполагается, что такая доступность является
-                ориентировочной, поскольку товары могут быть проданы с момента завершения запроса на резервирование и
-                проверки этого резервирования через магазин.</p>
-              <h3 id="reserv-conditions">СТАТЬЯ 3: УСЛОВИЯ РЕЗЕРВИРОВАНИЯ</h3>
-              <p>Товары можно заказать только в отображаемых при резервировании магазинах. Резервирование является
-                бесплатным и без каких-либо обязательств к покупке в магазине. Пользователь может зарезервировать
-                максимум:</p>
-              <ul>
-                <li>3 товара;</li>
-                <li>2 размера одного и того же товара.</li>
-              </ul>
-              <p>Однако он не может одновременно зарезервировать дважды один и тот же товар в одном и том же размере и
-                цвете. Часы работы магазина доступны для ознакомления на веб-сайте.</p>
-              <p>Магазин обязуется, при получении запроса на резервирование Пользователя, сделанного на сайте,
-                обработать запрос, связаться с Пользователем для подтверждения наличия резерва в течение часа в рабочее
-                время. Указанный срок ответа на запрос резервирования является ориентировочным и никоим образом не
-                является договорным. Выбранный товар будет зарезервирован на ближайшие 24 часа после подтверждения
-                сотрудника магазина.</p>
-              <h4>Отмена резерва/отказ от товаров, составляющих резерв</h4>
-              <p>Поскольку резервирование является бесплатным и не требует покупки в магазине, пользователь может
-                отказаться от покупки зарезервированных товаров, если они не подходят ему после того, как он приехал в
-                магазин. Кроме того, пользователь может отменить резервирование, обратившись в выбранный магазин. В
-                случае отмены резервирования пользователем, сотрудники магазина возвращают товар на продажу в торговом
-                зале.</p>
-              <h3 id="liabilities">СТАТЬЯ 4: ОБЯЗАТЕЛЬСТВА ПОЛЬЗОВАТЕЛЯ</h3>
-              <p>Следует особо отметить, что резервирование товара на сайте не подразумевает каких-либо обязательств
-                покупки. Тем не менее, после подтверждения резервирования сотрудником магазина по телефону, пользователь
-                обязан зайти в этот магазин, чтобы сообщить о себе продавцу магазина или, в противном случае, отменить
-                резервирование до истечения срока резервирования. Если пользователь не отменил резервирование, это может
-                привести к нарушению настоящих договорных условий.</p>
-              <h3 id="privacy">СТАТЬЯ 5: ЗАЩИТА ПЕРСОНАЛЬНЫХ ДАННЫХ</h3>
-              <h4>Получатели данных</h4>
-              <p>Личная информация предназначена исключительно для Компании.</p>
-              <h4>Категории собранных персональных данных</h4>
-              <p>- Определение: личные данные-это любая информация, относящаяся к физическому лицу или физическому лицу,
-                посетившему сайт, позволяющая прямо или косвенно идентифицировать его. При создании запроса (например,
-                запроса на резервирование) Компания собирает следующие данные:</p>
-              <ul>
-                <li>Имя</li>
-                <li>Фамилия</li>
-                <li>Адрес электронной почты</li>
-                <li>Номер мобильного телефона</li>
-                <li>Принятие настоящих Условий (обязательно)</li>
-                <li>Принятие сообщений от компании (необязательно)</li>
-              </ul>
-              <p>Порядок и цели использования персональных данных описаны по ссылке <a
-                  href="https://claudiepierlot.ru">https://claudiepierlot.ru</a></p>
+            <div class="product-block hide">
+              <div class="product-header"><span class="location-reminder"><span>Вы выбрали г.Москва</span><a id="changeCityBtn" href="javascript:void(0)">Изменить город</a></span>
+                <h2 class="step-title">Флисовый свитшот с нашивкой</h2>
+              </div>
+              <div class="product-column-left">
+                <div class="product-img"><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="img">
+                  <div class="product-slider">
+                    <ul>
+                      <li><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="img"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="product-column-right">
+                <form><strong>Чтобы уточнить наличие товара, пожалуйста, выберите:</strong>
+                  <label>Размер*</label>
+                  <div class="select-block-size">
+                    <select required>
+                      <option value="0" selected disabled>Выбрать размер</option>
+                      <option value="0">S</option>
+                      <option value="1">M</option>
+                    </select>
+                  </div><span class="b-error">Укажите размер</span>
+                  <label>Цвет*</label>
+                  <div class="select-block-color">
+                    <select required>
+                      <option value="0" selected disabled>Выбрать цвет</option>
+                      <option value="0">Белый</option>
+                      <option value="1">Черный</option>
+                    </select>
+                  </div><span class="b-error">Укажите цвет</span>
+                </form>
+                <div class="next-step">
+                  <button class="button-style btn-next">Далее</button>
+                  <label>* Обязательные поля</label>
+                </div>
+              </div>
+              <div class="product-sentence">Цена на товар в бутике совпадает с ценой товара в выбранном магазине</div>
             </div>
           </div>
-          <div class="user-content">
-            <h2 class="step-title">Ваши данные</h2>
+          <div class="step-store steps step-2 hide">
+            <h2 class="step-title">Магазины около Вас</h2>
+            <div class="map-toggle"><a class="button-toggle"><span class="close-map hide">Закрыть карту</span><span class="open-map">Показать на карте</span></a></div>
+            <div class="store-list-container">
+              <ul class="product-store-list">
+                <li class="product-store">
+                  <div class="store-info">
+                    <h3>Цветной</h3>
+                    <address><span>Цветной бул., 15, стр. 1</span><span>+7 (495) 737-77-73<a href="javascript:void(0)">Показать на карте</a></span></address>
+                    <p>10:00 — 22:00</p>
+                  </div>
+                  <div class="other-info"><a class="button-style" href="javascript:void(0)">Выбрать магазин</a></div>
+                </li>
+                <li class="product-store">
+                  <div class="store-info">
+                    <h3>Цветной</h3>
+                    <address><span>Цветной бул., 15, стр. 1</span><span>+7 (495) 737-77-73<a href="javascript:void(0)">Показать на карте</a></span></address>
+                    <p>10:00 — 22:00</p>
+                  </div>
+                  <div class="other-info"><a class="button-style" href="javascript:void(0)">Выбрать магазин</a></div>
+                </li>
+                <li class="product-store">
+                  <div class="store-info">
+                    <h3>Цветной</h3>
+                    <address><span>Цветной бул., 15, стр. 1</span><span>+7 (495) 737-77-73<a href="javascript:void(0)">Показать на карте</a></span></address>
+                    <p>10:00 — 22:00</p>
+                  </div>
+                  <div class="other-info"><a class="button-style" href="javascript:void(0)">Выбрать магазин</a></div>
+                </li>
+              </ul>
+              <div class="hide" id="store-map" style="width: 100%; height: 400px;"></div>
+            </div>
+          </div>
+          <div class="step-user steps step-3 hide">
+            <div class="terms-data hide">
+              <div class="top-panel">
+                <h2>ПРАВИЛА ИСПОЛЬЗОВАНИЯ И УСЛОВИЯ ИНТЕРНЕТ-РЕЗЕРВИРОВАНИЯ</h2><a class="close-icon"></a>
+              </div>
+              <div class="terms-data-content">
+                <h3>ВВЕДЕНИЕ</h3>
+                <p>Цель настоящих условий заключается в том, чтобы определить условия, при которых Пользователь может использовать услугу резервирования товара, предложенную на веб-сайте maje.ru (далее - Услуга), как это определено ниже. Настоящие условия заключаются исключительно между компанией ООО Фэшн Студио (далее Компания), и любым лицом, совершающим резервирование, далее именуемым "пользователь сети" и совместно именуемым "сторонами". Стороны соглашаются с тем, что их отношения будут регулироваться исключительно условиями резервирования, которые доступны на данном веб-сайте. Эти условия могут быть изменены. В таком случае применяются условия, действующие на сайте во время резервирования. И наконец, в настоящих общих условиях резервирования определяются условия резервирования. Любой пользователь, получивший доступ к сервису, обязуется ознакомиться с настоящими Условиями и принять их. Любое использование Сайта и сервиса предполагает принятие и соблюдение всех настоящих условий. Таким образом, они являются соглашением между Пользователем и Компанией. В случае, если пользователь не желает принимать все или часть настоящих Условий, он должен отказаться от использования сервиса. Пользователя информируют о том, что единственная подлинная версия настоящих условий и положений — это версия, находящаяся в Интернете на сайте, которую он должен систематически подтверждать при каждом входе в систему. Предполагается, что настоящие Условия использования услуг Компанией не могут рассматриваться каждой из сторон как общие условия продажи. В случае покупки применяются общие условия продажи, которые применяются в магазине или на сайте.</p>
+                <h3>ОПРЕДЕЛЕНИЯ:</h3>
+                <ul>
+                  <li>Пользователь или клиент: любое лицо, которое подключается к сайту и использует сервис;</li>
+                  <li>Веб-сайт claudiepierlot.ru;</li>
+                  <li>Сервис: услуга резервирования объекта настоящих общих условий.</li>
+                </ul><a href="#shop-reserv">СТАТЬЯ 1: РЕЗЕРВИРОВАНИЕ В МАГАЗИНЕ</a><a href="#in-stock">СТАТЬЯ 2: НАЛИЧИЕ ТОВАРА</a><a href="#reserv-conditions">СТАТЬЯ 3: УСЛОВИЯ РЕЗЕРВИРОВАНИЯ</a><a href="#liabilities">СТАТЬЯ 4: ОБЯЗАТЕЛЬСТВА ПОЛЬЗОВАТЕЛЯ</a><a href="#privacy">СТАТЬЯ 5: ЗАЩИТА ПЕРСОНАЛЬНЫХ ДАННЫХ</a>
+                <h3 id="shop-reserv">СТАТЬЯ 1: РЕЗЕРВИРОВАНИЕ В МАГАЗИНЕ</h3>
+                <p>Заказ товара в выбранном клиентом магазине не предполагает онлайн-оплаты пользователем. Оплата будет производиться в магазине, при покупке зарезервированного товара. Когда пользователь хочет зарезервировать товар, резервирование осуществляется в несколько этапов:</p>
+                <ul>
+                  <li>сайт предлагает пользователю список магазинов, в которых имеется выбранный пользователем товар. Пользователь выбирает нужный магазин;</li>
+                  <li>пользователь заполняет корзину резервирования;</li>
+                  <li>пользователь сообщает следующую информацию: имя, фамилия, номер телефона, адрес электронной почты; пользователь подтверждает, что предоставленная им информация является персональной и достоверной. В частности, он обязуется не предоставлять ложную информацию и / или неполную информацию о своей личности и контактных данных,</li>
+                  <li>пользователь получает подтверждение оформления резерва по электронной почте;</li>
+                  <li>магазин связывается с пользователем по телефону для подтверждения наличия зарезервированного товара и подтверждения предполагаемого времени визита в магазин.</li>
+                </ul>
+                <p>Резервирование не предполагает каких-либо обязательств покупки, а только обязательства явиться в магазин (или произвести аннулирование до истечения срока, в течение которого товар зарезервирован для клиента). Цена Товара указывается на Сайте в рублях Российской Федерации. В случае неверного указания цены заказанного Клиентом Товара, Компания при первой возможности информирует об этом Клиента для подтверждения Резерва по исправленной цене либо аннулирования Резерва. При невозможности связаться с Клиентом данный Резерв считается аннулированным. Промокоды, полученные на сайте или в сети интернет, не могут быть использованы при оплате товара в магазине.</p>
+                <h4>Какие существуют способы оплаты?</h4>
+                <p>Способ оплаты устанавливается индивидуально в каждом магазине. Оплата может осуществлять наличными или банковской картой в выбранном магазине при покупке товара. Компания оставляет за собой право отказаться от обработки запроса на резервирование, если контактные данные пользователя не анализируются как надежные (например, Ошибка номера телефона), если существует предыдущий или текущий спор об оплате или если резервирование касается более 5 (пяти) товаров, забронированных одновременно.</p>
+                <h4>Подтверждение резерва / Оплата</h4>
+                <p>Пользователю рекомендуется сохранять электронную почту для подтверждения резервирования.</p>
+                <h3 id="in-stock">СТАТЬЯ 2: НАЛИЧИЕ ТОВАРА</h3>
+                <p>Предложения товаров и цен действительны до тех пор, пока они отображаются на сайте, за исключением специальных операций, срок действия которых указан на сайте. На первых этапах резервирования пользователю будет предложено проверить наличие товаров, продаваемых в магазине. Наличие указывает на наличие товара в выбранном каждого магазине. Пользователь выбирает один из этих магазинов, чтобы зарезервировать свой товар. Тем не менее, предполагается, что такая доступность является ориентировочной, поскольку товары могут быть проданы с момента завершения запроса на резервирование и проверки этого резервирования через магазин.</p>
+                <h3 id="reserv-conditions">СТАТЬЯ 3: УСЛОВИЯ РЕЗЕРВИРОВАНИЯ</h3>
+                <p>Товары можно заказать только в отображаемых при резервировании магазинах. Резервирование является бесплатным и без каких-либо обязательств к покупке в магазине. Пользователь может зарезервировать максимум:</p>
+                <ul>
+                  <li>3 товара;</li>
+                  <li>2 размера одного и того же товара.</li>
+                </ul>
+                <p>Однако он не может одновременно зарезервировать дважды один и тот же товар в одном и том же размере и цвете. Часы работы магазина доступны для ознакомления на веб-сайте.</p>
+                <p>Магазин обязуется, при получении запроса на резервирование Пользователя, сделанного на сайте, обработать запрос, связаться с Пользователем для подтверждения наличия резерва в течение часа в рабочее время. Указанный срок ответа на запрос резервирования является ориентировочным и никоим образом не является договорным. Выбранный товар будет зарезервирован на ближайшие 24 часа после подтверждения сотрудника магазина.</p>
+                <h4>Отмена резерва/отказ от товаров, составляющих резерв</h4>
+                <p>Поскольку резервирование является бесплатным и не требует покупки в магазине, пользователь может отказаться от покупки зарезервированных товаров, если они не подходят ему после того, как он приехал в магазин. Кроме того, пользователь может отменить резервирование, обратившись в выбранный магазин. В случае отмены резервирования пользователем, сотрудники магазина возвращают товар на продажу в торговом зале.</p>
+                <h3 id="liabilities">СТАТЬЯ 4: ОБЯЗАТЕЛЬСТВА ПОЛЬЗОВАТЕЛЯ</h3>
+                <p>Следует особо отметить, что резервирование товара на сайте не подразумевает каких-либо обязательств покупки. Тем не менее, после подтверждения резервирования сотрудником магазина по телефону, пользователь обязан зайти в этот магазин, чтобы сообщить о себе продавцу магазина или, в противном случае, отменить резервирование до истечения срока резервирования. Если пользователь не отменил резервирование, это может привести к нарушению настоящих договорных условий.</p>
+                <h3 id="privacy">СТАТЬЯ 5: ЗАЩИТА ПЕРСОНАЛЬНЫХ ДАННЫХ</h3>
+                <h4>Получатели данных</h4>
+                <p>Личная информация предназначена исключительно для Компании.</p>
+                <h4>Категории собранных персональных данных</h4>
+                <p>- Определение: личные данные-это любая информация, относящаяся к физическому лицу или физическому лицу, посетившему сайт, позволяющая прямо или косвенно идентифицировать его. При создании запроса (например, запроса на резервирование) Компания собирает следующие данные:</p>
+                <ul>
+                  <li>Имя</li>
+                  <li>Фамилия</li>
+                  <li>Адрес электронной почты</li>
+                  <li>Номер мобильного телефона</li>
+                  <li>Принятие настоящих Условий (обязательно)</li>
+                  <li>Принятие сообщений от компании (необязательно)</li>
+                </ul>
+                <p>Порядок и цели использования персональных данных описаны по ссылке <a href="https://claudiepierlot.ru">https://claudiepierlot.ru</a></p>
+              </div>
+            </div>
+            <div class="user-content">
+              <h2 class="step-title">Ваши данные</h2>
+              <div class="column-left">
+                <div class="user-store">
+                  <h3>Магазин:</h3><a href="javascript:void(0)">Изменить</a>
+                </div>
+                <div class="user-products">
+                  <h3>Товар:</h3><a href="javascript:void(0)">Изменить</a>
+                  <div class="user-product-item"><img src="assets/images/Claudie_CFPOU00332-B001_H_2.jpg" alt="img">
+                    <div class="product-details"><span>Флисовый свитшот с нашивкой</span><span>Размер: M</span><span>Цвет: Белый</span><span>Количество: 1</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="column-right">
+                <form>
+                  <div class="col-row">
+                    <div class="col-float-left">
+                      <label>Имя*</label>
+                      <input type="text" name="name" required><span class="b-error">Введите ваше имя</span>
+                    </div>
+                    <div class="col-float-right">
+                      <label>Фамилия*</label>
+                      <input type="text" name="lastname" required><span class="b-error">Введите вашу фамилию</span>
+                    </div>
+                  </div>
+                  <div class="col-row">
+                    <div class="col-float-left">
+                      <label>Email*</label>
+                      <input type="email" name="email"><span class="b-error">Введите ваш email</span>
+                    </div>
+                    <div class="col-float-right">
+                      <label>Телефон*</label>
+                      <input id="b-phone" type="text" name="phone" placeholder="+7 (xxx) xxx-xx-xx" required><span class="b-error">Введите ваш телефон</span>
+                    </div>
+                  </div>
+                  <div class="col-row"><span>Настоящим я даю разрешение на отправку мне информации об акциях и персональных предложениях в соответствии с <a target="_blank" href="#">Политикой конфиденциальности</a>.</span>
+                    <div class="col-checkboxes">
+                      <div>
+                        <input id="userEmail" type="checkbox" name="subscribe-email">
+                        <label for="userEmail">Email</label>
+                      </div>
+                      <div>
+                        <input id="userSMS" type="checkbox" name="subscribe-sms">
+                        <label for="userSMS">SMS</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-row">
+                    <div class="col-checkboxes user-legal">
+                      <input id="userLegal" type="checkbox" name="agreement">
+                      <label for="userLegal">Я соглашаюсь <a id="open-terms" href="javascript:void(0)">с условиями оформления резерва</a>*</label><span class="b-error">Согласитесь с условиями оформления резерва</span>
+                    </div>
+                  </div>
+                </form>
+                <div class="step-actions"><span>* Обязательные поля</span>
+                  <button>Далее</button>
+                </div>
+                <p>В случае поступление от Вас более 3 запросов на резерв товара, по которым Вы не смогли приехать в магазин, мы оставляем за собой возможность не резервировать для Вас товар.</p>
+              </div>
+            </div>
+          </div>
+          <div class="step-confirmation steps step-4 hide">
             <div class="column-left">
               <div class="user-store">
                 <h3>Магазин:</h3><a href="javascript:void(0)">Изменить</a>
@@ -799,148 +727,77 @@
               <div class="user-products">
                 <h3>Товар:</h3><a href="javascript:void(0)">Изменить</a>
                 <div class="user-product-item"><img src="assets/images/Claudie_CFPOU00332-B001_H_2.jpg" alt="img">
-                  <div class="product-details"><span>Флисовый свитшот с нашивкой</span><span>Размер: M</span><span>Цвет:
-                      Белый</span><span>Количество: 1</span></div>
+                  <div class="product-details"><span>Флисовый свитшот с нашивкой</span><span>Размер: M</span><span>Цвет: Белый</span><span>Количество: 1</span></div>
                 </div>
               </div>
             </div>
             <div class="column-right">
-              <form>
-                <div class="col-row">
-                  <div class="col-float-left">
-                    <label>Имя*</label>
-                    <input type="text" name="name" required><span class="b-error">Введите ваше имя</span>
-                  </div>
-                  <div class="col-float-right">
-                    <label>Фамилия*</label>
-                    <input type="text" name="lastname" required><span class="b-error">Введите вашу фамилию</span>
-                  </div>
-                </div>
-                <div class="col-row">
-                  <div class="col-float-left">
-                    <label>Email*</label>
-                    <input type="email" name="email"><span class="b-error">Введите ваш email</span>
-                  </div>
-                  <div class="col-float-right">
-                    <label>Телефон*</label>
-                    <input id="b-phone" type="text" name="phone" placeholder="+7 (xxx) xxx-xx-xx" required><span
-                      class="b-error">Введите ваш телефон</span>
-                  </div>
-                </div>
-                <div class="col-row"><span>Настоящим я даю разрешение на отправку мне информации об акциях и
-                    персональных предложениях в соответствии с <a target="_blank" href="#">Политикой
-                      конфиденциальности</a>.</span>
-                  <div class="col-checkboxes">
-                    <div>
-                      <input id="userEmail" type="checkbox" name="subscribe-email">
-                      <label for="userEmail">Email</label>
-                    </div>
-                    <div>
-                      <input id="userSMS" type="checkbox" name="subscribe-sms">
-                      <label for="userSMS">SMS</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-row">
-                  <div class="col-checkboxes user-legal">
-                    <input id="userLegal" type="checkbox" name="agreement">
-                    <label for="userLegal">Я соглашаюсь <a id="open-terms" href="javascript:void(0)">с условиями
-                        оформления резерва</a>*</label><span class="b-error">Согласитесь с условиями оформления
-                      резерва</span>
-                  </div>
-                </div>
-              </form>
-              <div class="step-actions"><span>* Обязательные поля</span>
-                <button>Далее</button>
-              </div>
-              <p>В случае поступление от Вас более 3 запросов на резерв товара, по которым Вы не смогли приехать в
-                магазин, мы оставляем за собой возможность не резервировать для Вас товар.</p>
-            </div>
-          </div>
-        </div>
-        <div class="step-confirmation steps step-4 hide">
-          <div class="column-left">
-            <div class="user-store">
-              <h3>Магазин:</h3><a href="javascript:void(0)">Изменить</a>
-            </div>
-            <div class="user-products">
-              <h3>Товар:</h3><a href="javascript:void(0)">Изменить</a>
-              <div class="user-product-item"><img src="assets/images/Claudie_CFPOU00332-B001_H_2.jpg" alt="img">
-                <div class="product-details"><span>Флисовый свитшот с нашивкой</span><span>Размер: M</span><span>Цвет:
-                    Белый</span><span>Количество: 1</span></div>
+              <div class="confirmation-content">
+                <ul class="validation-steps">
+                  <li><span></span>
+                    <h4>ПОЖАЛУЙСТА, ДОЖДИТЕСЬ ЗВОНКА ИЗ МАГАЗИНА</h4>
+                    <p>Сотрудник магазина свяжется с Вами в течение часа в рабочее время для подтверждения наличия резерва.</p>
+                  </li>
+                  <li><span></span>
+                    <h4>ПОДТВЕРЖДЕНИЕ РЕЗЕРВА</h4>
+                    <p>Выбранный Вами товар будет зарезервирован на ближайшие 24 часа.</p>
+                  </li>
+                </ul>
+                <ul class="validation-extra">
+                  <li>
+                    <h4>БЕЗ ОБЯЗАТЕЛЬСТВА ПОКУПКИ</h4>
+                    <p>Оформление резерва бесплатное. Вы можете передумать в любой момент.</p>
+                  </li>
+                  <li>
+                    <h4>ПЕРЕДУМАЛИ?</h4>
+                    <p>Если Вы решили отказаться от резерва, пожалуйста, свяжитесь с выбранным магазином.</p>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-          <div class="column-right">
-            <div class="confirmation-content">
-              <ul class="validation-steps">
-                <li><span></span>
-                  <h4>ПОЖАЛУЙСТА, ДОЖДИТЕСЬ ЗВОНКА ИЗ МАГАЗИНА</h4>
-                  <p>Сотрудник магазина свяжется с Вами в течение часа в рабочее время для подтверждения наличия
-                    резерва.</p>
-                </li>
-                <li><span></span>
-                  <h4>ПОДТВЕРЖДЕНИЕ РЕЗЕРВА</h4>
-                  <p>Выбранный Вами товар будет зарезервирован на ближайшие 24 часа.</p>
-                </li>
-              </ul>
-              <ul class="validation-extra">
-                <li>
-                  <h4>БЕЗ ОБЯЗАТЕЛЬСТВА ПОКУПКИ</h4>
-                  <p>Оформление резерва бесплатное. Вы можете передумать в любой момент.</p>
-                </li>
-                <li>
-                  <h4>ПЕРЕДУМАЛИ?</h4>
-                  <p>Если Вы решили отказаться от резерва, пожалуйста, свяжитесь с выбранным магазином.</p>
-                </li>
-              </ul>
+            <div class="step-actions">
+              <button type="submit">Подтвердить</button>
             </div>
           </div>
-          <div class="step-actions">
-            <button type="submit">Подтвердить</button>
+          <!-- SUCCESS-->
+          <div class="booking-success-msg hide">
+            <p>Ваш запрос на бронирование отправлен в магазин!</p>
+            <button>Закрыть</button>
           </div>
-        </div>
-        <!-- SUCCESS-->
-        <div class="booking-success-msg hide">
-          <p>Ваш запрос на бронирование отправлен в магазин!</p>
-          <button>Закрыть</button>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Password Popup-->
-  <div class="password-bg-layer"></div>
-  <div class="password-container">
-    <div class="password-popup-area">
-      <h2>Восстановление пароля</h2><a class="close-icon"></a>
-      <form id="forgot-form">
-        <div class="pass-form-row">
-          <label for="reset-password">E-mail для восстановления</label>
-          <input id="reset-password" type="email" name="reset-password" placeholder="Введите ваш e-mail" required><span
-            class="p-error">Введите email</span>
-        </div>
-        <button type="submit">Отправить</button>
-      </form>
+    <!-- Password Popup-->
+    <div class="password-bg-layer"></div>
+    <div class="password-container">
+      <div class="password-popup-area">
+        <h2>Восстановление пароля</h2><a class="close-icon"></a>
+        <form id="forgot-form">
+          <div class="pass-form-row">
+            <label for="reset-password">E-mail для восстановления</label>
+            <input id="reset-password" type="email" name="reset-password" placeholder="Введите ваш e-mail" required><span class="p-error">Введите email</span>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+      <!-- SUCCESS-->
+      <div class="password-popup-success">
+        <p>Ваши регистрационные данные были высланы на email.</p>
+        <button>Закрыть</button>
+      </div>
     </div>
-    <!-- SUCCESS-->
-    <div class="password-popup-success">
-      <p>Ваши регистрационные данные были высланы на email.</p>
-      <button>Закрыть</button>
-    </div>
-  </div>
-  <!-- Scripts-->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/slick.min.js"></script>
-  <script src="assets/js/jquery.mousewheel.js"></script>
-  <script src="assets/js/jquery.jscrollpane.min.js"></script>
-  <script src="assets/js/inputmask.min.js"></script>
-  <script src="assets/js/jquery-ui.min.js"></script>
-  <script src="assets/js/form.js"></script>
-  <script src="assets/js/cart.js"></script>
-  <script src="assets/js/booking.js"></script>
-  <script src="assets/js/password.js"></script>
-  <script src="assets/js/personal.js"></script>
-  <script src="assets/js/app.js"></script>
-</body>
-
+    <!-- Scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.mousewheel.js"></script>
+    <script src="assets/js/jquery.jscrollpane.min.js"></script>
+    <script src="assets/js/inputmask.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/booking.js"></script>
+    <script src="assets/js/password.js"></script>
+    <script src="assets/js/personal.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>

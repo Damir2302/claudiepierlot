@@ -1,490 +1,423 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <title>Вопросы и ответы - Мой аккаунт | Claudie Pierlot</title>
-  <!-- Styles-->
-  <link rel="stylesheet" href="assets/css/style.min.css">
-</head>
-
-<body>
-  <div id="page">
-    <!-- Header::Start-->
-    <div id="header">
-      <header>
-        <div class="header__top"><a class="header__menu-btn" title="Menu"><span class="line line-1"></span><span
-              class="line line-2"></span><span class="line line-3"></span></a><a class="top-mobile-return"
-            href="javascript:history.go(-1)"></a>
-          <div class="header__logo"><img class="black" src="assets/images/logo-2021-black-retina.png"
-              alt="Claudie Pierlot"></div>
-          <div class="header__right">
-            <div class="right__layer"></div>
-            <ul class="header__info">
-              <li class="header__search"><a href="javasscript.void(0)" title="Search"><i class="icon-search"></i></a>
-              </li>
-              <li class="header__login"><a href="javasscript.void(0)" title="Login"><i class="icon-my-account"></i></a>
-                <div class="login__content">
-                  <div class="close__content"></div>
-                  <div class="login__container">
-                    <div class="login__title">Аккаунт</div>
-                    <form id="login-form">
-                      <input type="email" placeholder="Ваш адрес электронной почты" required>
-                      <input type="password" placeholder="Ваш пароль" required><a href="#password-forgot"
-                        rel="nofollow">Забыли пароль?</a>
-                      <button class="login-btn">Войти</button>
-                    </form>
-                    <div class="register-sec">
-                      <h3>Нет аккаунта?</h3><a class="register-link button-style"
-                        href="/register.html">Зарегистрироваться</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Вопросы и ответы - Мой аккаунт | Claudie Pierlot</title>
+    <!-- Styles-->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+  </head>
+  <body>
+    <div id="page">
+      <!-- Header::Start-->
+      <div id="header">
+        <header>
+          <div class="header__top"><a class="header__menu-btn" title="Menu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></a><a class="top-mobile-return" href="javascript:history.go(-1)"></a>
+            <div class="header__logo"><img class="black" src="assets/images/logo-2021-black-retina.png" alt="Claudie Pierlot"></div>
+            <div class="header__right">
+              <div class="right__layer"></div>
+              <ul class="header__info">
+                <li class="header__search"><a href="javasscript.void(0)" title="Search"><i class="icon-search"></i></a></li>
+                <li class="header__login"><a href="javasscript.void(0)" title="Login"><i class="icon-my-account"></i></a>
+                  <div class="login__content">
+                    <div class="close__content"></div>
+                    <div class="login__container">
+                      <div class="login__title">Аккаунт</div>
+                      <form id="login-form">
+                        <input type="email" placeholder="Ваш адрес электронной почты" required>
+                        <input type="password" placeholder="Ваш пароль" required><a href="#password-forgot" rel="nofollow">Забыли пароль?</a>
+                        <button class="login-btn">Войти</button>
+                      </form>
+                      <div class="register-sec">
+                        <h3>Нет аккаунта?</h3><a class="register-link button-style" href="/register.html">Зарегистрироваться</a>
+                      </div>
+                    </div>
+                    <!-- LOGGED-->
+                    <div class="logged__container">
+                      <div class="logged__title">Мой аккаунт</div>
+                      <ul class="logged__menu">
+                        <li><a href="personal.html">Профиль</a></li>
+                        <li><a href="favorites.html">Избранное</a></li>
+                        <li><a href="orders.html">История заказов</a></li>
+                        <li><a href="return.html">Возврат товара</a></li>
+                        <li class="logout-account"><a href="#" rel="nofollow">Выход</a></li>
+                      </ul>
                     </div>
                   </div>
-                  <!-- LOGGED-->
-                  <div class="logged__container">
-                    <div class="logged__title">Мой аккаунт</div>
-                    <ul class="logged__menu">
-                      <li><a href="personal.html">Профиль</a></li>
-                      <li><a href="favorites.html">Избранное</a></li>
-                      <li><a href="orders.html">История заказов</a></li>
-                      <li><a href="return.html">Возврат товара</a></li>
-                      <li class="logout-account"><a href="#" rel="nofollow">Выход</a></li>
+                </li>
+                <li class="header__wishlist"><a href="javasscript.void(0)" title="Wishlist"><i class="icon-wishlist"></i><span class="number-item">2</span></a>
+                  <div class="wishlist__content">
+                    <div class="close__content"></div>
+                    <div class="wishlist-top__container">
+                      <div class="wishlist__title">Список желаний (1)</div>
+                      <div class="wishlist__promo">
+                        <p>Бесплатная доставка и возврат для всех заказов</p>
+                      </div>
+                    </div>
+                    <form id="wishlist-form">
+                      <div class="wishlist__main">
+                        <div class="wishlist__product">
+                          <div class="wishlist__image"><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="image"></a></div>
+                          <div class="wishlist__attributes">
+                            <div class="wishlist__product-name"><a>Длинное платье с принтом геометрией</a></div>
+                            <div class="wishlist__attr-types">
+                              <div class="attr-color"><span>Цвет:</span><span>Темный</span></div>
+                              <div class="attr-size"><span>Размер:</span><span>36</span></div>
+                            </div>
+                            <div class="wishlist__remove"><a>Удалить</a></div>
+                            <div class="wishlist__pricing"><span>28 000 ₽</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wishlist__totals">
+                        <button class="wishlist__button">Добавить все в корзину</button>
+                        <button class="wishlist__button button-invert">Посмотреть все</button>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                <li class="header__cart"><a href="javasscript.void(0)" title="Cart"><i class="icon-panier"></i><span class="number-item">2</span></a>
+                  <div class="cart__content">
+                    <div class="close__content"><span>Назад</span></div>
+                    <div class="cart-top__container">
+                      <div class="cart__title">Корзина (1)</div>
+                      <div class="cart__promo">
+                        <p>Бесплатная доставка и возврат для всех заказов</p>
+                      </div>
+                    </div>
+                    <form id="cart-form">
+                      <div class="cart__main">
+                        <div class="cart__product">
+                          <div class="cart__image"><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg" alt="image"></a></div>
+                          <div class="cart__attributes">
+                            <div class="cart__product-name"><a>Длинное платье с принтом геометрией</a></div>
+                            <div class="cart__attr-types">
+                              <div class="attr-color"><span>Темный</span></div>
+                              <div class="attr-size">
+                                <select>
+                                  <option value="36">36</option>
+                                  <option value="38">38</option>
+                                  <option value="40">40</option>
+                                  <option value="42">42</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="cart__remove"><a>Удалить</a></div>
+                            <div class="cart__pricing"><span>28 000 ₽</span></div>
+                          </div>
+                        </div>
+                        <div class="cart__subtotals"><span class="shipping-time">Доставка от 2 до 3 дней</span><span class="shipping-price">Бесплатно</span></div>
+                      </div>
+                      <div class="cart__totals">
+                        <div class="total-price"><span>Итого: 28 000 ₽</span></div>
+                        <button class="cart__button">Смотреть мою корзину</button>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <nav id="navbar">
+            <ul class="navbar__menu">
+              <li class="item__menu has-submenu"><a class="item__menu-link" href="#">New in</a>
+                <div class="submenu__wrap">
+                  <div class="submenu__main">
+                    <ul class="submenu__expand-col">
+                      <li class="submenu__col-list"><span class="submenu__title">Новое</span>
+                        <ul>
+                          <li class="submenu__col-item">
+                            <h3><a>Новинка на этой неделе</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Новая рабочая одежда НОВЫЙ</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Зеленая жизнь</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Новая коллекция</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3><a>Лукбук Осень-Зима</a></h3>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="submenu__col-list">
+                        <ul class="submenu__images">
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-1.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-2.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-3.jpg" alt="image"></span><span>Название модели</span></a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </div>
                 </div>
               </li>
-              <li class="header__wishlist"><a href="javasscript.void(0)" title="Wishlist"><i
-                    class="icon-wishlist"></i><span class="number-item">2</span></a>
-                <div class="wishlist__content">
-                  <div class="close__content"></div>
-                  <div class="wishlist-top__container">
-                    <div class="wishlist__title">Список желаний (1)</div>
-                    <div class="wishlist__promo">
-                      <p>Бесплатная доставка и возврат для всех заказов</p>
-                    </div>
+              <li class="item__menu has-submenu"><a class="item__menu-link" href="#">Одежда</a>
+                <div class="submenu__wrap">
+                  <div class="submenu__main">
+                    <ul class="submenu__expand-col">
+                      <li class="submenu__col-list"><span class="submenu__title">Наши новинки</span>
+                        <ul>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Время праздновать</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>На луну и обратно</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Привет из Колорадо</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Новая коллекция</a></h3>
+                          </li>
+                          <li class="submenu__col-item">
+                            <h3 class="submenu__title-main"><a>Лукбук Осень-Зима</a></h3>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="submenu__col-list">
+                        <ul class="submenu__images">
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-1.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-2.jpg" alt="image"></span><span>Название модели</span></a></li>
+                          <li><a class="zoom-on-content"><span><img src="assets/images/model-3.jpg" alt="image"></span><span>Название модели</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
                   </div>
-                  <form id="wishlist-form">
-                    <div class="wishlist__main">
-                      <div class="wishlist__product">
-                        <div class="wishlist__image"><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg"
-                              alt="image"></a></div>
-                        <div class="wishlist__attributes">
-                          <div class="wishlist__product-name"><a>Длинное платье с принтом геометрией</a></div>
-                          <div class="wishlist__attr-types">
-                            <div class="attr-color"><span>Цвет:</span><span>Темный</span></div>
-                            <div class="attr-size"><span>Размер:</span><span>36</span></div>
-                          </div>
-                          <div class="wishlist__remove"><a>Удалить</a></div>
-                          <div class="wishlist__pricing"><span>28 000 ₽</span></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="wishlist__totals">
-                      <button class="wishlist__button">Добавить все в корзину</button>
-                      <button class="wishlist__button button-invert">Посмотреть все</button>
-                    </div>
-                  </form>
                 </div>
               </li>
-              <li class="header__cart"><a href="javasscript.void(0)" title="Cart"><i class="icon-panier"></i><span
-                    class="number-item">2</span></a>
-                <div class="cart__content">
-                  <div class="close__content"><span>Назад</span></div>
-                  <div class="cart-top__container">
-                    <div class="cart__title">Корзина (1)</div>
-                    <div class="cart__promo">
-                      <p>Бесплатная доставка и возврат для всех заказов</p>
-                    </div>
-                  </div>
-                  <form id="cart-form">
-                    <div class="cart__main">
-                      <div class="cart__product">
-                        <div class="cart__image"><a><img src="assets/images/Claudie_CFPOU00332-B001_H_1.jpg"
-                              alt="image"></a></div>
-                        <div class="cart__attributes">
-                          <div class="cart__product-name"><a>Длинное платье с принтом геометрией</a></div>
-                          <div class="cart__attr-types">
-                            <div class="attr-color"><span>Темный</span></div>
-                            <div class="attr-size">
-                              <select>
-                                <option value="36">36</option>
-                                <option value="38">38</option>
-                                <option value="40">40</option>
-                                <option value="42">42</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="cart__remove"><a>Удалить</a></div>
-                          <div class="cart__pricing"><span>28 000 ₽</span></div>
-                        </div>
-                      </div>
-                      <div class="cart__subtotals"><span class="shipping-time">Доставка от 2 до 3 дней</span><span
-                          class="shipping-price">Бесплатно</span></div>
-                    </div>
-                    <div class="cart__totals">
-                      <div class="total-price"><span>Итого: 28 000 ₽</span></div>
-                      <button class="cart__button">Смотреть мою корзину</button>
-                    </div>
-                  </form>
-                </div>
-              </li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Сумки</a></li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Обувь</a></li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Аксессуары</a></li>
+              <li class="item__menu"><a class="item__menu-link" href="#">Claudie cares</a></li>
             </ul>
-          </div>
-        </div>
-        <nav id="navbar">
-          <ul class="navbar__menu">
-            <li class="item__menu has-submenu"><a class="item__menu-link" href="#">New in</a>
-              <div class="submenu__wrap">
-                <div class="submenu__main">
-                  <ul class="submenu__expand-col">
-                    <li class="submenu__col-list"><span class="submenu__title">Новое</span>
-                      <ul>
-                        <li class="submenu__col-item">
-                          <h3><a>Новинка на этой неделе</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3><a>Новая рабочая одежда НОВЫЙ</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3><a>Зеленая жизнь</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3><a>Новая коллекция</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3><a>Лукбук Осень-Зима</a></h3>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="submenu__col-list">
-                      <ul class="submenu__images">
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-1.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-2.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-3.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="item__menu has-submenu"><a class="item__menu-link" href="#">Одежда</a>
-              <div class="submenu__wrap">
-                <div class="submenu__main">
-                  <ul class="submenu__expand-col">
-                    <li class="submenu__col-list"><span class="submenu__title">Наши новинки</span>
-                      <ul>
-                        <li class="submenu__col-item">
-                          <h3 class="submenu__title-main"><a>Время праздновать</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3 class="submenu__title-main"><a>На луну и обратно</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3 class="submenu__title-main"><a>Привет из Колорадо</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3 class="submenu__title-main"><a>Новая коллекция</a></h3>
-                        </li>
-                        <li class="submenu__col-item">
-                          <h3 class="submenu__title-main"><a>Лукбук Осень-Зима</a></h3>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="submenu__col-list">
-                      <ul class="submenu__images">
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-1.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-2.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                        <li><a class="zoom-on-content"><span><img src="assets/images/model-3.jpg"
-                                alt="image"></span><span>Название модели</span></a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="item__menu"><a class="item__menu-link" href="#">Сумки</a></li>
-            <li class="item__menu"><a class="item__menu-link" href="#">Обувь</a></li>
-            <li class="item__menu"><a class="item__menu-link" href="#">Аксессуары</a></li>
-            <li class="item__menu"><a class="item__menu-link" href="#">Claudie cares</a></li>
-          </ul>
-          <ul class="navbar__extra">
-            <li class="extra__menu"><a class="extra__menu-link" href="#">Нужна помощь?</a></li>
-            <li class="extra__menu"><a class="extra__menu-link" href="#">Список желаний</a></li>
-            <li class="extra__menu"><a class="extra__menu-link" href="#">Связаться с нами</a></li>
-            <li class="extra__menu"><a class="extra__menu-link" href="#">Найти магазин</a></li>
-            <li class="extra__menu"><a class="extra__menu-link extra__menu-link--account button-style"
-                href="/account.html">Аккаунт</a></li>
-          </ul>
-        </nav>
-        <div class="header__search-form">
-          <form id="search-form" role="search">
-            <fieldset>
-              <button class="icon-search" type="submit"></button>
-              <input id="search" type="text" name="search" placeholder="Найти" autocomplete="off"><a
-                class="search__close-icon" href="javasscript.void(0)" title="close"><span class="icon-close"></span></a>
-            </fieldset>
-          </form>
-        </div>
-      </header>
-    </div>
-    <!-- Header::End-->
-    <!-- Main::Start-->
-    <main id="main" role="main">
-      <div id="faq-page">
-        <h1 class="faq__title">Мой аккаунт</h1>
-        <div class="faq__container">
-          <nav class="nav__services">
-            <ul>
-              <li class="selected-mobile"><a href="#">Мой аккаунт</a></li>
-              <li class="faq-link"><a href="#">FAQ Главная</a></li>
-              <li><a href="#">Брексит</a></li>
-              <li class="selected"><a href="#">Мой аккаунт</a></li>
-              <li><a href="#">Мои заказы</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Возврат и обмен</a></li>
-              <li><a href="#">Магазин и онлайн-бронирование</a></li>
-              <li><a href="#">Таблица размеров</a></li>
-              <li><a href="#">Инструкция по уходу</a></li>
+            <ul class="navbar__extra">
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Нужна помощь?</a></li>
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Список желаний</a></li>
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Связаться с нами</a></li>
+              <li class="extra__menu"><a class="extra__menu-link" href="#">Найти магазин</a></li>
+              <li class="extra__menu"><a class="extra__menu-link extra__menu-link--account button-style" href="/account.html">Аккаунт</a></li>
             </ul>
           </nav>
-          <div class="faq__wrapper">
-            <section class="topic">
-              <article>
-                <h3>Создайте учетную запись Claudie Pierlot</h3>
-                <p>Будьте в курсе наших последних новостей, создайте свой собственный список желаний, отслеживайте свои
-                  заказы и наслаждайтесь нашими специальными частными предложениями, создав учетную запись!</p>
-                <p><strong>Создать аккаунт</strong></p>
-                <p><strong>1 |</strong> Перейдите в <strong><a href="#">Страницу входа</a></strong> в правом верхнем
-                  углу нашей домашней страницы на компьютере. На мобильном устройстве нажмите «Моя учетная запись» в
-                  меню вверху слева.</p>
-                <p><strong>2 |</strong> Как только вы перейдете на страницу создания учетной записи, введите все свои
-                  данные и выберите пароль, содержащий не менее 8 символов. Запишите адрес электронной почты, который вы
-                  используете, потому что он будет использоваться в качестве имени для входа на сайт Claudie Pierlot.
-                </p>
-                <p><strong>3 |</strong> Если вы хотите одним из первых получать новости о Клоди Пьерло, вы также можете
-                  подписаться на нашу электронную рассылку новостей и текстовые сообщения.</p>
-                <p><i>Вскоре вы получите электронное письмо с подтверждением, чтобы напомнить вам данные для входа. Эта
-                    информация понадобится вам для входа в систему и размещения заказов на нашем сайте.</i></p>
-              </article>
-            </section>
-            <section class="questions">
-              <h2>Часто задаваемые вопросы</h2>
-              <div class="question__content">
-                <article class="answer-open">
-                  <h3>Когда моя любимая вещь снова появится в наличии?</h3>
-                  <p>Акция регулярно пополняется для текущей коллекции (в зависимости от конкретного предмета). Но
-                    будьте осторожны, ведь во время распродаж такое случается нечасто!</p>
-                  <p>
-                    Поэтому мы предлагаем вам подписаться на наши списки ожидания. Для этого нажмите «Недоступный
-                    размер» на уровне желаемой модели, введите размер и свой адрес электронной почты перед
-                    проверкой.<br>Как только товар снова станет доступен в выбранном размере, вы получите уведомление по
-                    электронной почте!</p>
-                </article>
-              </div>
-              <div class="question__content">
-                <article>
-                  <h3>Ошибка с моей посылкой, что мне делать?</h3>
-                  <p>
-                    Мы искренне сожалеем, что с вашей посылкой произошла ошибка. Мы всегда очень заботимся о ваших
-                    посылках и хотим улучшить наши процессы, поэтому при их обработке мы проводим несколько
-                    проверок.<br>Однако, если вы столкнулись с проблемой, у вас есть 30 дней с даты получения, чтобы
-                    вернуть нам свой заказ. Как только мы получим ваш возвращенный товар обратно на наш склад, вам
-                    вернут деньги в течение 7 дней. Не стесняйтесь проверить раздел <strong><a href="#">возврат и
-                        обмен</a></strong>, если вы хотите узнать больше о методах!</p>
-                  <p>
-                    Если это заказ, размещенный во время распродаж в наших Аутлетах, мы приглашаем вас связаться с нашей
-                    службой поддержки клиентов, чтобы мы могли отправить вам этикетку предоплаты, с которой вы можете
-                    вернуть свою посылку в течение 30 дней. Если вы превысили 30-дневный период или у вас возникли
-                    вопросы, обратитесь в службу поддержки по телефону 0 808 143 37 04 (обслуживание и звонок
-                    бесплатные) или через нашу <a href="#">форму обратной связи</a>!<br>Обратите внимание: К сожалению,
-                    обменять товар на нашем складе невозможно.</p>
-                </article>
-              </div>
-              <div class="question__content">
-                <article>
-                  <h3>Возникла проблема с качеством полученного мной товара, что мне делать?</h3>
-                  <p>
-                    Если вы заметили проблему с вашим товаром в течение 30 дней после его получения, отправьте его нам
-                    обратно, используя предоплаченную этикетку, прилагаемую к вашей посылке.<br>Не забудьте указать
-                    квитанцию ​​о доставке, а также причину возврата в посылку для возврата. Как только наша команда по
-                    логистике подтвердит, что ваш товар был возвращен нам, мы отправим вам возмещение непосредственно на
-                    банковский счет, который вы использовали для покупки. Обычно возврат средств занимает 48 часов
-                    (максимум 7 дней) в зависимости от межбанковских задержек.</p>
-                  <p>
-                    Если прошло 30 дней, свяжитесь с нашей службой поддержки клиентов, чтобы вместе согласовать решение.
-                    Нам нужны следующие данные, чтобы помочь нам обработать ваш запрос как можно лучше:<br>- Ваши
-                    контактные данные<br>
-                    - Номер вашего заказа<br>
-                    - Название предмета, о котором идет речь<br>
-                    - Фото проблемы<br>
-                    Наши команды доступны по телефону 0 808 143 37 04 (обслуживание и звонок бесплатные) с понедельника
-                    по пятницу с 9 до 17 часов. и по субботам с 10 до 17 часов. или по электронной почте через нашу <a
-                      href="#"><strong>форму обратной связи</strong></a>
-                  </p>
-                </article>
-              </div>
-              <div class="question__content">
-                <article>
-                  <h3>Если я верну модель, когда я получу возмещение?</h3>
-                  <p>После получения и обработки вашей посылки нашей логистической командой ваш возврат будет произведен
-                    в течение 48 часов (максимум 7 дней). Этот период может быть продлен в зависимости от межбанковских
-                    задержек и в периоды высокой коммерческой активности. На банковский счет, использованный при оплате,
-                    будет зачислена сумма возвращенных товаров.</p>
-                </article>
-              </div>
-              <div class="question__content">
-                <article>
-                  <h3>Моя посылка вернулась на ваш склад, но мне не вернули деньги?</h3>
-                  <p>Как только ваша посылка поступит на наш склад, вы получите ее в течение 48 часов (максимум 7 дней).
-                    Это может занять больше времени в зависимости от задержек между банками и в периоды повышенной
-                    активности продаж. На ваш банковский счет снова будут зачислены деньги от возвращенных товаров. Если
-                    вы все еще не получили возмещение в течение 10 рабочих дней, обратитесь в службу поддержки, чтобы
-                    найти решение.</p>
-                </article>
-              </div>
-            </section>
+          <div class="header__search-form">
+            <form id="search-form" role="search">
+              <fieldset>
+                <button class="icon-search" type="submit"></button>
+                <input id="search" type="text" name="search" placeholder="Найти" autocomplete="off"><a class="search__close-icon" href="javasscript.void(0)" title="close"><span class="icon-close"></span></a>
+              </fieldset>
+            </form>
           </div>
-          <div class="faq__contact-block">
-            <h2 class="contact__block-title">Мой заказ</h2>
-            <p class="contact__block-subtitle">Не уверены в статусе вашего заказа?</p>
-            <button>Отследить свой заказ</button>
-            <h2 class="contact__block-title">Свяжитесь с нами</h2>
-            <p>
-              С понедельника по пятницу: с 9:00 до 19:00.<br>Суббота: с 10:00 до 17:00.</p>
-            <p>
-              По телефону :<br><b>8 999-XX-XX</b></p>
-            <p class="contact-paragraph">
-              По электронной почте :<br>Отправив сообщение через нашу форму</p>
-            <button>Написать</button>
-            <p class="contact-paragraph">
-              Онлайн :<br>с консультантом</p>
-            <button>Facebook Messenger</button>
-            <button>Онлайн чат</button>
-          </div>
-        </div>
+        </header>
       </div>
-    </main>
-    <!-- Main::End-->
-    <!-- Footer::Start-->
-    <div id="footer">
-      <footer>
-        <div class="footer__socials"><span>Присоединяйтесь к нам</span>
-          <ul>
-            <li><a class="icon-facebook2" href="facebook.com" title="facebook" target="_blank"></a></li>
-            <li><a class="icon-ico-instagram" href="instagram.com" title="instagram" target="_blank"></a></li>
-          </ul>
-        </div>
-        <div class="footer__reassurance">
-          <div class="exchange__info"><a><img src="assets/images/return.png" alt="return"><span>Обмен в
-                магазине</span></a></div>
-          <div class="service-client"><a><img src="assets/images/SERVICE-CLIENT.png" alt="service"><span>Консультации
-                для клиентов</span></a></div>
-          <div class="safe-payment"><a><img src="assets/images/PAYMENT.png" alt="payment"><span>Безопасная
-                оплата</span></a></div>
-        </div>
-        <div class="footer__container">
-          <div class="footer__menu">
-            <ul class="menu__list">
-              <li class="menu__item has-sub-menu"><span>Есть вопросы?</span>
-                <ul class="footer__submenu">
-                  <li><a href="#">Отследить заказ</a></li>
-                  <li><a href="#">Свяжитесь с нами</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Руководство по размерам</a></li>
-                  <li><a href="#">Руководство по техническому обслуживанию</a></li>
-                  <li><a href="#">*Условия действующих предложений</a></li>
-                </ul>
-              </li>
-              <li class="menu__item has-sub-menu"><span>Наши услуги</span>
-                <ul class="footer__submenu">
-                  <li><a href="#">Все способы доставки</a></li>
-                  <li><a href="#">Звоните и забирайте</a></li>
-                  <li><a href="#">Возврат и обмен</a></li>
-                  <li><a href="#">GTC - Руководство по покупке</a></li>
-                  <li><a href="#">Политика конфиденциальности</a></li>
-                  <li><a href="#">Политика в отношении файлов cookie</a></li>
-                  <li><a href="#">Управление файлами cookie</a></li>
-                </ul>
-              </li>
-              <li class="menu__item has-sub-menu"><span>Бренд</span>
-                <ul class="footer__submenu">
-                  <li><a href="#">Клоди Касс</a></li>
-                  <li><a href="#">Присоединяйтесь к нам</a></li>
-                </ul>
-              </li>
-              <li class="menu__item store-locator"><span><a href="#"><span class="icon-store"></span><span>Найти
-                      магазин</span></a></span></li>
-            </ul>
-          </div>
-          <div class="footer__countries"><span class="select__label">Страны/регионы:</span>
-            <div class="select__container">
-              <select class="select__lang">
-                <option class="lang" data-url="/" value="Russia">Россия</option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Austria">Австрия</option>
-                <option class="lang" data-url="https://be.claudiepierlot.com" value="Belgium">Бельгия</option>
-                <option class="lang" data-url="https://uk.claudiepierlot.com" value="United Kingdom">Великобритания
-                </option>
-                <option class="lang" data-url="https://de.claudiepierlot.com" value="Deutschland">Германия</option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Greece">Греция</option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Ireland">Ирландия</option>
-                <option class="lang" data-url="https://es.claudiepierlot.com" value="España">Испания</option>
-                <option class="lang" data-url="https://it.claudiepierlot.com" value="Italy">Италия</option>
-                <option class="lang" data-url="https://www.claudiepierlot.cn" value="China">Китай</option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Luxembourg">Люксембург</option>
-                <option class="lang" data-url="http://www.claudiepierlot.com.hk/" value="Hong-Kong SAR/Macau SAR">Макао
-                </option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Netherlands">Нидерланды</option>
-                <option class="lang" data-url="https://int.claudiepierlot.com" value="Portugal">Португалия</option>
-                <option class="lang" data-url="https://fr.claudiepierlot.com" value="France">Франция</option>
-                <option class="lang" data-url="https://ch.claudiepierlot.com" value="Switzerland">Швейцария</option>
-              </select>
+      <!-- Header::End-->
+      <!-- Main::Start-->
+      <main id="main" role="main">
+        <div id="faq-page">
+          <h1 class="faq__title">Мой аккаунт</h1>
+          <div class="faq__container">
+            <nav class="nav__services">
+              <ul>
+                <li class="selected-mobile"><a href="#">Мой аккаунт</a></li>
+                <li class="faq-link"><a href="#">FAQ Главная</a></li>
+                <li><a href="#">Брексит</a></li>
+                <li class="selected"><a href="#">Мой аккаунт</a></li>
+                <li><a href="#">Мои заказы</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Возврат и обмен</a></li>
+                <li><a href="#">Магазин и онлайн-бронирование</a></li>
+                <li><a href="#">Таблица размеров</a></li>
+                <li><a href="#">Инструкция по уходу</a></li>
+              </ul>
+            </nav>
+            <div class="faq__wrapper">
+              <section class="topic">
+                <article>
+                  <h3>Создайте учетную запись Claudie Pierlot</h3>
+                  <p>Будьте в курсе наших последних новостей, создайте свой собственный список желаний, отслеживайте свои заказы и наслаждайтесь нашими специальными частными предложениями, создав учетную запись!</p>
+                  <p><strong>Создать аккаунт</strong></p>
+                  <p><strong>1 |</strong> Перейдите в <strong><a href="#">Страницу входа</a></strong> в правом верхнем углу нашей домашней страницы на компьютере. На мобильном устройстве нажмите «Моя учетная запись» в меню вверху слева.</p>
+                  <p><strong>2 |</strong> Как только вы перейдете на страницу создания учетной записи, введите все свои данные и выберите пароль, содержащий не менее 8 символов. Запишите адрес электронной почты, который вы используете, потому что он будет использоваться в качестве имени для входа на сайт Claudie Pierlot.</p>
+                  <p><strong>3 |</strong> Если вы хотите одним из первых получать новости о Клоди Пьерло, вы также можете подписаться на нашу электронную рассылку новостей и текстовые сообщения.</p>
+                  <p><i>Вскоре вы получите электронное письмо с подтверждением, чтобы напомнить вам данные для входа. Эта информация понадобится вам для входа в систему и размещения заказов на нашем сайте.</i></p>
+                </article>
+              </section>
+              <section class="questions">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="question__content">
+                  <article class="answer-open">
+                    <h3>Когда моя любимая вещь снова появится в наличии?</h3>
+                    <p>Акция регулярно пополняется для текущей коллекции (в зависимости от конкретного предмета). Но будьте осторожны, ведь во время распродаж такое случается нечасто!</p>
+                    <p>
+                      Поэтому мы предлагаем вам подписаться на наши списки ожидания. Для этого нажмите «Недоступный размер» на уровне желаемой модели, введите размер и свой адрес электронной почты перед проверкой.<br>Как только товар снова станет доступен в выбранном размере, вы получите уведомление по электронной почте!</p>
+                  </article>
+                </div>
+                <div class="question__content">
+                  <article>
+                    <h3>Ошибка с моей посылкой, что мне делать?</h3>
+                    <p>
+                      Мы искренне сожалеем, что с вашей посылкой произошла ошибка. Мы всегда очень заботимся о ваших посылках и хотим улучшить наши процессы, поэтому при их обработке мы проводим несколько проверок.<br>Однако, если вы столкнулись с проблемой, у вас есть 30 дней с даты получения, чтобы вернуть нам свой заказ. Как только мы получим ваш возвращенный товар обратно на наш склад, вам вернут деньги в течение 7 дней. Не стесняйтесь проверить раздел <strong><a href="#">возврат и обмен</a></strong>, если вы хотите узнать больше о методах!</p>
+                    <p>
+                      Если это заказ, размещенный во время распродаж в наших Аутлетах, мы приглашаем вас связаться с нашей службой поддержки клиентов, чтобы мы могли отправить вам этикетку предоплаты, с которой вы можете вернуть свою посылку в течение 30 дней. Если вы превысили 30-дневный период или у вас возникли вопросы, обратитесь в службу поддержки по телефону 0 808 143 37 04 (обслуживание и звонок бесплатные) или через нашу <a href="#">форму обратной связи</a>!<br>Обратите внимание: К сожалению, обменять товар на нашем складе невозможно.</p>
+                  </article>
+                </div>
+                <div class="question__content">
+                  <article>
+                    <h3>Возникла проблема с качеством полученного мной товара, что мне делать?</h3>
+                    <p>
+                      Если вы заметили проблему с вашим товаром в течение 30 дней после его получения, отправьте его нам обратно, используя предоплаченную этикетку, прилагаемую к вашей посылке.<br>Не забудьте указать квитанцию ​​о доставке, а также причину возврата в посылку для возврата. Как только наша команда по логистике подтвердит, что ваш товар был возвращен нам, мы отправим вам возмещение непосредственно на банковский счет, который вы использовали для покупки. Обычно возврат средств занимает 48 часов (максимум 7 дней) в зависимости от межбанковских задержек.</p>
+                    <p>
+                      Если прошло 30 дней, свяжитесь с нашей службой поддержки клиентов, чтобы вместе согласовать решение. Нам нужны следующие данные, чтобы помочь нам обработать ваш запрос как можно лучше:<br>- Ваши контактные данные<br>
+                      - Номер вашего заказа<br>
+                      - Название предмета, о котором идет речь<br>
+                      - Фото проблемы<br>
+                      Наши команды доступны по телефону 0 808 143 37 04 (обслуживание и звонок бесплатные) с понедельника по пятницу с 9 до 17 часов. и по субботам с 10 до 17 часов. или по электронной почте через нашу <a href="#"><strong>форму обратной связи</strong></a>
+                    </p>
+                  </article>
+                </div>
+                <div class="question__content">
+                  <article>
+                    <h3>Если я верну модель, когда я получу возмещение?</h3>
+                    <p>После получения и обработки вашей посылки нашей логистической командой ваш возврат будет произведен в течение 48 часов (максимум 7 дней). Этот период может быть продлен в зависимости от межбанковских задержек и в периоды высокой коммерческой активности. На банковский счет, использованный при оплате, будет зачислена сумма возвращенных товаров.</p>
+                  </article>
+                </div>
+                <div class="question__content">
+                  <article>
+                    <h3>Моя посылка вернулась на ваш склад, но мне не вернули деньги?</h3>
+                    <p>Как только ваша посылка поступит на наш склад, вы получите ее в течение 48 часов (максимум 7 дней). Это может занять больше времени в зависимости от задержек между банками и в периоды повышенной активности продаж. На ваш банковский счет снова будут зачислены деньги от возвращенных товаров. Если вы все еще не получили возмещение в течение 10 рабочих дней, обратитесь в службу поддержки, чтобы найти решение.</p>
+                  </article>
+                </div>
+              </section>
+            </div>
+            <div class="faq__contact-block">
+              <h2 class="contact__block-title">Мой заказ</h2>
+              <p class="contact__block-subtitle">Не уверены в статусе вашего заказа?</p>
+              <button>Отследить свой заказ</button>
+              <h2 class="contact__block-title">Свяжитесь с нами</h2>
+              <p>
+                С понедельника по пятницу: с 9:00 до 19:00.<br>Суббота: с 10:00 до 17:00.</p>
+              <p>
+                По телефону :<br><b>8 999-XX-XX</b></p>
+              <p class="contact-paragraph">
+                По электронной почте :<br>Отправив сообщение через нашу форму</p>
+              <button>Написать</button>
+              <p class="contact-paragraph">
+                Онлайн :<br>с консультантом</p>
+              <button>Facebook Messenger</button>
+              <button>Онлайн чат</button>
             </div>
           </div>
         </div>
-      </footer>
+      </main>
+      <!-- Main::End-->
+      <!-- Footer::Start-->
+      <div id="footer">
+        <footer>
+          <div class="footer__socials"><span>Присоединяйтесь к нам</span>
+            <ul>
+              <li><a class="icon-facebook2" href="facebook.com" title="facebook" target="_blank"></a></li>
+              <li><a class="icon-ico-instagram" href="instagram.com" title="instagram" target="_blank"></a></li>
+            </ul>
+          </div>
+          <div class="footer__reassurance">
+            <div class="exchange__info"><a><img src="assets/images/return.png" alt="return"><span>Обмен в магазине</span></a></div>
+            <div class="service-client"><a><img src="assets/images/SERVICE-CLIENT.png" alt="service"><span>Консультации для клиентов</span></a></div>
+            <div class="safe-payment"><a><img src="assets/images/PAYMENT.png" alt="payment"><span>Безопасная оплата</span></a></div>
+          </div>
+          <div class="footer__container">
+            <div class="footer__menu">
+              <ul class="menu__list">
+                <li class="menu__item has-sub-menu"><span>Есть вопросы?</span>
+                  <ul class="footer__submenu">
+                    <li><a href="#">Отследить заказ</a></li>
+                    <li><a href="#">Свяжитесь с нами</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Руководство по размерам</a></li>
+                    <li><a href="#">Руководство по техническому обслуживанию</a></li>
+                    <li><a href="#">*Условия действующих предложений</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item has-sub-menu"><span>Наши услуги</span>
+                  <ul class="footer__submenu">
+                    <li><a href="#">Все способы доставки</a></li>
+                    <li><a href="#">Звоните и забирайте</a></li>
+                    <li><a href="#">Возврат и обмен</a></li>
+                    <li><a href="#">GTC - Руководство по покупке</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Политика в отношении файлов cookie</a></li>
+                    <li><a href="#">Управление файлами cookie</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item has-sub-menu"><span>Бренд</span>
+                  <ul class="footer__submenu">
+                    <li><a href="#">Клоди Касс</a></li>
+                    <li><a href="#">Присоединяйтесь к нам</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item store-locator"><span><a href="#"><span class="icon-store"></span><span>Найти магазин</span></a></span></li>
+              </ul>
+            </div>
+            <div class="footer__countries"><span class="select__label">Страны/регионы:</span>
+              <div class="select__container">
+                <select class="select__lang">
+                  <option class="lang" data-url="/" value="Russia">Россия</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Austria">Австрия</option>
+                  <option class="lang" data-url="https://be.claudiepierlot.com" value="Belgium">Бельгия</option>
+                  <option class="lang" data-url="https://uk.claudiepierlot.com" value="United Kingdom">Великобритания</option>
+                  <option class="lang" data-url="https://de.claudiepierlot.com" value="Deutschland">Германия</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Greece">Греция</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Ireland">Ирландия</option>
+                  <option class="lang" data-url="https://es.claudiepierlot.com" value="España">Испания</option>
+                  <option class="lang" data-url="https://it.claudiepierlot.com" value="Italy">Италия</option>
+                  <option class="lang" data-url="https://www.claudiepierlot.cn" value="China">Китай</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Luxembourg">Люксембург</option>
+                  <option class="lang" data-url="http://www.claudiepierlot.com.hk/" value="Hong-Kong SAR/Macau SAR">Макао</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Netherlands">Нидерланды</option>
+                  <option class="lang" data-url="https://int.claudiepierlot.com" value="Portugal">Португалия</option>
+                  <option class="lang" data-url="https://fr.claudiepierlot.com" value="France">Франция</option>
+                  <option class="lang" data-url="https://ch.claudiepierlot.com" value="Switzerland">Швейцария</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- Footer::End-->
     </div>
-    <!-- Footer::End-->
-  </div>
-  <!-- Password Popup-->
-  <div class="password-bg-layer"></div>
-  <div class="password-container">
-    <div class="password-popup-area">
-      <h2>Восстановление пароля</h2><a class="close-icon"></a>
-      <form id="forgot-form">
-        <div class="pass-form-row">
-          <label for="reset-password">E-mail для восстановления</label>
-          <input id="reset-password" type="email" name="reset-password" placeholder="Введите ваш e-mail" required><span
-            class="p-error">Введите email</span>
-        </div>
-        <button type="submit">Отправить</button>
-      </form>
+    <!-- Password Popup-->
+    <div class="password-bg-layer"></div>
+    <div class="password-container">
+      <div class="password-popup-area">
+        <h2>Восстановление пароля</h2><a class="close-icon"></a>
+        <form id="forgot-form">
+          <div class="pass-form-row">
+            <label for="reset-password">E-mail для восстановления</label>
+            <input id="reset-password" type="email" name="reset-password" placeholder="Введите ваш e-mail" required><span class="p-error">Введите email</span>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+      <!-- SUCCESS-->
+      <div class="password-popup-success">
+        <p>Ваши регистрационные данные были высланы на email.</p>
+        <button>Закрыть</button>
+      </div>
     </div>
-    <!-- SUCCESS-->
-    <div class="password-popup-success">
-      <p>Ваши регистрационные данные были высланы на email.</p>
-      <button>Закрыть</button>
-    </div>
-  </div>
-  <!-- Scripts-->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/slick.min.js"></script>
-  <script src="assets/js/jquery.mousewheel.js"></script>
-  <script src="assets/js/jquery.jscrollpane.min.js"></script>
-  <script src="assets/js/inputmask.min.js"></script>
-  <script src="assets/js/jquery-ui.min.js"></script>
-  <script src="assets/js/form.js"></script>
-  <script src="assets/js/cart.js"></script>
-  <script src="assets/js/booking.js"></script>
-  <script src="assets/js/password.js"></script>
-  <script src="assets/js/personal.js"></script>
-  <script src="assets/js/app.js"></script>
-</body>
-
+    <!-- Scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.mousewheel.js"></script>
+    <script src="assets/js/jquery.jscrollpane.min.js"></script>
+    <script src="assets/js/inputmask.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/booking.js"></script>
+    <script src="assets/js/password.js"></script>
+    <script src="assets/js/personal.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>

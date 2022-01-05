@@ -53,17 +53,10 @@
     margin-right: 20px;
     position: relative;
     display: block;
-    min-width: 75px;
-    height: 100px;
+    max-width: 75px;
+    height: 100%;
     font-size: 0;
     overflow: hidden;
-}
-
-.p-orders__image img {
-    position: absolute;
-    left: -25%;
-    width: 150%;
-    height: auto;
 }
 
 .p-orders__info {

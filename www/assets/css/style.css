@@ -26546,17 +26546,10 @@ section.topic a {
     margin-right: 20px;
     position: relative;
     display: block;
-    min-width: 75px;
-    height: 100px;
+    max-width: 75px;
+    height: 100%;
     font-size: 0;
     overflow: hidden
-}
-
-.p-orders__image img {
-    position: absolute;
-    left: -25%;
-    width: 150%;
-    height: auto
 }
 
 .p-orders__info {
@@ -26904,7 +26897,7 @@ section.topic a {
 }
 
 @font-face {
-    font-family:'symbolcrpregular';src:url("/assets/fonts/symbolcrp.woff");font-weight:normal;font-style:normal
+    font-family:'symbolcrpregular';src:url("../fonts/symbolcrp.woff");font-weight:normal;font-style:normal
 }
 
 body.booking-popup {
@@ -28284,4 +28277,103 @@ body.password-popup {
 
 .password-popup-success button {
     max-width: 360px
+}
+
+#page404 .content404 {
+    margin: 80px 10px 10px;
+    position: relative;
+    width: auto;
+    height: auto
+}
+
+@media (min-width: 768px) {
+    #page404 .content404 {
+        margin: 0 auto;
+        max-width: 850px
+    }
+}
+
+#page404 .content-msg {
+    background-color: #fff;
+    letter-spacing: .7px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+@media (min-width: 768px) {
+    #page404 .content-msg {
+        padding: 30px;
+        position: absolute;
+        top: 170px;
+        width: 100%;
+        height: 475px;
+        max-width: 70%;
+        z-index: 2
+    }
+}
+
+#page404 .content-msg h2 {
+    margin: 10px 0;
+    font-size: 30px
+}
+
+@media (min-width: 768px) {
+    #page404 .content-msg h2 {
+        font-size: 48px;
+        text-align: left
+    }
+}
+
+#page404 .content-msg p {
+    margin: 0 auto;
+    width: 300px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 23px;
+    text-transform: none
+}
+
+@media (min-width: 768px) {
+    #page404 .content-msg p {
+        margin: 35px 0;
+        width: 100%;
+        max-width: 500px;
+        font-size: 22px;
+        line-height: 40px;
+        text-align: left
+    }
+}
+
+#page404 .content-msg>div {
+    margin: 20px auto
+}
+
+#page404 .content-msg>div>a {
+    margin-bottom: 10px;
+    padding: 15px;
+    background: #d3d3d3;
+    font-weight: 600;
+    color: #000
+}
+
+@media (min-width: 470px) {
+    #page404 .content-msg>div>a {
+        margin: 0 auto 10px;
+        max-width: 200px
+    }
+}
+
+@media (min-width: 768px) {
+    #page404 .content-msg>div>a {
+        margin: 15px 0;
+        max-width: 250px
+    }
+}
+
+@media (min-width: 768px) {
+    #page404 .content-img {
+        margin-bottom: 50px;
+        max-height: 800px;
+        overflow: hidden
+    }
 }
