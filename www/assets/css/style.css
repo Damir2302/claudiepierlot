@@ -20041,7 +20041,8 @@ header.item-details.hide-header {
     position: fixed;
     right: 0;
     top: 0;
-    max-width: 470px;
+    width: 100%;
+    max-width: 430px;
     height: 100%;
     text-align: center;
     overflow: auto;
@@ -20156,7 +20157,7 @@ header.item-details.hide-header {
     position: relative;
     width: 100%;
     min-height: 280px;
-    max-height: 375px;
+    max-height: 60vh;
     overflow: auto
 }
 
