@@ -124,7 +124,7 @@ $(document).ready(function(){
     });
 
     // Slick-slider
-    $('.slick-slider').slick({
+    $('.banner__slider').slick({
         slidesToShow: 1,
         arrows : false,
         dots : false,
@@ -159,11 +159,14 @@ $(document).ready(function(){
         }]
     });
 
-    $('.grid__block .thumb__link').slick({
-        slidesToShow: 1,
-        swipe: false,
-        dots: true
-    });
+    $('.grid__block .thumb__link').each(function(item) {
+        $(this).addClass('slider-' + item);
+        $('.slider-' + item).slick({
+            slidesToShow: 1,
+            swipe: false,
+            dots: true
+        });
+    })
 
     if ($(window).width() > 1023) {
         $('.product__tile').on('mouseenter', function(e) {

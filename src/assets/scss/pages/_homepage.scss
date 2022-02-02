@@ -17,7 +17,7 @@ section.home__content:first-child {
     }
 }
 
-.slick-slider span img:first-child {
+.banner__slider span img:first-child {
     display: none;
 
     @include breakpoint(md) {
@@ -25,7 +25,7 @@ section.home__content:first-child {
     }
 }
 
-.slick-slider span img:last-child {
+.banner__slider span img:last-child {
 
     @include breakpoint(md) {
         display: none;

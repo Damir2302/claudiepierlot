@@ -46,7 +46,10 @@ block main
                             span.detail-item_name Юбка со складками из переработанного полиэстера
                             span.detail-item_size Размер: 42
                             span.detail-item_color Цвет: Зеленый лес
-                            span.detail-item_quantity Количество: 1
+                            .detail-item_quantity Количество:
+                                a.cart_minus(href="javascript:void(0);") −
+                                input(type="number" placeholde="0" min="1" value="1")
+                                a.cart_plus(href="javascript:void(0);") +
                             span.item-price 28 000 ₽
                             a.item-remove_btn Удалить
 
@@ -208,7 +211,7 @@ block main
                                     .checkbox
                                         input#checkbox-rules(type="checkbox" checked)
                                         label(for="checkbox-rules")
-                                            span Согласен с <a href="#popup-info-rules">правилами обработки информации</a>
+                                            span Согласен с <a class="js-link-popup" href="#popup-info-rules">правилами обработки информации</a>
 
                                     .checkbox
                                         input#checkbox-feed(type="checkbox")

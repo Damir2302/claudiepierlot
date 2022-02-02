@@ -955,6 +955,13 @@
 .catalog__sec .thumb__link {
     display: block;
     overflow: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+    transition-delay: 1s;
+}
+
+.catalog__sec .thumb__link.slick-initialized {
+    opacity: 1;
 }
 
 .catalog__sec  .slick__tile {
