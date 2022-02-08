@@ -17418,6 +17418,14 @@ button:hover,.button-style:hover {
     background: #343434
 }
 
+input[type='number']::-webkit-outer-spin-button,input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none
+}
+
+input[type='number'] {
+    -moz-appearance: textfield
+}
+
 .slick-slider {
     position: relative;
     display: block;
@@ -20598,8 +20606,7 @@ header.item-details.hide-header {
     margin: 0 auto 17px;
     position: relative;
     width: 100%;
-    min-height: 280px;
-    max-height: 60vh;
+    height: 70%;
     overflow: auto
 }
 
@@ -20751,13 +20758,6 @@ select {
     margin-bottom: 0;
     width: 100%;
     max-width: 370px
-}
-
-@media (min-width: 768px) {
-    .cart__totals,.wishlist__totals {
-        position: fixed;
-        bottom: 35px
-    }
 }
 
 .total-price {
@@ -24590,14 +24590,6 @@ body.cart-page .header__logo {
     font-size: 14px;
     text-align: center;
     border: 0
-}
-
-.detail-item_quantity input::-webkit-outer-spin-button,.detail-item_quantity input::-webkit-inner-spin-button {
-    -webkit-appearance: none
-}
-
-.detail-item_quantity input[type='number'] {
-    -moz-appearance: textfield
 }
 
 .cart-item .item-price {

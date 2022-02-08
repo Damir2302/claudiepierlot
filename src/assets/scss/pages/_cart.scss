@@ -242,15 +242,6 @@ body.cart-page .header__logo img {
     border: 0;
 }
 
-.detail-item_quantity input::-webkit-outer-spin-button,
-.detail-item_quantity input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-.detail-item_quantity input[type='number'] {
-    -moz-appearance: textfield;
-}
-
 .cart-item .item-price {
     display: inline-block;
     position: absolute;
