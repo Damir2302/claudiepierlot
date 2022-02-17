@@ -306,6 +306,10 @@ body.swatchs-layer-opened {
     }
 }
 
+#product-content .attribute-color button[disabled]::after {
+    content: none;
+}
+
 #product-content .attribute-color.open > .colors-list {
     transform: translateY(0);
 
@@ -341,6 +345,15 @@ body.swatchs-layer-opened {
     border-radius: 50%;
     border: 1px solid #d1d1d1;
     vertical-align: baseline;
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
+
+#product-content .attribute-color .color-select--mobile,
+#product-content .attribute-color .size-select--mobile {
+    text-transform: initial;
 
     @include breakpoint(lg) {
         display: none;
@@ -518,6 +531,10 @@ body.swatchs-layer-opened {
         top: 23px;
         right: 27px;
     }
+}
+
+#product-content .attribute-size button[disabled]::after {
+    content: none;
 }
 
 #product-content .attribute-size.open > .size-list {

@@ -23590,6 +23590,10 @@ body.swatchs-layer-opened {
     }
 }
 
+#product-content .attribute-color button[disabled]::after {
+    content: none
+}
+
 #product-content .attribute-color.open>.colors-list {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -23639,6 +23643,16 @@ body.swatchs-layer-opened {
 
 @media (min-width: 1024px) {
     #product-content .attribute-color button a {
+        display: none
+    }
+}
+
+#product-content .attribute-color .color-select--mobile,#product-content .attribute-color .size-select--mobile {
+    text-transform: initial
+}
+
+@media (min-width: 1024px) {
+    #product-content .attribute-color .color-select--mobile,#product-content .attribute-color .size-select--mobile {
         display: none
     }
 }
@@ -23839,6 +23853,10 @@ body.swatchs-layer-opened {
         top: 23px;
         right: 27px
     }
+}
+
+#product-content .attribute-size button[disabled]::after {
+    content: none
 }
 
 #product-content .attribute-size.open>.size-list {

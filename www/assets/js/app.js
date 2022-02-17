@@ -298,9 +298,9 @@ $(document).ready(function(){
 
     // Choose size
     $('#product-content .attribute-size button').on('click', function(){
-        $('.attribute-size').toggleClass('open');
+        $('.attribute-size').addClass('open');
         $('.swatchs-layer').addClass('open');
-        $('body').toggleClass('swatchs-layer-opened ');
+        $('body').addClass('swatchs-layer-opened');
     });
 
     $('html').click(function(e) {
@@ -311,15 +311,16 @@ $(document).ready(function(){
 
     $('.swatchs-size li').on('click', function() {
         $('button > .size-select').html($(this).children().html());
-        $('.attribute-size').toggleClass('open');
+        // $('.attribute-size').removeClass('open');
         $('.swatchs-layer').removeClass('open');
+        $('body').removeClass('swatchs-layer-opened');
     });
 
     // Choose color
     $('#product-content .attribute-color button').on('click', function(){
-        $('.attribute-color').toggleClass('open');
+        $('.attribute-color').addClass('open');
         $('.swatchs-layer').addClass('open');
-        $('body').toggleClass('swatchs-layer-opened ');
+        $('body').addClass('swatchs-layer-opened ');
     });
 
     $('.swatchs-layer').on('click', function(){
@@ -329,8 +330,9 @@ $(document).ready(function(){
 
     $('.swatchs-colors li').on('click', function() {
         $('.attribute-color button').html(`<a class='color-select' style="${$(this).children().attr('style')}"></a>${$(this).children().children().text()}`);
-        $('.attribute-color').removeClass('open');
+        // $('.attribute-color').removeClass('open');
         $('.swatchs-layer').removeClass('open');
+        $('body').removeClass('swatchs-layer-opened');
     });
 
     // Desktop
@@ -374,7 +376,3 @@ $(document).ready(function(){
     $('input[type="tel"]').inputmask({"mask": "+7 (999) 99-99-99"});
 
 });
-
-
-
-
