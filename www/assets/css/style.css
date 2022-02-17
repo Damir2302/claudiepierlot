@@ -25048,6 +25048,12 @@ body.cart-page .header__logo {
     }
 }
 
+@media (min-width: 768px) {
+    .prepaid-courier {
+        white-space: break-spaces
+    }
+}
+
 .payment-section {
     display: -webkit-box;
     display: -ms-flexbox;

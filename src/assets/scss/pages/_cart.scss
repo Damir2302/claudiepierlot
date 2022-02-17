@@ -607,6 +607,13 @@ body.cart-page .header__logo img {
     }
 }
 
+.prepaid-courier {
+
+    @include breakpoint(md) {
+        white-space: break-spaces;
+    }
+}
+
 .payment-section {
     display: flex;
     flex-direction: column;
