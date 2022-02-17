@@ -19393,7 +19393,7 @@ body.filter-opened,body.open-menu,body.show-wishlist,body.show-cart,body.show-lo
 
 .filter-opened .header__menu-btn .line-1,.open-menu .header__menu-btn .line-1 {
     top: 1px;
-    left: -2px;
+    left: 1px;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg)
@@ -19406,7 +19406,8 @@ body.filter-opened,body.open-menu,body.show-wishlist,body.show-cart,body.show-lo
 .filter-opened .header__menu-btn .line-3,.open-menu .header__menu-btn .line-3 {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
-    transform: rotate(45deg)
+    transform: rotate(45deg);
+    left: 3px
 }
 
 .top-mobile-return {
@@ -19544,8 +19545,9 @@ header.item-details.hide-header {
 }
 
 .header__menu-btn {
+    padding: 14px 16px;
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 16px;
     height: 18px;
     width: 21px;
@@ -19563,25 +19565,26 @@ header.item-details.hide-header {
     background: #000;
     width: 100%;
     height: 2px;
+    max-width: 21px;
     position: absolute;
-    left: 0;
+    left: 5px;
     -webkit-transition: all .4s;
     transition: all .4s
 }
 
 .header__menu-btn .line.line-1 {
-    top: 0;
+    top: 6px;
     -webkit-transform-origin: 100% 0;
     -ms-transform-origin: 100% 0;
     transform-origin: 100% 0
 }
 
 .header__menu-btn .line.line-2 {
-    top: calc(50% - 1px)
+    top: calc(50% - 0)
 }
 
 .header__menu-btn .line.line-3 {
-    top: calc(100% - 3px);
+    top: calc(100% - 7px);
     -webkit-transform-origin: 100% 0;
     -ms-transform-origin: 100% 0;
     transform-origin: 100% 0
