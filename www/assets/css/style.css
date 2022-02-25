@@ -24028,7 +24028,8 @@ body.swatchs-layer-opened {
 
 @media (min-width: 1024px) {
     #product-content .product-add-to-cart {
-        width: 100%
+        width: 100%;
+        cursor: pointer
     }
 }
 
@@ -24089,10 +24090,8 @@ body.swatchs-layer-opened {
 
 .product-image {
     margin-bottom: 10px;
-    padding-bottom: 71.201%;
     position: relative;
     width: calc(50% - 5px);
-    height: 0;
     overflow: hidden;
     cursor: url(../images/cross-zoom.svg) 25 25,url(../images/cross-zoom.cur) 25 25,auto
 }
@@ -24103,20 +24102,69 @@ body.swatchs-layer-opened {
     }
 }
 
-.product-image .zoom-icon {
-    margin: -38px 0 0 -38px;
-    background: url(../images/cross-zoom.svg) no-repeat;
-    display: block;
+.product-image--last {
+    display: none;
+    cursor: default
+}
+
+@media (min-width: 1024px) {
+    .product-image--last {
+        display: block
+    }
+}
+
+.image-zoom.active-zoom {
+    cursor: url(../images/close-zoom.svg) 25 25,url(../images/close-zoom.cur) 25 25,auto
+}
+
+.zoom-content-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background: rgba(255,255,255,0.9)
+}
+
+.closeBtnX {
+    color: #000;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 38px;
-    height: 38px;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+    text-decoration: none;
+    background-size: 15px;
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    cursor: pointer;
+    font-weight: 700
+}
+
+.zoom-content-mobile button.closeBtnX,.zoom-content-mobile button.closeBtnX:hover {
+    background: 0 0;
+    border: 0;
+    -webkit-tap-highlight-color: transparent
+}
+
+.zoom-icon {
+    position: absolute;
     opacity: .79;
     -webkit-animation: .5s ease-out 2s 1 zommIconAnimate;
     animation: .5s ease-out 2s 1 zommIconAnimate;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards
+}
+
+@media (min-width: 1024px) {
+    .zoom-icon {
+        display: none
+    }
 }
 
 @-webkit-keyframes zommIconAnimate {
@@ -24137,6 +24185,66 @@ body.swatchs-layer-opened {
     100% {
         opacity: 0
     }
+}
+
+.zoom-icon.pinch-icon {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -30px;
+    background: url(../images/pinch-zoom.svg) no-repeat
+}
+
+.product-image .zoom-icon {
+    margin: -38px 0 0 -38px;
+    background: url(../images/cross-zoom.svg) no-repeat;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 38px;
+    height: 38px;
+    opacity: .79;
+    -webkit-animation: .5s ease-out 2s 1 zommIconAnimate;
+    animation: .5s ease-out 2s 1 zommIconAnimate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+@media (min-width: 1024px) {
+    .product-image .zoom-icon {
+        display: none
+    }
+}
+
+@keyframes zommIconAnimate {
+    0% {
+        opacity: .75
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.zoom-content {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: -webkit-transform .25s;
+    transition: -webkit-transform .25s;
+    transition: transform .25s;
+    transition: transform .25s, -webkit-transform .25s;
+    z-index: 9
 }
 
 .tabs-container {
