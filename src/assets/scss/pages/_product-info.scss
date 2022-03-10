@@ -229,7 +229,7 @@ body.swatchs-layer-opened {
     flex-wrap: wrap;
     width: 100%;
     transition: bottom .35s ease-in;
-    z-index: 99;
+    z-index: 98;
 
     @include breakpoint(lg) {
         margin-top: 25px;
@@ -624,6 +624,16 @@ body.swatchs-layer-opened {
     text-align: center;
 }
 
+#product-content .size-table a {
+    display: none;
+
+    @include breakpoint(lg) {
+        display: block;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+    }
+}
+
 #product-content .add-wish-list__btn {
     background: #fbfbf7;
     position: relative;
@@ -675,6 +685,7 @@ body.swatchs-layer-opened {
     width: 50%;
 
     @include breakpoint(lg) {
+        margin: 20px 0 0;
         width: 100%;
         cursor: pointer;
     }

@@ -230,10 +230,10 @@ $(document).ready(function(){
         $('.orderby').addClass('opened');
     });
 
-    $('.catname__title span').on('click', function() {
-        $('body').addClass('filter-opened');
-        $('.catheader__catname').addClass('opened');
-    });
+    // $('.catname__title span').on('click', function() {
+    //     $('body').addClass('filter-opened');
+    //     $('.catheader__catname').addClass('opened');
+    // });
 
     $('.orderby__link').on('click', function() {
         $('.filter__title').removeClass('open');

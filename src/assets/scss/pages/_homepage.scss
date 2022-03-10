@@ -32,6 +32,67 @@ section.home__content:first-child {
     }
 }
 
+.hpbloc-wrapper {
+
+    @include breakpoint(md) {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0vh 10.21vw 3vh;
+        padding: 0 0 48px;
+        column-gap: 45px;
+    }
+}
+
+.hpbloc-wrapper--left, .hpbloc-wrapper--right {
+    margin-top: 30px;
+}
+
+.hpbloc-wrapper--left, .hpbloc-wrapper--right {
+    position: relative;
+}
+
+.hpbloc-wrapper__title {
+    margin: 0 0 8px 12px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #000000;
+
+    @include breakpoint(md) {
+        min-height: 36px;
+        margin: 0 0 18px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.hpbloc-wrapper a.hpbloc-btn {
+    padding: 12px 31.5px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 12px;
+    bottom: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        left: 3.02vw;
+        bottom: 3.02vw;
+    }
+}
+
 .season-iconic__container {
     padding: 60px 0 20px 14px;
     padding-left: 14px;
@@ -40,6 +101,10 @@ section.home__content:first-child {
         padding: 0 0 20px;
         margin-left: 50px;
     }
+}
+
+.season__iconic .slick-track {
+    margin-left: 0;
 }
 
 .season-iconic__container .slick-slide {
@@ -85,13 +150,14 @@ section.home__content:first-child {
 .season__title {
     margin-bottom: 15px;
     display: block;
-    font-size: 16px;
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-size: 22px;
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
 
-    @include breakpoint(xl) {
-        font-size: 22px;
+    @include breakpoint(md) {
+        font-size: 24px;
     }
 }
 
@@ -109,6 +175,8 @@ section.home__content:first-child {
 .product__price {
     padding-top: 5px;
 }
+
+
 
 .board__container {
     padding: 20px 14px 30px;

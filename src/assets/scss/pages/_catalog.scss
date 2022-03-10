@@ -153,22 +153,22 @@
     }
 }
 
-.catname__title span:after {
-    content: "\e90c";
-    position: absolute;
-    top: 0;
-    right: 4px;
-    display: block;
-    font-family: 'icomoon';
-    font-weight: 400;
-    font-size: 16px;
-    color: #000;
-    transform: rotate(-90deg);
+// .catname__title span:after {
+//     content: "\e90c";
+//     position: absolute;
+//     top: 0;
+//     right: 4px;
+//     display: block;
+//     font-family: 'icomoon';
+//     font-weight: 400;
+//     font-size: 16px;
+//     color: #000;
+//     transform: rotate(-90deg);
 
-    @include breakpoint(lg) {
-        all: unset;
-    }
-}
+//     @include breakpoint(lg) {
+//         all: unset;
+//     }
+// }
 
 .catname__content {
     background-color: #fbfbf7;
@@ -973,9 +973,9 @@
 }
 
 .catalog__sec .vignette__badge {
-    background-color: #f8f6f6;
+    background-color: rgba(251,251,247,.6);
     position: absolute;
-    top: 100%;
+    bottom: 0;
     width: 100%;
     font-size: inherit;
     line-height: 26px;
