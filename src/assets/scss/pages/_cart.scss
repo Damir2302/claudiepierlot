@@ -31,9 +31,13 @@ body.cart-page .header__logo img {
 }
 
 #cart-page {
-    margin: 0 auto;
+    margin: 70px auto 0;
     padding-bottom: 50px;
     max-width: 1440px;
+
+    @include breakpoint(xl) {
+        margin: 0 auto;
+    }
 }
 
 .reinsurance-column {

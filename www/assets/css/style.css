@@ -24563,9 +24563,15 @@ body.cart-page .header__logo {
 }
 
 #cart-page {
-    margin: 0 auto;
+    margin: 70px auto 0;
     padding-bottom: 50px;
     max-width: 1440px
+}
+
+@media (min-width: 1260px) {
+    #cart-page {
+        margin: 0 auto
+    }
 }
 
 .reinsurance-column {
@@ -27596,9 +27602,15 @@ section.topic a {
 }
 
 #contact-us {
-    margin: 0 auto;
+    margin: 60px auto 0;
     padding: 0 15px 100px;
     max-width: 850px
+}
+
+@media (min-width: 1260px) {
+    #contact-us {
+        margin: 0 auto
+    }
 }
 
 #contact-us form {
