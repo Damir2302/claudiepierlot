@@ -154,7 +154,6 @@ $(document).ready(function(){
             breakpoint: 1259,
             settings: {
                 arrows: false,
-                autoplay: true
             }
         }]
     });

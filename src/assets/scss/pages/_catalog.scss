@@ -972,6 +972,16 @@
     width: 100%;
 }
 
+.catalog__sec .vignette__badge.new_col{
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.catalog__sec .vignette__badge.new_col.cloudie_cares {
+    bottom: 26px;
+}
+
 .catalog__sec .vignette__badge {
     background-color: rgba(251,251,247,.6);
     position: absolute;
@@ -980,7 +990,7 @@
     font-size: inherit;
     line-height: 26px;
     text-align: center;
-    z-index: 100;
+    z-index: 1;
 }
 
 .catalog__sec .vignette__badge  img {

@@ -214,7 +214,12 @@ section.home__content:first-child {
 }
 
 .board__image img {
-    min-width: 400px;
+    height: 60vw;
+    object-fit: cover;
+
+    @include breakpoint(xl) {
+        height: 37vw;
+    }
 }
 
 .board__desc {

@@ -97,6 +97,22 @@ body.swatchs-layer-opened {
     }
 }
 
+.product-nova {
+    margin-bottom: 15px;
+    background-color: #f8f6f6;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: center;
+
+    @include breakpoint(lg) {
+        background-color: unset;
+        font-size: 13px;
+        line-height: 14px;
+        text-align: unset;
+    }
+}
+
 .product-name {
     margin: 10px 0;
     padding-left: 17px;

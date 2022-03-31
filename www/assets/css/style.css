@@ -20149,10 +20149,6 @@ header.item-details.hide-header {
     margin: 10px 0 0
 }
 
-.navbar__menu .submenu__col-item:first-child h3 {
-    font-weight: bold
-}
-
 .navbar__menu h3 {
     display: inline-block;
     font-weight: 400;
@@ -21720,7 +21716,15 @@ section.home__content:first-child {
 }
 
 .board__image img {
-    min-width: 400px
+    height: 60vw;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+@media (min-width: 1260px) {
+    .board__image img {
+        height: 37vw
+    }
 }
 
 @media (min-width: 1260px) {
@@ -22873,6 +22877,16 @@ section.home__content:first-child {
     width: 100%
 }
 
+.catalog__sec .vignette__badge.new_col {
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px
+}
+
+.catalog__sec .vignette__badge.new_col.cloudie_cares {
+    bottom: 26px
+}
+
 .catalog__sec .vignette__badge {
     background-color: rgba(251,251,247,0.6);
     position: absolute;
@@ -22881,7 +22895,7 @@ section.home__content:first-child {
     font-size: inherit;
     line-height: 26px;
     text-align: center;
-    z-index: 100
+    z-index: 1
 }
 
 .catalog__sec .vignette__badge img {
@@ -23399,6 +23413,24 @@ body.swatchs-layer-opened {
         -ms-flex-pack: justify;
         justify-content: space-between;
         width: 62.7933%
+    }
+}
+
+.product-nova {
+    margin-bottom: 15px;
+    background-color: #f8f6f6;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: normal;
+    text-align: center
+}
+
+@media (min-width: 1024px) {
+    .product-nova {
+        background-color: unset;
+        font-size: 13px;
+        line-height: 14px;
+        text-align: unset
     }
 }
 
