@@ -37,18 +37,18 @@ $(document).ready(function(){
     });
 
     // Open submenu
-    $(window).on('resize', function() {
-        if ($(window).width() < 1260) {
-            $("#navbar .item__menu.has-submenu > a").on("click", function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                $(this).closest("li").toggleClass("active-link");
-                $(this).closest("ul").toggleClass("submenu-show");
-            });
-        } else {
-            $("#navbar .item__menu.has-submenu > a").off("click");
-        }
-    });
+    // $(window).on('resize', function() {
+    //     if ($(window).width() < 1260) {
+    //         $("#navbar .item__menu.has-submenu > a").on("click", function(e) {
+    //             e.preventDefault();
+    //             e.stopPropagation();
+    //             $(this).closest("li").toggleClass("active-link");
+    //             $(this).closest("ul").toggleClass("submenu-show");
+    //         });
+    //     } else {
+    //         $("#navbar .item__menu.has-submenu > a").off("click");
+    //     }
+    // });
 
     if ($(window).width() < 1260) {
             $("#navbar .item__menu.has-submenu > a").on("click", function(e) {
