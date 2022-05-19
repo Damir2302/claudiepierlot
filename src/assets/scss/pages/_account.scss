@@ -37,13 +37,10 @@
 }
 
 .account__wrapper {
-
-    @include breakpoint(lg) {
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        max-width: 1170px;
-    }
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1170px;
 }
 
 .login__block {
