@@ -198,7 +198,12 @@ header.item-details.hide-header {
 }
 
 .header__logo img {
+    margin-right: 35px;
     max-width: 170px;
+
+    @include breakpoint(s) {
+        margin-right: 0;
+    }
 
     @include breakpoint(xl) {
         max-width: 200px;
@@ -286,10 +291,15 @@ header.item-details.hide-header {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 30px;
+    min-width: 26px;
     height: 39px;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
+
+    @include breakpoint(s) {
+        min-width: 30px;
+        font-size: 22px;
+    }
 
     @include breakpoint(md) {
         min-width: 44px;
@@ -316,11 +326,7 @@ header.item-details.hide-header {
 }
 
 .header__info .header__login {
-    display: none;
-
-    @include breakpoint(md) {
-        display: flex;
-    }
+    display: flex;
 }
 
 .header__info .header__wishlist {
@@ -350,12 +356,17 @@ header.item-details.hide-header {
     position: absolute;
     bottom: -3px;
     right: 3px;
-    width: 17px;
-    height: 17px;
+    width: 12px;
+    height: 12px;
     font-size: 10px;
     line-height: 17px;
     border-radius: 550%;
     z-index: 0;
+
+    @include breakpoint(xs) {
+        width: 17px;
+        height: 17px;
+    }
 }
 
 #navbar {
