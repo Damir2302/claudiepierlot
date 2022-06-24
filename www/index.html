@@ -277,7 +277,24 @@
           <div class="container">
             <section class="home__content">
               <div class="slick__container">
-                <div class="banner__slider"><span><img src="assets/images/background_1920w.jpg" alt="image"><img src="assets/images/background_720w.jpg" alt="image"></span></div>
+                <div class="banner__slider">
+                  <div class="banner__block"><a class="banner__link" href="#">
+                      <picture>
+                        <source media="(max-width: 750px)" srcset="assets/images/background_720w.jpg">
+                        <source media="(max-width: 1024px)" srcset="assets/images/background_1920w.jpg">
+                        <source media="(min-width: 1025px)" srcset="assets/images/background_1920w.jpg"><img src="assets/images/background_1920w.jpg" alt="image">
+                      </picture></a></div>
+                  <div class="banner__block"><a class="banner__link" href="#">
+                      <video class="desktop" playsinline="" muted="" autoplay="" loop="">
+                        <source src="assets/images/3175368442.mp4" type="video/mp4">
+                      </video>
+                      <video class="tablet" playsinline="" muted="" autoplay="" loop="">
+                        <source src="assets/images/3175368442.mp4" type="video/mp4">
+                      </video>
+                      <video class="mobile" playsinline="" muted="" autoplay="" loop="">
+                        <source src="assets/images/3175368442.mp4" type="video/mp4">
+                      </video></a></div>
+                </div>
               </div>
             </section>
             <section class="home__content">

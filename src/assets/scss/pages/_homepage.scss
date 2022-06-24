@@ -32,6 +32,49 @@ section.home__content:first-child {
     }
 }
 
+.banner__link {
+    height: 100%;
+}
+
+.banner__block img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.banner__block video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile {
+
+    @include breakpoint(md) {
+        display: none;
+    }
+}
+
+.tablet {
+    display: none;
+
+    @include breakpoint(md) {
+        display: block;
+    }
+
+    @include breakpoint(xl) {
+        display: none;
+    }
+}
+
+.desktop {
+    display: none;
+
+    @include breakpoint(xl) {
+        display: block;
+    }
+}
+
 .hpbloc-wrapper {
 
     @include breakpoint(md) {
